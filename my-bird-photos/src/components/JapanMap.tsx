@@ -6,7 +6,7 @@ import {
   Geography
 } from "react-simple-maps";
 
-const geoUrl = "/geojson/prefectures.geojson";
+const geoUrl = process.env.PUBLIC_URL + "/geojson/prefectures.geojson";
 
 interface IJapanMapProps {
   setTooltipContent: (content: string) => void;

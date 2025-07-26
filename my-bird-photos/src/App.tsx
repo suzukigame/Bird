@@ -2,7 +2,7 @@ import React, { useState, useMemo } from 'react';
 import './App.css';
 import { prefectures } from './data/prefectures';
 import { photos } from './data/photos';
-import PrefectureSelector from './components/PrefectureSelector';
+
 import PhotoGallery from './components/PhotoGallery';
 import JapanMap from './components/JapanMap';
 import YearSelector from './components/YearSelector';
@@ -60,11 +60,7 @@ function App() {
         <h1>GauraBirder奮闘記</h1>
       </header>
       <main>
-        <PrefectureSelector
-          prefectures={prefectures}
-          selectedPrefecture={selectedPrefecture}
-          onSelectPrefecture={handleSelectPrefecture}
-        />
+        
         <YearSelector
           years={uniqueYears}
           selectedYear={selectedYear}
