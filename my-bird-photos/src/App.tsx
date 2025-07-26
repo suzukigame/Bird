@@ -50,6 +50,17 @@ function App() {
           selectedPrefecture={selectedPrefecture}
           onSelectPrefecture={handleSelectPrefecture}
         />
+        <YearSelector
+          years={uniqueYears}
+          selectedYear={selectedYear}
+          onSelectYear={handleSelectYear}
+        />
+        <BirdSpeciesSelector
+          birdSpecies={uniqueBirdSpecies}
+          selectedBirdSpecies={selectedBirdSpecies}
+          onSelectBirdSpecies={handleSelectBirdSpecies}
+        />
+        <p>見つけた鳥の種類: {foundBirdSpeciesCount} 種類</p>
         <PhotoGallery photos={filteredPhotos} />
       </main>
     </div>
