@@ -374,5 +374,16 @@ export const photos: IPhoto[] = [
     locationDetail: '',
     memo: '',
     family: 'レンジャク',
+  },
+  {
+    id: '35',
+    src: process.env.PUBLIC_URL + '/images/birds/フクロウ/Ural Owl_ibaraki_202505.JPG',
+    thumbnail: process.env.PUBLIC_URL + '/images/birds/フクロウ/Ural Owl_ibaraki_202505.JPG',
+    prefecture: '茨城県',
+    date: '2025-05-11',
+    birdSpecies: 'フクロウ',
+    locationDetail: '',
+    memo: '',
+    family: 'フクロウ',
   }
 ];
