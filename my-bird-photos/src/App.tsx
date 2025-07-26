@@ -4,10 +4,7 @@ import { prefectures } from './data/prefectures';
 import { photos } from './data/photos';
 
 import PhotoGallery from './components/PhotoGallery';
-import JapanMap from './components/JapanMap';
-import YearSelector from './components/YearSelector';
-import BirdSpeciesSelector from './components/BirdSpeciesSelector';
-import { Tooltip } from 'react-tooltip';
+import PrefectureSelector from './components/PrefectureSelector';
 
 
 function App() {
