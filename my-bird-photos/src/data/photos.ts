@@ -3,8 +3,8 @@ import { IPhoto } from '../types/photo';
 export const photos: IPhoto[] = [
   {
     id: '1',
-    src: process.env.PUBLIC_URL + '/images/birds/2025/茨城県/0717/20250719_ibaraki_owl.JPG',
-    thumbnail: process.env.PUBLIC_URL + '/images/birds/2025/茨城県/0717/20250719_ibaraki_owl.JPG',
+    src: process.env.PUBLIC_URL + '/images/birds/2025/茨城県/0719/20250719_ibaraki_owl.JPG',
+    thumbnail: process.env.PUBLIC_URL + '/images/birds/2025/茨城県/0719/20250719_ibaraki_owl.JPG',
     prefecture: '茨城県',
     date: '2025-07-19',
     birdSpecies: 'フクロウ',
