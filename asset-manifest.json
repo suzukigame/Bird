@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Bird/static/css/main.2c72c129.css",
-    "main.js": "/Bird/static/js/main.34f79a10.js",
+    "main.css": "/Bird/static/css/main.a12cfd94.css",
+    "main.js": "/Bird/static/js/main.46e43a0b.js",
     "index.html": "/Bird/index.html",
-    "main.2c72c129.css.map": "/Bird/static/css/main.2c72c129.css.map",
-    "main.34f79a10.js.map": "/Bird/static/js/main.34f79a10.js.map"
+    "main.a12cfd94.css.map": "/Bird/static/css/main.a12cfd94.css.map",
+    "main.46e43a0b.js.map": "/Bird/static/js/main.46e43a0b.js.map"
   },
   "entrypoints": [
-    "static/css/main.2c72c129.css",
-    "static/js/main.34f79a10.js"
+    "static/css/main.a12cfd94.css",
+    "static/js/main.46e43a0b.js"
   ]
 }
