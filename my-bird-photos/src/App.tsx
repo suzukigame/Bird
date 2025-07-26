@@ -58,7 +58,8 @@ function App() {
       const matchesPrefecture = selectedPrefecture === null || photo.prefecture === selectedPrefecture;
       const matchesYear = selectedYear === null || photo.date.startsWith(selectedYear);
       const matchesBirdSpecies = selectedBirdSpecies === null || photo.birdSpecies === selectedBirdSpecies;
-      const matchesFamily = selectedFamily === null || photo.family === selectedFamily;
+      // Fix: If selectedFamily is null or empty string, don't filter by family
+      const matchesFamily = !selectedFamily || photo.family === selectedFamily;
       return matchesPrefecture && matchesYear && matchesBirdSpecies && matchesFamily;
     });
   }, [selectedPrefecture, selectedYear, selectedBirdSpecies, selectedFamily]);
