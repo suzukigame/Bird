@@ -12,20 +12,9 @@ import { Tooltip } from 'react-tooltip';
 
 function App() {
   const [selectedPrefecture, setSelectedPrefecture] = useState<string | null>(null);
-  const [selectedYear, setSelectedYear] = useState<string | null>(null);
-  const [selectedBirdSpecies, setSelectedBirdSpecies] = useState<string | null>(null);
-  const [tooltipContent, setTooltipContent] = useState<string>("");
 
   const handleSelectPrefecture = (prefecture: string | null) => {
     setSelectedPrefecture(prefecture);
-  };
-
-  const handleSelectYear = (year: string | null) => {
-    setSelectedYear(year);
-  };
-
-  const handleSelectBirdSpecies = (species: string | null) => {
-    setSelectedBirdSpecies(species);
   };
 
   const uniqueYears = useMemo(() => {
@@ -48,11 +37,9 @@ function App() {
   const filteredPhotos = useMemo(() => {
     return photos.filter(photo => {
       const matchesPrefecture = selectedPrefecture === null || photo.prefecture === selectedPrefecture;
-      const matchesYear = selectedYear === null || photo.date.startsWith(selectedYear);
-      const matchesBirdSpecies = selectedBirdSpecies === null || photo.birdSpecies === selectedBirdSpecies;
-      return matchesPrefecture && matchesYear && matchesBirdSpecies;
+      return matchesPrefecture;
     });
-  }, [selectedPrefecture, selectedYear, selectedBirdSpecies]);
+  }, [selectedPrefecture]);
 
   return (
     <div className="App">
@@ -61,16 +48,6 @@ function App() {
       </header>
       <main>
         
-        <YearSelector
-          years={uniqueYears}
-          selectedYear={selectedYear}
-          onSelectYear={handleSelectYear}
-        />
-        <BirdSpeciesSelector
-          birdSpecies={uniqueBirdSpecies}
-          selectedBirdSpecies={selectedBirdSpecies}
-          onSelectBirdSpecies={handleSelectBirdSpecies}
-        />
         <PrefectureSelector
           prefectures={prefectures}
           selectedPrefecture={selectedPrefecture}
