@@ -46,7 +46,8 @@ function App() {
   const uniqueBirdSpecies = useMemo(() => {
     const species = new Set<string>();
     photos.forEach(photo => {
-      if (selectedFamily === null || photo.family === selectedFamily) {
+      // If no family is selected (null or empty string), include all bird species
+      if (!selectedFamily || photo.family === selectedFamily) {
         species.add(photo.birdSpecies);
       }
     });
@@ -58,7 +59,6 @@ function App() {
       const matchesPrefecture = selectedPrefecture === null || photo.prefecture === selectedPrefecture;
       const matchesYear = selectedYear === null || photo.date.startsWith(selectedYear);
       const matchesBirdSpecies = selectedBirdSpecies === null || photo.birdSpecies === selectedBirdSpecies;
-      // Fix: If selectedFamily is null or empty string, don't filter by family
       const matchesFamily = !selectedFamily || photo.family === selectedFamily;
       return matchesPrefecture && matchesYear && matchesBirdSpecies && matchesFamily;
     });
