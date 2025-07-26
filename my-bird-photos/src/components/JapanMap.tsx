@@ -72,7 +72,7 @@ const JapanMap: React.FC<IJapanMapProps> = ({
                     }}
                     style={{
                       default: {
-                        fill: isSelected ? "#4CAF50" : "#D6D6DA", // 選択された都道府県の色
+                        fill: isSelected ? "#4CAF50" : "#A0A0A0", // 選択された都道府県の色
                         stroke: "#FFFFFF",
                         outline: "none"
                       },
