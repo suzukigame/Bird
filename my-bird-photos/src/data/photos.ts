@@ -3,8 +3,8 @@ import { IPhoto } from '../types/photo';
 export const photos: IPhoto[] = [
   {
     id: '1',
-    src: process.env.PUBLIC_URL + '/images/birds/ホオジロ/Yellow-throated Bunting_fukuoka_20241231.JPG',
-    thumbnail: process.env.PUBLIC_URL + '/images/birds/ホオジロ/Yellow-throated Bunting_fukuoka_20241231.JPG',
+    src: process.env.PUBLIC_URL + '/images/birds/ホオジロ/Yellow-throated Bunting_fukuoka_202412.JPG',
+    thumbnail: process.env.PUBLIC_URL + '/images/birds/ホオジロ/Yellow-throated Bunting_fukuoka_202412.JPG',
     prefecture: '福岡県',
     date: '2024-12-31',
     birdSpecies: 'ミヤマホオジロ',
@@ -53,8 +53,8 @@ export const photos: IPhoto[] = [
   },
   {
     id: '6',
-    src: process.env.PUBLIC_URL + '/images/birds/イカル/Hawfinch_fukuoka_202412.JPG',
-    thumbnail: process.env.PUBLIC_URL + '/images/birds/イカル/Hawfinch_fukuoka_202412.JPG',
+    src: process.env.PUBLIC_URL + '/images/birds/アトリ/Hawfinch_fukuoka_202412.JPG',
+    thumbnail: process.env.PUBLIC_URL + '/images/birds/アトリ/Hawfinch_fukuoka_202412.JPG',
     prefecture: '福岡県',
     date: '2024-12-31',
     birdSpecies: 'イカル',
@@ -63,8 +63,8 @@ export const photos: IPhoto[] = [
   },
   {
     id: '7',
-    src: process.env.PUBLIC_URL + '/images/birds/ヒタキ/Hawfinch_fukuoka_202412.JPG',
-    thumbnail: process.env.PUBLIC_URL + '/images/birds/ヒタキ/Hawfinch_fukuoka_202412.JPG',
+    src: process.env.PUBLIC_URL + '/images/birds/ヒタキ/Daurian Redstart_fukuoka_202412.JPG',
+    thumbnail: process.env.PUBLIC_URL + '/images/birds/ヒタキ/Daurian Redstart_fukuoka_202412.JPG',
     prefecture: '福岡県',
     date: '2024-12-31',
     birdSpecies: 'ジョウビタキ',
@@ -121,4 +121,24 @@ export const photos: IPhoto[] = [
     locationDetail: '',
     memo: '',
   },
+  {
+    id: '13',
+    src: process.env.PUBLIC_URL + '/images/birds/キバシリ/Eurasian Treecreeper_tochigi_202401.JPG',
+    thumbnail: process.env.PUBLIC_URL + '/images/birds/キバシリ/Eurasian Treecreeper_tochigi_202401.JPG',
+    prefecture: '栃木県',
+    date: '2024-12-01',
+    birdSpecies: 'キバシリ',
+    locationDetail: '',
+    memo: '',
+  }, 
+  {
+    id: '14',
+    src: process.env.PUBLIC_URL + '/images/birds/サギ/Cattle egret_fukuoka_202505.JPG',
+    thumbnail: process.env.PUBLIC_URL + '/images/birds/サギ/Cattle egret_fukuoka_202505.JPG',
+    prefecture: '茨城県',
+    date: '2025-05-19',
+    birdSpecies: 'アマサギ',
+    locationDetail: '',
+    memo: '',
+  }, 
 ];
