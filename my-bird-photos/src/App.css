@@ -32,16 +32,7 @@ main {
   margin: 0 auto;
 }
 
-.japan-map-container {
-  width: 100%;
-  max-width: 800px;
-  height: 600px; /* 明示的な高さを設定 */
-  margin: 30px auto;
-  border: 1px solid var(--medium-gray);
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-}
+
 
 .prefecture-selector,
 .year-selector,
@@ -144,12 +135,14 @@ main {
     font-size: 2em;
   }
 
+  .prefecture-selector,
   .year-selector,
   .bird-species-selector {
     gap: 8px;
     padding: 8px;
   }
 
+  .prefecture-selector button,
   .year-selector button,
   .bird-species-selector button {
     padding: 8px 12px;
@@ -180,12 +173,14 @@ main {
     font-size: 1.8em;
   }
 
+  .prefecture-selector,
   .year-selector,
   .bird-species-selector {
     flex-direction: column;
     align-items: stretch;
   }
 
+  .prefecture-selector button,
   .year-selector button,
   .bird-species-selector button {
     width: 100%;
