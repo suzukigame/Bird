@@ -7,4 +7,5 @@ export interface IPhoto {
   birdSpecies: string;
   locationDetail: string;
   memo?: string;
+  family?: string; // Add family property
 }

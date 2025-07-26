@@ -2,17 +2,20 @@ import React, { useState, useMemo } from 'react';
 import './App.css';
 import { prefectures } from './data/prefectures';
 import { photos } from './data/photos';
+import { birdDatabase } from './data/bird_database';
 
 import PhotoGallery from './components/PhotoGallery';
 import PrefectureSelector from './components/PrefectureSelector';
 import YearSelector from './components/YearSelector';
 import BirdSpeciesSelector from './components/BirdSpeciesSelector';
+import FamilySelector from './components/FamilySelector';
 
 
 function App() {
   const [selectedPrefecture, setSelectedPrefecture] = useState<string | null>(null);
   const [selectedYear, setSelectedYear] = useState<string | null>(null);
   const [selectedBirdSpecies, setSelectedBirdSpecies] = useState<string | null>(null);
+  const [selectedFamily, setSelectedFamily] = useState<string | null>(null);
 
   const handleSelectPrefecture = (prefecture: string | null) => {
     setSelectedPrefecture(prefecture);
@@ -24,6 +27,11 @@ function App() {
 
   const handleSelectBirdSpecies = (species: string | null) => {
     setSelectedBirdSpecies(species);
+  };
+
+  const handleSelectFamily = (family: string | null) => {
+    setSelectedFamily(family);
+    setSelectedBirdSpecies(null); // Reset bird species when family changes
   };
 
   const uniqueYears = useMemo(() => {
@@ -38,19 +46,22 @@ function App() {
   const uniqueBirdSpecies = useMemo(() => {
     const species = new Set<string>();
     photos.forEach(photo => {
-      species.add(photo.birdSpecies);
+      if (selectedFamily === null || photo.family === selectedFamily) {
+        species.add(photo.birdSpecies);
+      }
     });
     return Array.from(species).sort();
-  }, []);
+  }, [photos, selectedFamily]);
 
   const filteredPhotos = useMemo(() => {
     return photos.filter(photo => {
       const matchesPrefecture = selectedPrefecture === null || photo.prefecture === selectedPrefecture;
       const matchesYear = selectedYear === null || photo.date.startsWith(selectedYear);
       const matchesBirdSpecies = selectedBirdSpecies === null || photo.birdSpecies === selectedBirdSpecies;
-      return matchesPrefecture && matchesYear && matchesBirdSpecies;
+      const matchesFamily = selectedFamily === null || photo.family === selectedFamily;
+      return matchesPrefecture && matchesYear && matchesBirdSpecies && matchesFamily;
     });
-  }, [selectedPrefecture, selectedYear, selectedBirdSpecies]);
+  }, [selectedPrefecture, selectedYear, selectedBirdSpecies, selectedFamily]);
 
   
 
@@ -66,7 +77,10 @@ function App() {
         <h1>GauraBirder奮闘記</h1>
       </header>
       <main>
-        
+        <FamilySelector
+          selectedFamily={selectedFamily || ''}
+          onSelectFamily={handleSelectFamily}
+        />
         <PrefectureSelector
           prefectures={prefectures}
           selectedPrefecture={selectedPrefecture}
@@ -81,6 +95,7 @@ function App() {
           birdSpecies={uniqueBirdSpecies}
           selectedBirdSpecies={selectedBirdSpecies}
           onSelectBirdSpecies={handleSelectBirdSpecies}
+          selectedFamily={selectedFamily} // Pass selectedFamily prop
         />
         <p>見つけた鳥の種類: {foundBirdSpeciesCount} 種類</p>
         <PhotoGallery photos={filteredPhotos} />
