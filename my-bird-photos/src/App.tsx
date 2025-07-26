@@ -5,13 +5,25 @@ import { photos } from './data/photos';
 
 import PhotoGallery from './components/PhotoGallery';
 import PrefectureSelector from './components/PrefectureSelector';
+import YearSelector from './components/YearSelector';
+import BirdSpeciesSelector from './components/BirdSpeciesSelector';
 
 
 function App() {
   const [selectedPrefecture, setSelectedPrefecture] = useState<string | null>(null);
+  const [selectedYear, setSelectedYear] = useState<string | null>(null);
+  const [selectedBirdSpecies, setSelectedBirdSpecies] = useState<string | null>(null);
 
   const handleSelectPrefecture = (prefecture: string | null) => {
     setSelectedPrefecture(prefecture);
+  };
+
+  const handleSelectYear = (year: string | null) => {
+    setSelectedYear(year);
+  };
+
+  const handleSelectBirdSpecies = (species: string | null) => {
+    setSelectedBirdSpecies(species);
   };
 
   const uniqueYears = useMemo(() => {
@@ -34,9 +46,19 @@ function App() {
   const filteredPhotos = useMemo(() => {
     return photos.filter(photo => {
       const matchesPrefecture = selectedPrefecture === null || photo.prefecture === selectedPrefecture;
-      return matchesPrefecture;
+      const matchesYear = selectedYear === null || photo.date.startsWith(selectedYear);
+      const matchesBirdSpecies = selectedBirdSpecies === null || photo.birdSpecies === selectedBirdSpecies;
+      return matchesPrefecture && matchesYear && matchesBirdSpecies;
     });
-  }, [selectedPrefecture]);
+  }, [selectedPrefecture, selectedYear, selectedBirdSpecies]);
+
+  
+
+  const foundBirdSpeciesCount = useMemo(() => {
+    const uniqueSpecies = new Set<string>();
+    filteredPhotos.forEach(photo => uniqueSpecies.add(photo.birdSpecies));
+    return uniqueSpecies.size;
+  }, [filteredPhotos]);
 
   return (
     <div className="App">
