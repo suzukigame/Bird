@@ -57,7 +57,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>日本の野鳥、都道府県で巡る写真の旅</h1>
+        <h1>GauraBirder奮闘記</h1>
       </header>
       <main>
         <PrefectureSelector
