@@ -11,9 +11,14 @@ const geoUrl = "/geojson/prefectures.geojson";
 interface IJapanMapProps {
   setTooltipContent: (content: string) => void;
   onSelectPrefecture: (prefecture: string | null) => void;
+  selectedPrefecture: string | null;
 }
 
-const JapanMap: React.FC<IJapanMapProps> = ({ setTooltipContent, onSelectPrefecture }) => {
+const JapanMap: React.FC<IJapanMapProps> = ({
+  setTooltipContent,
+  onSelectPrefecture,
+  selectedPrefecture,
+}) => {
   const [position, setPosition] = useState({ coordinates: [138, 38] as [number, number], zoom: 4 });
 
   function handleZoomIn() {
@@ -31,7 +36,7 @@ const JapanMap: React.FC<IJapanMapProps> = ({ setTooltipContent, onSelectPrefect
   }
 
   return (
-    <>
+    <div className="japan-map-container">
       <ComposableMap
         data-tip=""
         projection="geoMercator"
@@ -50,38 +55,41 @@ const JapanMap: React.FC<IJapanMapProps> = ({ setTooltipContent, onSelectPrefect
         >
           <Geographies geography={geoUrl}>
             {({ geographies }) =>
-              geographies.map((geo) => (
-                <Geography
-                  key={geo.rsmKey}
-                  geography={geo}
-                  onMouseEnter={() => {
-                    setTooltipContent(geo.properties.name_ja);
-                  }}
-                  onMouseLeave={() => {
-                    setTooltipContent("");
-                  }}
-                  onClick={() => {
-                    onSelectPrefecture(geo.properties.name_ja);
-                  }}
-                  style={{
-                    default: {
-                      fill: "#D6D6DA",
-                      stroke: "#FFFFFF",
-                      outline: "none"
-                    },
-                    hover: {
-                      fill: "#F53",
-                      stroke: "#FFFFFF",
-                      outline: "none"
-                    },
-                    pressed: {
-                      fill: "#E42",
-                      stroke: "#FFFFFF",
-                      outline: "none"
-                    }
-                  }}
-                />
-              ))
+              geographies.map((geo) => {
+                const isSelected = geo.properties.name_ja === selectedPrefecture;
+                return (
+                  <Geography
+                    key={geo.rsmKey}
+                    geography={geo}
+                    onMouseEnter={() => {
+                      setTooltipContent(geo.properties.name_ja);
+                    }}
+                    onMouseLeave={() => {
+                      setTooltipContent("");
+                    }}
+                    onClick={() => {
+                      onSelectPrefecture(geo.properties.name_ja);
+                    }}
+                    style={{
+                      default: {
+                        fill: isSelected ? "#4CAF50" : "#D6D6DA", // 選択された都道府県の色
+                        stroke: "#FFFFFF",
+                        outline: "none"
+                      },
+                      hover: {
+                        fill: isSelected ? "#4CAF50" : "#F53", // ホバー時の色
+                        stroke: "#FFFFFF",
+                        outline: "none"
+                      },
+                      pressed: {
+                        fill: isSelected ? "#4CAF50" : "#E42", // 押された時の色
+                        stroke: "#FFFFFF",
+                        outline: "none"
+                      }
+                    }}
+                  />
+                );
+              })
             }
           </Geographies>
         </ZoomableGroup>
@@ -111,7 +119,7 @@ const JapanMap: React.FC<IJapanMapProps> = ({ setTooltipContent, onSelectPrefect
           </svg>
         </button>
       </div>
-    </>
+    </div>
   );
 };
 

@@ -75,7 +75,7 @@ function App() {
           selectedBirdSpecies={selectedBirdSpecies}
           onSelectBirdSpecies={handleSelectBirdSpecies}
         />
-        <JapanMap setTooltipContent={setTooltipContent} onSelectPrefecture={handleSelectPrefecture} />
+        <JapanMap setTooltipContent={setTooltipContent} onSelectPrefecture={handleSelectPrefecture} selectedPrefecture={selectedPrefecture} />
         <Tooltip>{tooltipContent}</Tooltip>
         <PhotoGallery photos={filteredPhotos} />
       </main>
