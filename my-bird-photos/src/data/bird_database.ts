@@ -31,59 +31,79 @@ export const birdDatabase = [
     "familyName": "アビ",
     "types": [
       {
-        "typeName": "アビ",
+        "typeName": "",
         "species": [
           {
-            "japaneseName": "Red-throated Diver",
-            "englishName": "大洗漁港"
+            "japaneseName": "アビ",
+            "englishName": "Red-throated Diver"
+          },
+          {
+            "japaneseName": "シロエリオオハム",
+            "englishName": "Pacific Diver"
+          },
+          {
+            "japaneseName": "ハシジロアビ",
+            "englishName": "White-billed Diver"
           }
         ]
       }
     ]
   },
   {
-    "familyName": "シロエリオオハム",
-    "types": []
-  },
-  {
-    "familyName": "ハシジロアビ",
-    "types": []
-  },
-  {
     "familyName": "カイツブリ",
-    "types": []
-  },
-  {
-    "familyName": "アカエリカイツブリ",
-    "types": []
-  },
-  {
-    "familyName": "ミミカイツブリ",
-    "types": []
-  },
-  {
-    "familyName": "ハジロカイツブリ",
-    "types": []
-  },
-  {
-    "familyName": "カイツブリ",
-    "types": []
+    "types": [
+      {
+        "typeName": "",
+        "species": [
+          {
+            "japaneseName": "カンムリカイツブリ",
+            "englishName": "Great Crested Grebe"
+          },
+          {
+            "japaneseName": "アカエリカイツブリ",
+            "englishName": "Red-necked grebe"
+          },
+          {
+            "japaneseName": "ミミカイツブリ",
+            "englishName": "Horned Grebe"
+          },
+          {
+            "japaneseName": "ハジロカイツブリ",
+            "englishName": "Black-necked Grebe"
+          },
+          {
+            "japaneseName": "カイツブリ",
+            "englishName": "Little grebe"
+          }
+        ]
+      }
+    ]
   },
   {
     "familyName": "ウ",
-    "types": []
-  },
-  {
-    "familyName": "ウミウ",
-    "types": []
-  },
-  {
-    "familyName": "ヒメウ",
-    "types": []
-  },
-  {
-    "familyName": "チシマウガラス",
-    "types": []
+    "types": [
+      {
+        "typeName": "",
+        "species": [
+          {
+            "japaneseName": "カワウ",
+            "englishName": "Great Cormorant"
+          },
+          {
+            "japaneseName": "ウミウ",
+            "englishName": "Japanese Cormorant"
+          },
+          {
+            "japaneseName": "ヒメウ",
+            "englishName": "Pelagic Cormorant"
+          },
+          {
+            "japaneseName": "チシマウガラス",
+            "englishName": "Red-faced Cormorant"
+          }
+        ]
+      }
+    ]
   },
   {
     "familyName": "カモ",
@@ -96,194 +116,221 @@ export const birdDatabase = [
             "englishName": "Mute Swan"
           }
         ]
-      }
-    ]
-  },
-  {
-    "familyName": "オオハクチョウ",
-    "types": []
-  },
-  {
-    "familyName": "コハクチョウ",
-    "types": []
-  },
-  {
-    "familyName": "ガン",
-    "types": [
+      },
       {
-        "typeName": "シジュウカラガン",
+        "typeName": "",
         "species": [
           {
-            "japaneseName": "Cackling goose",
-            "englishName": "伊豆沼、浦幌"
+            "japaneseName": "オオハクチョウ",
+            "englishName": "Whooper swan"
+          },
+          {
+            "japaneseName": "コハクチョウ",
+            "englishName": "Tundra swan"
           }
         ]
-      }
-    ]
-  },
-  {
-    "familyName": "コクガン",
-    "types": []
-  },
-  {
-    "familyName": "ハクガン",
-    "types": []
-  },
-  {
-    "familyName": "マガン",
-    "types": []
-  },
-  {
-    "familyName": "ヒシクイ",
-    "types": [
+      },
       {
-        "typeName": "Bean goose",
+        "typeName": "ガン",
         "species": [
+          {
+            "japaneseName": "シジュウカラガン",
+            "englishName": "Cackling goose"
+          }
+        ]
+      },
+      {
+        "typeName": "",
+        "species": [
+          {
+            "japaneseName": "コクガン",
+            "englishName": "Brant"
+          },
+          {
+            "japaneseName": "ハクガン",
+            "englishName": "Snow goose"
+          },
+          {
+            "japaneseName": "マガン",
+            "englishName": "Greater white-fronted goose"
+          },
           {
             "japaneseName": "ヒシクイ",
-            "englishName": "東よか、浦幌"
+            "englishName": "Bean goose"
           }
         ]
-      }
-    ]
-  },
-  {
-    "familyName": "オオヒシクイ",
-    "types": []
-  },
-  {
-    "familyName": "ツクシガモ",
-    "types": []
-  },
-  {
-    "familyName": "アカツクシガモ",
-    "types": []
-  },
-  {
-    "familyName": "淡水ガモ",
-    "types": []
-  },
-  {
-    "familyName": "カルガモ",
-    "types": []
-  },
-  {
-    "familyName": "ハシビロガモ",
-    "types": []
-  },
-  {
-    "familyName": "コガモ",
-    "types": []
-  },
-  {
-    "familyName": "アメリカコガモ",
-    "types": []
-  },
-  {
-    "familyName": "シマアジ",
-    "types": []
-  },
-  {
-    "familyName": "トモエガモ",
-    "types": []
-  },
-  {
-    "familyName": "オシドリ",
-    "types": []
-  },
-  {
-    "familyName": "ヨシガモ",
-    "types": []
-  },
-  {
-    "familyName": "オカヨシガモ",
-    "types": []
-  },
-  {
-    "familyName": "オナガガモ",
-    "types": []
-  },
-  {
-    "familyName": "ヒドリガモ",
-    "types": []
-  },
-  {
-    "familyName": "アメリカヒドリ",
-    "types": []
-  },
-  {
-    "familyName": "海ガモ",
-    "types": []
-  },
-  {
-    "familyName": "オオホシハジロ",
-    "types": []
-  },
-  {
-    "familyName": "ホオジロガモ",
-    "types": []
-  },
-  {
-    "familyName": "キンクロハジロ",
-    "types": []
-  },
-  {
-    "familyName": "スズガモ",
-    "types": []
-  },
-  {
-    "familyName": "シノリガモ",
-    "types": []
-  },
-  {
-    "familyName": "クロガモ",
-    "types": []
-  },
-  {
-    "familyName": "ビロードキンクロ",
-    "types": []
-  },
-  {
-    "familyName": "コオリガモ",
-    "types": []
-  },
-  {
-    "familyName": "アイサ",
-    "types": []
-  },
-  {
-    "familyName": "ウミアイサ",
-    "types": []
-  },
-  {
-    "familyName": "カワアイサ",
-    "types": []
-  },
-  {
-    "familyName": "ウミスズメ",
-    "types": [
+      },
       {
-        "typeName": "ケイマフリ",
+        "typeName": "ツクシガモ",
         "species": [
           {
-            "japaneseName": "Spectacled Guillemot",
-            "englishName": "斜里町"
+            "japaneseName": "ツクシガモ",
+            "englishName": "Common Shelduck"
+          }
+        ]
+      },
+      {
+        "typeName": "",
+        "species": [
+          {
+            "japaneseName": "アカツクシガモ",
+            "englishName": "Ruddy shelduck"
+          }
+        ]
+      },
+      {
+        "typeName": "淡水ガモ",
+        "species": [
+          {
+            "japaneseName": "マガモ",
+            "englishName": "Mallard"
+          }
+        ]
+      },
+      {
+        "typeName": "",
+        "species": [
+          {
+            "japaneseName": "カルガモ",
+            "englishName": "Eastern Spot-billed Duck"
+          },
+          {
+            "japaneseName": "ハシビロガモ",
+            "englishName": "Northern Shoveler"
+          },
+          {
+            "japaneseName": "コガモ",
+            "englishName": "Common Teal"
+          },
+          {
+            "japaneseName": "シマアジ",
+            "englishName": "Garganey"
+          },
+          {
+            "japaneseName": "トモエガモ",
+            "englishName": "Baikal teal"
+          },
+          {
+            "japaneseName": "オシドリ",
+            "englishName": "Mandarin duck"
+          },
+          {
+            "japaneseName": "ヨシガモ",
+            "englishName": "Falcated duck"
+          },
+          {
+            "japaneseName": "オカヨシガモ",
+            "englishName": "Gadwall"
+          },
+          {
+            "japaneseName": "オナガガモ",
+            "englishName": "Northern Pintail"
+          },
+          {
+            "japaneseName": "ヒドリガモ",
+            "englishName": "Eurasian Wigeon"
+          },
+          {
+            "japaneseName": "アメリカヒドリ",
+            "englishName": "American Wigeon"
+          }
+        ]
+      },
+      {
+        "typeName": "海ガモ",
+        "species": [
+          {
+            "japaneseName": "ホシハジロ",
+            "englishName": "Common pochard"
+          }
+        ]
+      },
+      {
+        "typeName": "",
+        "species": [
+          {
+            "japaneseName": "オオホシハジロ",
+            "englishName": "Canvasback"
+          },
+          {
+            "japaneseName": "ホオジロガモ",
+            "englishName": "Common Goldeneye"
+          },
+          {
+            "japaneseName": "キンクロハジロ",
+            "englishName": "Tufted duck"
+          },
+          {
+            "japaneseName": "スズガモ",
+            "englishName": "Greater Scaup"
+          },
+          {
+            "japaneseName": "シノリガモ",
+            "englishName": "Harlequin duck"
+          },
+          {
+            "japaneseName": "クロガモ",
+            "englishName": "Black scoter"
+          },
+          {
+            "japaneseName": "ビロードキンクロ",
+            "englishName": "Velvet scoter"
+          },
+          {
+            "japaneseName": "コオリガモ",
+            "englishName": "Long-tailed Duck"
+          }
+        ]
+      },
+      {
+        "typeName": "アイサ",
+        "species": [
+          {
+            "japaneseName": "ミコアイサ",
+            "englishName": "Smew"
+          }
+        ]
+      },
+      {
+        "typeName": "",
+        "species": [
+          {
+            "japaneseName": "ウミアイサ",
+            "englishName": "Red-breasted Merganser"
+          },
+          {
+            "japaneseName": "カワアイサ",
+            "englishName": "Common Merganser"
+          }
+        ]
+      },
+      {
+        "typeName": "ウミスズメ",
+        "species": [
+          {
+            "japaneseName": "ケイマフリ",
+            "englishName": "Spectacled Guillemot"
+          }
+        ]
+      },
+      {
+        "typeName": "",
+        "species": [
+          {
+            "japaneseName": "ウミガラス",
+            "englishName": "Common Murre"
+          },
+          {
+            "japaneseName": "ウミスズメ",
+            "englishName": "Ancient murrelet"
+          },
+          {
+            "japaneseName": "カンムリウミスズメ",
+            "englishName": "Japanese Murrelet"
           }
         ]
       }
     ]
-  },
-  {
-    "familyName": "ウミガラス",
-    "types": []
-  },
-  {
-    "familyName": "ウミスズメ",
-    "types": []
-  },
-  {
-    "familyName": "カンムリウミスズメ",
-    "types": []
   },
   {
     "familyName": "アホウドリ",
@@ -296,16 +343,21 @@ export const birdDatabase = [
             "englishName": "Short-tailed albatross"
           }
         ]
+      },
+      {
+        "typeName": "",
+        "species": [
+          {
+            "japaneseName": "コアホウドリ",
+            "englishName": "Laysan albatross"
+          },
+          {
+            "japaneseName": "クロアシアホウドリ",
+            "englishName": "Black-footed albatross"
+          }
+        ]
       }
     ]
-  },
-  {
-    "familyName": "コアホウドリ",
-    "types": []
-  },
-  {
-    "familyName": "クロアシアホウドリ",
-    "types": []
   },
   {
     "familyName": "ミズナギドリ",
@@ -318,24 +370,29 @@ export const birdDatabase = [
             "englishName": "Northern Fulmar"
           }
         ]
+      },
+      {
+        "typeName": "",
+        "species": [
+          {
+            "japaneseName": "オオミズナギドリ",
+            "englishName": "Streaked Shearwater"
+          },
+          {
+            "japaneseName": "ハシボソミズナギドリ",
+            "englishName": "Short-tailed Shearwater"
+          },
+          {
+            "japaneseName": "ハジロミズナギドリ",
+            "englishName": "Providence petrel"
+          },
+          {
+            "japaneseName": "オナガミズナギドリ",
+            "englishName": "Wedge-tailed shearwater"
+          }
+        ]
       }
     ]
-  },
-  {
-    "familyName": "オオミズナギドリ",
-    "types": []
-  },
-  {
-    "familyName": "ハシボソミズナギドリ",
-    "types": []
-  },
-  {
-    "familyName": "ハジロミズナギドリ",
-    "types": []
-  },
-  {
-    "familyName": "オナガミズナギドリ",
-    "types": []
   },
   {
     "familyName": "ウミツバメ",
@@ -376,76 +433,91 @@ export const birdDatabase = [
             "englishName": "Slaty-backed Gull"
           }
         ]
+      },
+      {
+        "typeName": "",
+        "species": [
+          {
+            "japaneseName": "セグロカモメ",
+            "englishName": "Herring Gull"
+          },
+          {
+            "japaneseName": "ウミネコ",
+            "englishName": "Black-tailed gull"
+          },
+          {
+            "japaneseName": "ワシカモメ",
+            "englishName": "Glaucous-winged Gull"
+          },
+          {
+            "japaneseName": "シロカモメ",
+            "englishName": "Glaucous Gull"
+          },
+          {
+            "japaneseName": "カモメ",
+            "englishName": "Common gull"
+          },
+          {
+            "japaneseName": "ズグロカモメ",
+            "englishName": "Saunders's gull"
+          },
+          {
+            "japaneseName": "ユリカモメ",
+            "englishName": "Black-headed Gull"
+          },
+          {
+            "japaneseName": "ミツユビカモメ",
+            "englishName": "Black-legged kittiwake"
+          },
+          {
+            "japaneseName": "ギンカモメ",
+            "englishName": "Silver gull"
+          }
+        ]
+      },
+      {
+        "typeName": "アジサシ",
+        "species": [
+          {
+            "japaneseName": "アジサシ",
+            "englishName": "Common Tern"
+          }
+        ]
+      },
+      {
+        "typeName": "",
+        "species": [
+          {
+            "japaneseName": "ベニアジサシ",
+            "englishName": "Roseate Tern"
+          },
+          {
+            "japaneseName": "エリグロアジサシ",
+            "englishName": "Black-naped Tern"
+          },
+          {
+            "japaneseName": "コアジサシ",
+            "englishName": "Little Tern"
+          },
+          {
+            "japaneseName": "オニアジサシ",
+            "englishName": "Caspian Tern"
+          },
+          {
+            "japaneseName": "オオアジサシ",
+            "englishName": "Greater crested tern"
+          },
+          {
+            "japaneseName": "ハシグロクロハラアジサシ",
+            "englishName": "Black Tern"
+          },
+          {
+            "japaneseName": "クロハラアジサシ",
+            "englishName": "Whiskered Tern"
+          }
+        ]
       }
     ]
-  },
-  {
-    "familyName": "セグロカモメ",
-    "types": []
-  },
-  {
-    "familyName": "ウミネコ",
-    "types": []
-  },
-  {
-    "familyName": "ワシカモメ",
-    "types": []
-  },
-  {
-    "familyName": "シロカモメ",
-    "types": []
-  },
-  {
-    "familyName": "カモメ",
-    "types": []
-  },
-  {
-    "familyName": "ズグロカモメ",
-    "types": []
-  },
-  {
-    "familyName": "ユリカモメ",
-    "types": []
-  },
-  {
-    "familyName": "ミツユビカモメ",
-    "types": []
-  },
-  {
-    "familyName": "ギンカモメ",
-    "types": []
-  },
-  {
-    "familyName": "アジサシ",
-    "types": []
-  },
-  {
-    "familyName": "ベニアジサシ",
-    "types": []
-  },
-  {
-    "familyName": "エリグロアジサシ",
-    "types": []
-  },
-  {
-    "familyName": "コアジサシ",
-    "types": []
-  },
-  {
-    "familyName": "オニアジサシ",
-    "types": []
-  },
-  {
-    "familyName": "オオアジサシ",
-    "types": []
-  },
-  {
-    "familyName": "ハシグロクロハラアジサシ",
-    "types": []
-  },
-  {
-    "familyName": "クロハラアジサシ",
-    "types": []
   },
   {
     "familyName": "カツオドリ",
@@ -458,204 +530,265 @@ export const birdDatabase = [
             "englishName": "Brown booby"
           }
         ]
-      }
-    ]
-  },
-  {
-    "familyName": "アカアシカツオドリ",
-    "types": []
-  },
-  {
-    "familyName": "ナスカカツオドリ",
-    "types": []
-  },
-  {
-    "familyName": "サギ",
-    "types": []
-  },
-  {
-    "familyName": "リュウキュウヨシゴイ",
-    "types": []
-  },
-  {
-    "familyName": "ミゾゴイ",
-    "types": []
-  },
-  {
-    "familyName": "ズグロミゾゴイ",
-    "types": []
-  },
-  {
-    "familyName": "ゴイサギ",
-    "types": []
-  },
-  {
-    "familyName": "ササゴイ",
-    "types": []
-  },
-  {
-    "familyName": "アカガシラサギ",
-    "types": []
-  },
-  {
-    "familyName": "アマサギ",
-    "types": []
-  },
-  {
-    "familyName": "コサギ",
-    "types": []
-  },
-  {
-    "familyName": "チュウサギ",
-    "types": []
-  },
-  {
-    "familyName": "ダイサギ",
-    "types": []
-  },
-  {
-    "familyName": "クロサギ",
-    "types": []
-  },
-  {
-    "familyName": "アオサギ",
-    "types": []
-  },
-  {
-    "familyName": "ムラサキサギ",
-    "types": []
-  },
-  {
-    "familyName": "コウノトリ",
-    "types": []
-  },
-  {
-    "familyName": "トキ",
-    "types": []
-  },
-  {
-    "familyName": "ヘラサギ",
-    "types": []
-  },
-  {
-    "familyName": "クロツラヘラサギ",
-    "types": []
-  },
-  {
-    "familyName": "ツル",
-    "types": []
-  },
-  {
-    "familyName": "ナベヅル",
-    "types": [
+      },
       {
-        "typeName": "Hooded crane",
+        "typeName": "",
         "species": [
           {
-            "japaneseName": "ナベヅル",
-            "englishName": "出水"
+            "japaneseName": "アカアシカツオドリ",
+            "englishName": "Red-footed booby"
+          },
+          {
+            "japaneseName": "ナスカカツオドリ",
+            "englishName": "Nazca booby"
           }
         ]
       }
     ]
   },
   {
-    "familyName": "ナベクロヅル",
-    "types": []
+    "familyName": "サギ",
+    "types": [
+      {
+        "typeName": "",
+        "species": [
+          {
+            "japaneseName": "ヨシゴイ",
+            "englishName": "Yellow Bittern"
+          },
+          {
+            "japaneseName": "リュウキュウヨシゴイ",
+            "englishName": "Cinnamon Bittern"
+          },
+          {
+            "japaneseName": "ミゾゴイ",
+            "englishName": "Japanese night heron"
+          },
+          {
+            "japaneseName": "ズグロミゾゴイ",
+            "englishName": "Malayan Night Heron"
+          },
+          {
+            "japaneseName": "ゴイサギ",
+            "englishName": "Black-crowned night heron"
+          },
+          {
+            "japaneseName": "ササゴイ",
+            "englishName": "Striated heron"
+          },
+          {
+            "japaneseName": "アカガシラサギ",
+            "englishName": "Chinese pond heron"
+          },
+          {
+            "japaneseName": "アマサギ",
+            "englishName": "Cattle egret"
+          },
+          {
+            "japaneseName": "コサギ",
+            "englishName": "Little egret"
+          },
+          {
+            "japaneseName": "チュウサギ",
+            "englishName": "Intermediate egret"
+          },
+          {
+            "japaneseName": "ダイサギ",
+            "englishName": "Great egret"
+          },
+          {
+            "japaneseName": "クロサギ",
+            "englishName": "Pacific reef heron"
+          },
+          {
+            "japaneseName": "アオサギ",
+            "englishName": "Grey heron"
+          },
+          {
+            "japaneseName": "ムラサキサギ",
+            "englishName": "Purple heron"
+          }
+        ]
+      }
+    ]
   },
   {
-    "familyName": "カナダヅル",
-    "types": []
+    "familyName": "コウノトリ",
+    "types": [
+      {
+        "typeName": "",
+        "species": [
+          {
+            "japaneseName": "コウノトリ",
+            "englishName": "Oriental stork"
+          }
+        ]
+      }
+    ]
   },
   {
-    "familyName": "タンチョウ",
-    "types": []
+    "familyName": "トキ",
+    "types": [
+      {
+        "typeName": "",
+        "species": [
+          {
+            "japaneseName": "トキ",
+            "englishName": "Crested ibis"
+          },
+          {
+            "japaneseName": "ヘラサギ",
+            "englishName": "Eurasian Spoonbill"
+          },
+          {
+            "japaneseName": "クロツラヘラサギ",
+            "englishName": "Black-faced spoonbill"
+          }
+        ]
+      }
+    ]
   },
   {
-    "familyName": "ソデグロヅル",
-    "types": []
-  },
-  {
-    "familyName": "マナヅル",
-    "types": []
+    "familyName": "ツル",
+    "types": [
+      {
+        "typeName": "",
+        "species": [
+          {
+            "japaneseName": "クロヅル",
+            "englishName": "Common Crane"
+          },
+          {
+            "japaneseName": "ナベヅル",
+            "englishName": "Hooded crane"
+          },
+          {
+            "japaneseName": "カナダヅル",
+            "englishName": "Sandhill Crane"
+          },
+          {
+            "japaneseName": "タンチョウ",
+            "englishName": "Red-crowned crane"
+          },
+          {
+            "japaneseName": "ソデグロヅル",
+            "englishName": "Siberian Crane"
+          },
+          {
+            "japaneseName": "マナヅル",
+            "englishName": "White-necked crane"
+          }
+        ]
+      }
+    ]
   },
   {
     "familyName": "クイナ",
-    "types": []
-  },
-  {
-    "familyName": "バン",
-    "types": []
-  },
-  {
-    "familyName": "クイナ",
-    "types": []
-  },
-  {
-    "familyName": "ヒクイナ",
-    "types": []
-  },
-  {
-    "familyName": "ヤンバルクイナ",
-    "types": []
-  },
-  {
-    "familyName": "オオクイナ",
-    "types": []
-  },
-  {
-    "familyName": "シロハラクイナ",
-    "types": []
+    "types": [
+      {
+        "typeName": "",
+        "species": [
+          {
+            "japaneseName": "オオバン",
+            "englishName": "Common coot"
+          },
+          {
+            "japaneseName": "バン",
+            "englishName": "Common Moorhen"
+          },
+          {
+            "japaneseName": "クイナ",
+            "englishName": "Water rail"
+          },
+          {
+            "japaneseName": "ヒクイナ",
+            "englishName": "Ruddy-breasted crake"
+          },
+          {
+            "japaneseName": "ヤンバルクイナ",
+            "englishName": "Okinawa rail"
+          },
+          {
+            "japaneseName": "オオクイナ",
+            "englishName": "Slaty-legged Crake"
+          },
+          {
+            "japaneseName": "シロハラクイナ",
+            "englishName": "White-breasted Waterhen"
+          }
+        ]
+      }
+    ]
   },
   {
     "familyName": "ミヤコドリ",
-    "types": []
+    "types": [
+      {
+        "typeName": "",
+        "species": [
+          {
+            "japaneseName": "ミヤコドリ",
+            "englishName": "Eurasian Oystercatcher"
+          }
+        ]
+      }
+    ]
   },
   {
     "familyName": "チドリ",
-    "types": []
-  },
-  {
-    "familyName": "イカルチドリ",
-    "types": []
-  },
-  {
-    "familyName": "メダイチドリ",
-    "types": []
-  },
-  {
-    "familyName": "オオメダイチドリ",
-    "types": []
-  },
-  {
-    "familyName": "シロチドリ",
-    "types": []
-  },
-  {
-    "familyName": "ムナグロ",
-    "types": []
-  },
-  {
-    "familyName": "ダイゼン",
-    "types": []
-  },
-  {
-    "familyName": "タゲリ",
-    "types": []
-  },
-  {
-    "familyName": "ケリ",
-    "types": []
+    "types": [
+      {
+        "typeName": "",
+        "species": [
+          {
+            "japaneseName": "コチドリ",
+            "englishName": "Little ringed Plover"
+          },
+          {
+            "japaneseName": "イカルチドリ",
+            "englishName": "Long-billed Plover"
+          },
+          {
+            "japaneseName": "メダイチドリ",
+            "englishName": "Lesser Sand Plover"
+          },
+          {
+            "japaneseName": "オオメダイチドリ",
+            "englishName": "Greater Sand Plover"
+          },
+          {
+            "japaneseName": "シロチドリ",
+            "englishName": "Kentish Plover"
+          },
+          {
+            "japaneseName": "ムナグロ",
+            "englishName": "Pacific Golden Plover"
+          },
+          {
+            "japaneseName": "ダイゼン",
+            "englishName": "Grey plover"
+          },
+          {
+            "japaneseName": "タゲリ",
+            "englishName": "Northern lapwing"
+          },
+          {
+            "japaneseName": "ケリ",
+            "englishName": "Grey-headed lapwing"
+          }
+        ]
+      }
+    ]
   },
   {
     "familyName": "ツバメチドリ",
     "types": [
       {
-        "typeName": "ツバメチドリ",
+        "typeName": "",
         "species": [
           {
-            "japaneseName": "Oriental pratincole",
-            "englishName": "来間島"
+            "japaneseName": "ツバメチドリ",
+            "englishName": "Oriental pratincole"
           }
         ]
       }
@@ -663,145 +796,155 @@ export const birdDatabase = [
   },
   {
     "familyName": "シギ",
-    "types": []
-  },
-  {
-    "familyName": "オジロトウネン",
-    "types": []
-  },
-  {
-    "familyName": "ヨーロッパトウネン",
-    "types": []
-  },
-  {
-    "familyName": "ヒバリシギ",
-    "types": []
-  },
-  {
-    "familyName": "ウズラシギ",
-    "types": []
-  },
-  {
-    "familyName": "アメリカウズラシギ",
-    "types": []
-  },
-  {
-    "familyName": "キリアイ",
-    "types": []
-  },
-  {
-    "familyName": "ハマシギ",
-    "types": []
-  },
-  {
-    "familyName": "ミユビシギ",
-    "types": []
-  },
-  {
-    "familyName": "オバシギ",
-    "types": []
-  },
-  {
-    "familyName": "コオバシギ",
-    "types": []
-  },
-  {
-    "familyName": "エリマキシギ",
-    "types": []
-  },
-  {
-    "familyName": "タカブシギ",
-    "types": []
-  },
-  {
-    "familyName": "クサシギ",
-    "types": []
-  },
-  {
-    "familyName": "コアオアシシギ",
-    "types": []
-  },
-  {
-    "familyName": "イソシギ",
-    "types": []
-  },
-  {
-    "familyName": "ソリハシシギ",
-    "types": []
-  },
-  {
-    "familyName": "キョウジョシギ",
-    "types": []
-  },
-  {
-    "familyName": "ツルシギ",
-    "types": []
-  },
-  {
-    "familyName": "アカアシシギ",
-    "types": []
-  },
-  {
-    "familyName": "アオアシシギ",
-    "types": []
-  },
-  {
-    "familyName": "キアシシギ",
-    "types": []
-  },
-  {
-    "familyName": "オグロシギ",
-    "types": []
-  },
-  {
-    "familyName": "オオソリハシシギ",
-    "types": []
-  },
-  {
-    "familyName": "オオハシシギ",
-    "types": []
-  },
-  {
-    "familyName": "ダイシャクシギ",
-    "types": []
-  },
-  {
-    "familyName": "ホウロクシギ",
-    "types": []
-  },
-  {
-    "familyName": "チュウシャクシギ",
-    "types": []
-  },
-  {
-    "familyName": "タシギ",
-    "types": []
-  },
-  {
-    "familyName": "チュウジシギ",
-    "types": []
-  },
-  {
-    "familyName": "オオジシギ",
-    "types": []
-  },
-  {
-    "familyName": "ヤマシギ",
-    "types": []
-  },
-  {
-    "familyName": "アマミヤマシギ",
-    "types": []
+    "types": [
+      {
+        "typeName": "",
+        "species": [
+          {
+            "japaneseName": "トウネン",
+            "englishName": "Red-necked Stint"
+          },
+          {
+            "japaneseName": "オジロトウネン",
+            "englishName": "Temminick's Stint"
+          },
+          {
+            "japaneseName": "ヨーロッパトウネン",
+            "englishName": "Little Stint"
+          },
+          {
+            "japaneseName": "ヒバリシギ",
+            "englishName": "Long-toed Stint"
+          },
+          {
+            "japaneseName": "ウズラシギ",
+            "englishName": "Sharp-tailed Sandpiper"
+          },
+          {
+            "japaneseName": "アメリカウズラシギ",
+            "englishName": "Pectoral Sandpiper"
+          },
+          {
+            "japaneseName": "キリアイ",
+            "englishName": "Broad-billed Sandpiper"
+          },
+          {
+            "japaneseName": "ハマシギ",
+            "englishName": "Dunlin"
+          },
+          {
+            "japaneseName": "ミユビシギ",
+            "englishName": "Sanderling"
+          },
+          {
+            "japaneseName": "オバシギ",
+            "englishName": "Great Knot"
+          },
+          {
+            "japaneseName": "コオバシギ",
+            "englishName": "Red Knot"
+          },
+          {
+            "japaneseName": "エリマキシギ",
+            "englishName": "Ruff"
+          },
+          {
+            "japaneseName": "タカブシギ",
+            "englishName": "Wood Sandpiper"
+          },
+          {
+            "japaneseName": "クサシギ",
+            "englishName": "Green Sandpiper"
+          },
+          {
+            "japaneseName": "コアオアシシギ",
+            "englishName": "Marsh Sandpiper"
+          },
+          {
+            "japaneseName": "イソシギ",
+            "englishName": "Common Sandpiper"
+          },
+          {
+            "japaneseName": "ソリハシシギ",
+            "englishName": "Terek Sandpiper"
+          },
+          {
+            "japaneseName": "キョウジョシギ",
+            "englishName": "Ruddy Turnstone"
+          },
+          {
+            "japaneseName": "ツルシギ",
+            "englishName": "Spotted Redshank"
+          },
+          {
+            "japaneseName": "アカアシシギ",
+            "englishName": "Common Redshank"
+          },
+          {
+            "japaneseName": "アオアシシギ",
+            "englishName": "Common Greenshank"
+          },
+          {
+            "japaneseName": "キアシシギ",
+            "englishName": "Grey-tailed Tattler"
+          },
+          {
+            "japaneseName": "オグロシギ",
+            "englishName": "Black-tailed Godwit"
+          },
+          {
+            "japaneseName": "オオソリハシシギ",
+            "englishName": "Bar-tailed Godwit"
+          },
+          {
+            "japaneseName": "オオハシシギ",
+            "englishName": "Long-billed Dowitcher"
+          },
+          {
+            "japaneseName": "ダイシャクシギ",
+            "englishName": "Eurasian Curlew"
+          },
+          {
+            "japaneseName": "ホウロクシギ",
+            "englishName": "Far Eastern Curlew"
+          },
+          {
+            "japaneseName": "チュウシャクシギ",
+            "englishName": "Whimbrel"
+          },
+          {
+            "japaneseName": "タシギ",
+            "englishName": "Common snipe"
+          },
+          {
+            "japaneseName": "チュウジシギ",
+            "englishName": "Swinhoe's Snipe"
+          },
+          {
+            "japaneseName": "オオジシギ",
+            "englishName": "Latham's Snipe"
+          },
+          {
+            "japaneseName": "ヤマシギ",
+            "englishName": "Eurasian Woodcock"
+          },
+          {
+            "japaneseName": "アマミヤマシギ",
+            "englishName": "Amami Woodcock"
+          }
+        ]
+      }
+    ]
   },
   {
     "familyName": "タマシギ",
     "types": [
       {
-        "typeName": "タマシギ",
+        "typeName": "",
         "species": [
           {
-            "japaneseName": "Greater Painted-snipe",
-            "englishName": "♂のみ"
+            "japaneseName": "タマシギ",
+            "englishName": "Greater Painted-snipe"
           }
         ]
       }
@@ -809,173 +952,177 @@ export const birdDatabase = [
   },
   {
     "familyName": "セイタカシギ",
-    "types": []
-  },
-  {
-    "familyName": "ソリハシセイタカシギ",
-    "types": []
+    "types": [
+      {
+        "typeName": "",
+        "species": [
+          {
+            "japaneseName": "セイタカシギ",
+            "englishName": "Black-winged Stilt"
+          },
+          {
+            "japaneseName": "ソリハシセイタカシギ",
+            "englishName": "Pied Avocet"
+          }
+        ]
+      }
+    ]
   },
   {
     "familyName": "ヒレアシシギ",
-    "types": []
-  },
-  {
-    "familyName": "ハイイロヒレアシシギ",
-    "types": []
+    "types": [
+      {
+        "typeName": "",
+        "species": [
+          {
+            "japaneseName": "アカエリヒレアシシギ",
+            "englishName": "Red-necked phalarope"
+          },
+          {
+            "japaneseName": "ハイイロヒレアシシギ",
+            "englishName": "Red phalarope"
+          }
+        ]
+      }
+    ]
   },
   {
     "familyName": "タカ",
-    "types": []
-  },
-  {
-    "familyName": "オジロワシ",
-    "types": []
-  },
-  {
-    "familyName": "オオワシ",
-    "types": []
-  },
-  {
-    "familyName": "イヌワシ",
-    "types": []
-  },
-  {
-    "familyName": "カンムリワシ",
-    "types": []
-  },
-  {
-    "familyName": "クマタカ",
-    "types": []
-  },
-  {
-    "familyName": "ハチクマ",
-    "types": []
-  },
-  {
-    "familyName": "トビ",
-    "types": []
-  },
-  {
-    "familyName": "サシバ",
-    "types": []
-  },
-  {
-    "familyName": "ノスリ",
-    "types": []
-  },
-  {
-    "familyName": "オガサワラノスリ",
-    "types": []
-  },
-  {
-    "familyName": "ケアシノスリ",
-    "types": []
-  },
-  {
-    "familyName": "ハイイロチュウヒ",
-    "types": []
-  },
-  {
-    "familyName": "マダラチュウヒ",
-    "types": []
-  },
-  {
-    "familyName": "チュウヒ",
-    "types": []
-  },
-  {
-    "familyName": "オオタカ",
-    "types": []
-  },
-  {
-    "familyName": "ハイタカ",
-    "types": []
-  },
-  {
-    "familyName": "ツミ",
-    "types": []
-  },
-  {
-    "familyName": "カタグロトビ",
-    "types": []
+    "types": [
+      {
+        "typeName": "",
+        "species": [
+          {
+            "japaneseName": "ミサゴ",
+            "englishName": "Osprey"
+          },
+          {
+            "japaneseName": "オジロワシ",
+            "englishName": "White-tailed eagle"
+          },
+          {
+            "japaneseName": "オオワシ",
+            "englishName": "Steller's sea eagle"
+          },
+          {
+            "japaneseName": "イヌワシ",
+            "englishName": "Golden Eagle"
+          },
+          {
+            "japaneseName": "カンムリワシ",
+            "englishName": "Crested serpent eagle"
+          },
+          {
+            "japaneseName": "クマタカ",
+            "englishName": "Mountain hawk-eagle"
+          },
+          {
+            "japaneseName": "ハチクマ",
+            "englishName": "Oriental honey-buzzard"
+          },
+          {
+            "japaneseName": "トビ",
+            "englishName": "Black Kite"
+          },
+          {
+            "japaneseName": "サシバ",
+            "englishName": "Grey-faced buzzard"
+          },
+          {
+            "japaneseName": "ノスリ",
+            "englishName": "Eastern Buzzard"
+          },
+          {
+            "japaneseName": "ケアシノスリ",
+            "englishName": "Rough-legged Buzzard"
+          },
+          {
+            "japaneseName": "ハイイロチュウヒ",
+            "englishName": "Hen harrier"
+          },
+          {
+            "japaneseName": "マダラチュウヒ",
+            "englishName": "Pied Harrier"
+          },
+          {
+            "japaneseName": "チュウヒ",
+            "englishName": "Eastern marsh harrier"
+          },
+          {
+            "japaneseName": "オオタカ",
+            "englishName": "Northern Goshawk"
+          },
+          {
+            "japaneseName": "ハイタカ",
+            "englishName": "Eurasian Sparrowhawk"
+          },
+          {
+            "japaneseName": "ツミ",
+            "englishName": "Japanese sparrow-hawk"
+          },
+          {
+            "japaneseName": "カタグロトビ",
+            "englishName": "Black-winged kite"
+          }
+        ]
+      }
+    ]
   },
   {
     "familyName": "ハヤブサ",
     "types": [
       {
-        "typeName": "ハヤブサ",
+        "typeName": "",
         "species": [
           {
-            "japaneseName": "Peregrine Falcon",
-            "englishName": "ハヤブサ"
+            "japaneseName": "ハヤブサ",
+            "englishName": "Peregrine Falcon"
+          },
+          {
+            "japaneseName": "チゴハヤブサ",
+            "englishName": "Eurasian Hobby"
+          },
+          {
+            "japaneseName": "コチョウゲンボウ",
+            "englishName": "Merlin"
+          },
+          {
+            "japaneseName": "チョウゲンボウ",
+            "englishName": "Common Kestrel"
           }
         ]
       }
     ]
   },
   {
-    "familyName": "オオハヤブサ",
-    "types": []
-  },
-  {
-    "familyName": "シベリアハヤブサ",
-    "types": []
-  },
-  {
-    "familyName": "チゴハヤブサ",
-    "types": []
-  },
-  {
-    "familyName": "コチョウゲンボウ",
-    "types": []
-  },
-  {
-    "familyName": "チョウゲンボウ",
-    "types": []
-  },
-  {
     "familyName": "フクロウ",
     "types": [
       {
-        "typeName": "シマフクロウ",
+        "typeName": "",
         "species": [
           {
-            "japaneseName": "Blakiston's fish Owl",
-            "englishName": "羅臼"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "familyName": "トラフズク",
-    "types": []
-  },
-  {
-    "familyName": "コミミズク",
-    "types": []
-  },
-  {
-    "familyName": "フクロウ",
-    "types": []
-  },
-  {
-    "familyName": "アオバズク",
-    "types": []
-  },
-  {
-    "familyName": "リュウキュウアオバズク",
-    "types": []
-  },
-  {
-    "familyName": "コノハズク",
-    "types": [
-      {
-        "typeName": "Japanese Scops Owl",
-        "species": [
+            "japaneseName": "シマフクロウ",
+            "englishName": "Blakiston's fish Owl"
+          },
           {
-            "japaneseName": "リュウキュウコノハズク",
-            "englishName": "フルスト原"
+            "japaneseName": "トラフズク",
+            "englishName": "Long-eared Owl"
+          },
+          {
+            "japaneseName": "コミミズク",
+            "englishName": "Short-eared Owl"
+          },
+          {
+            "japaneseName": "フクロウ",
+            "englishName": "Ural Owl"
+          },
+          {
+            "japaneseName": "アオバズク",
+            "englishName": "Northern boobook"
+          },
+          {
+            "japaneseName": "コノハズク",
+            "englishName": "Japanese Scops Owl"
           }
         ]
       }
@@ -985,11 +1132,11 @@ export const birdDatabase = [
     "familyName": "ライチョウ",
     "types": [
       {
-        "typeName": "ライチョウ",
+        "typeName": "",
         "species": [
           {
-            "japaneseName": "Rock Ptarmigan",
-            "englishName": "立石"
+            "japaneseName": "ライチョウ",
+            "englishName": "Rock Ptarmigan"
           }
         ]
       }
@@ -999,11 +1146,11 @@ export const birdDatabase = [
     "familyName": "ミフウズラ",
     "types": [
       {
-        "typeName": "ミフウズラ",
+        "typeName": "",
         "species": [
           {
-            "japaneseName": "Barred Buttonquail",
-            "englishName": "来間島"
+            "japaneseName": "ミフウズラ",
+            "englishName": "Barred Buttonquail"
           }
         ]
       }
@@ -1011,101 +1158,103 @@ export const birdDatabase = [
   },
   {
     "familyName": "キジ",
-    "types": []
-  },
-  {
-    "familyName": "コリンウズラ",
-    "types": []
-  },
-  {
-    "familyName": "キジ",
-    "types": []
-  },
-  {
-    "familyName": "ヤマドリ",
-    "types": []
+    "types": [
+      {
+        "typeName": "",
+        "species": [
+          {
+            "japaneseName": "コジュケイ",
+            "englishName": "Chinese Bamboo Partridge"
+          },
+          {
+            "japaneseName": "コリンウズラ",
+            "englishName": "Northern Bobwhite"
+          },
+          {
+            "japaneseName": "キジ",
+            "englishName": "Green Pheasant"
+          },
+          {
+            "japaneseName": "ヤマドリ",
+            "englishName": "Copper Pheasant"
+          }
+        ]
+      }
+    ]
   },
   {
     "familyName": "ハト",
     "types": [
       {
-        "typeName": "カラスバト",
+        "typeName": "",
         "species": [
           {
-            "japaneseName": "Japanese Wood Pigeon",
-            "englishName": "カラスバト"
+            "japaneseName": "カラスバト",
+            "englishName": "Japanese Wood Pigeon"
+          },
+          {
+            "japaneseName": "キジバト",
+            "englishName": "Oriental Turtle Dove"
+          },
+          {
+            "japaneseName": "キンバト",
+            "englishName": "Emerald dove"
+          },
+          {
+            "japaneseName": "アオバト",
+            "englishName": "White-bellied green-pigeon"
+          },
+          {
+            "japaneseName": "ズアカアオバト",
+            "englishName": "Whistling Green Pigeon"
+          },
+          {
+            "japaneseName": "カワラバト（ドバト）",
+            "englishName": "Rock Dove"
           }
         ]
       }
     ]
-  },
-  {
-    "familyName": "アカガシラカラスバト",
-    "types": []
-  },
-  {
-    "familyName": "キジバト",
-    "types": []
-  },
-  {
-    "familyName": "キンバト",
-    "types": []
-  },
-  {
-    "familyName": "アオバト",
-    "types": []
-  },
-  {
-    "familyName": "ズアカアオバト",
-    "types": []
-  },
-  {
-    "familyName": "カワラバト（ドバト）",
-    "types": []
   },
   {
     "familyName": "カッコウ",
-    "types": []
-  },
-  {
-    "familyName": "ホトトギス",
-    "types": []
-  },
-  {
-    "familyName": "ツツドリ",
-    "types": []
-  },
-  {
-    "familyName": "アマツバメ",
     "types": [
       {
-        "typeName": "ハリオアマツバメ",
+        "typeName": "",
         "species": [
           {
-            "japaneseName": "White-throated Needletail",
-            "englishName": "羅臼"
+            "japaneseName": "カッコウ",
+            "englishName": "Common Cuckoo"
+          },
+          {
+            "japaneseName": "ホトトギス",
+            "englishName": "Lesser Cuckoo"
+          },
+          {
+            "japaneseName": "ツツドリ",
+            "englishName": "Oriental Cuckoo"
           }
         ]
       }
     ]
   },
   {
-    "familyName": "ヒメアマツバメ",
-    "types": []
-  },
-  {
     "familyName": "アマツバメ",
-    "types": []
-  },
-  {
-    "familyName": "カワセミ",
     "types": [
       {
-        "typeName": "ヤマセミ",
+        "typeName": "",
         "species": [
           {
-            "japaneseName": "Crested Kingfisher",
-            "englishName": "尾瀬"
+            "japaneseName": "ハリオアマツバメ",
+            "englishName": "White-throated Needletail"
+          },
+          {
+            "japaneseName": "ヒメアマツバメ",
+            "englishName": "House Swift"
+          },
+          {
+            "japaneseName": "アマツバメ",
+            "englishName": "Pacific Swift"
           }
         ]
       }
@@ -1113,17 +1262,21 @@ export const birdDatabase = [
   },
   {
     "familyName": "カワセミ",
-    "types": []
-  },
-  {
-    "familyName": "アカショウビン",
     "types": [
       {
-        "typeName": "Ruddy Kingfisher",
+        "typeName": "",
         "species": [
           {
-            "japaneseName": "リュウキュウアカショウビン",
-            "englishName": "大野山林"
+            "japaneseName": "ヤマセミ",
+            "englishName": "Crested Kingfisher"
+          },
+          {
+            "japaneseName": "カワセミ",
+            "englishName": "Common Kingfisher"
+          },
+          {
+            "japaneseName": "アカショウビン",
+            "englishName": "Ruddy Kingfisher"
           }
         ]
       }
@@ -1131,17 +1284,27 @@ export const birdDatabase = [
   },
   {
     "familyName": "ブッポウソウ",
-    "types": []
+    "types": [
+      {
+        "typeName": "",
+        "species": [
+          {
+            "japaneseName": "ブッポウソウ",
+            "englishName": "Oriental Dollarbird"
+          }
+        ]
+      }
+    ]
   },
   {
     "familyName": "ヤツガシラ",
     "types": [
       {
-        "typeName": "ヤツガシラ",
+        "typeName": "",
         "species": [
           {
-            "japaneseName": "Eurasian Hoopoe",
-            "englishName": "江戸崎"
+            "japaneseName": "ヤツガシラ",
+            "englishName": "Eurasian Hoopoe"
           }
         ]
       }
@@ -1151,67 +1314,87 @@ export const birdDatabase = [
     "familyName": "キツツキ",
     "types": [
       {
-        "typeName": "クマゲラ",
+        "typeName": "",
         "species": [
           {
-            "japaneseName": "Black Woodpecker",
-            "englishName": "真駒内"
+            "japaneseName": "クマゲラ",
+            "englishName": "Black Woodpecker"
+          },
+          {
+            "japaneseName": "アオゲラ",
+            "englishName": "Japanese Green Woodpecker"
+          },
+          {
+            "japaneseName": "ヤマゲラ",
+            "englishName": "Grey-headed Woodpecker"
+          },
+          {
+            "japaneseName": "アリスイ",
+            "englishName": "Eurasian Wryneck"
+          },
+          {
+            "japaneseName": "オオアカゲラ",
+            "englishName": "White-backed Woodpecker"
+          },
+          {
+            "japaneseName": "アカゲラ",
+            "englishName": "Great Spotted Woodpecker"
+          },
+          {
+            "japaneseName": "コゲラ",
+            "englishName": "Japanese Pygmy Woodpecker"
+          },
+          {
+            "japaneseName": "ノグチゲラ",
+            "englishName": "Okinawa Woodpecker"
           }
         ]
       }
     ]
   },
   {
-    "familyName": "アオゲラ",
-    "types": []
-  },
-  {
-    "familyName": "ヤマゲラ",
-    "types": []
-  },
-  {
-    "familyName": "アリスイ",
-    "types": []
-  },
-  {
-    "familyName": "オオアカゲラ",
-    "types": []
-  },
-  {
-    "familyName": "アカゲラ",
-    "types": []
-  },
-  {
-    "familyName": "コゲラ",
-    "types": []
-  },
-  {
-    "familyName": "ノグチゲラ",
-    "types": []
-  },
-  {
     "familyName": "ヒバリ",
-    "types": []
-  },
-  {
-    "familyName": "ハマヒバリ",
-    "types": []
+    "types": [
+      {
+        "typeName": "",
+        "species": [
+          {
+            "japaneseName": "ヒバリ",
+            "englishName": "Eurasian Skylark"
+          },
+          {
+            "japaneseName": "ハマヒバリ",
+            "englishName": "Horned Lark"
+          }
+        ]
+      }
+    ]
   },
   {
     "familyName": "ツバメ",
-    "types": []
-  },
-  {
-    "familyName": "コシアカツバメ",
-    "types": []
-  },
-  {
-    "familyName": "ツバメ",
-    "types": []
-  },
-  {
-    "familyName": "リュウキュウツバメ",
-    "types": []
+    "types": [
+      {
+        "typeName": "",
+        "species": [
+          {
+            "japaneseName": "イワツバメ",
+            "englishName": "Asian House Martin"
+          },
+          {
+            "japaneseName": "コシアカツバメ",
+            "englishName": "Red-rumped Swallow"
+          },
+          {
+            "japaneseName": "ツバメ",
+            "englishName": "Barn Swallow"
+          },
+          {
+            "japaneseName": "リュウキュウツバメ",
+            "englishName": "Pacific Swallow"
+          }
+        ]
+      }
+    ]
   },
   {
     "familyName": "セキレイ",
@@ -1224,60 +1407,57 @@ export const birdDatabase = [
             "englishName": "Grey Wagtail"
           }
         ]
-      }
-    ]
-  },
-  {
-    "familyName": "ハクセキレイ",
-    "types": []
-  },
-  {
-    "familyName": "セグロセキレイ",
-    "types": []
-  },
-  {
-    "familyName": "ツメナガセキレイ",
-    "types": [
+      },
       {
-        "typeName": "Eastern Yellow Wagtail",
+        "typeName": "",
         "species": [
           {
+            "japaneseName": "ハクセキレイ",
+            "englishName": "White Wagtail"
+          },
+          {
+            "japaneseName": "セグロセキレイ",
+            "englishName": "Japanese Wagtail"
+          },
+          {
             "japaneseName": "ツメナガセキレイ",
-            "englishName": "沖縄"
+            "englishName": "Eastern Yellow Wagtail"
+          }
+        ]
+      },
+      {
+        "typeName": "タヒバリ",
+        "species": [
+          {
+            "japaneseName": "ビンズイ",
+            "englishName": "Olive-backed Pipit"
+          }
+        ]
+      },
+      {
+        "typeName": "",
+        "species": [
+          {
+            "japaneseName": "タヒバリ",
+            "englishName": "Water Pipit"
+          },
+          {
+            "japaneseName": "ムネアカタヒバリ",
+            "englishName": "Red-throated Pipit"
           }
         ]
       }
     ]
   },
   {
-    "familyName": "マミジロツメナガセキレイ",
-    "types": []
-  },
-  {
-    "familyName": "シベリアツメナガセキレイ",
-    "types": []
-  },
-  {
-    "familyName": "タヒバリ",
-    "types": []
-  },
-  {
-    "familyName": "タヒバリ",
-    "types": []
-  },
-  {
-    "familyName": "ムネアカタヒバリ",
-    "types": []
-  },
-  {
     "familyName": "サンショウクイ",
     "types": [
       {
-        "typeName": "リュウキュウサンショウクイ",
+        "typeName": "",
         "species": [
           {
-            "japaneseName": "Ryukyu Minivet",
-            "englishName": "リュウキュウサンショウクイ"
+            "japaneseName": "リュウキュウサンショウクイ",
+            "englishName": "Ryukyu Minivet"
           }
         ]
       }
@@ -1285,43 +1465,103 @@ export const birdDatabase = [
   },
   {
     "familyName": "ヒヨドリ",
-    "types": []
+    "types": [
+      {
+        "typeName": "",
+        "species": [
+          {
+            "japaneseName": "ヒヨドリ",
+            "englishName": "Brown-eared Bulbul"
+          }
+        ]
+      }
+    ]
   },
   {
     "familyName": "モズ",
-    "types": []
-  },
-  {
-    "familyName": "アカモズ",
-    "types": []
-  },
-  {
-    "familyName": "タカサゴモズ",
-    "types": []
-  },
-  {
-    "familyName": "オオカラモズ",
-    "types": []
+    "types": [
+      {
+        "typeName": "",
+        "species": [
+          {
+            "japaneseName": "モズ",
+            "englishName": "Bull-headed Shrike"
+          },
+          {
+            "japaneseName": "アカモズ",
+            "englishName": "Brown Shrike"
+          },
+          {
+            "japaneseName": "タカサゴモズ",
+            "englishName": "Long-tailed Shrike"
+          },
+          {
+            "japaneseName": "オオカラモズ",
+            "englishName": "Chinese Grey Shrike"
+          }
+        ]
+      }
+    ]
   },
   {
     "familyName": "レンジャク",
-    "types": []
-  },
-  {
-    "familyName": "キレンジャク",
-    "types": []
+    "types": [
+      {
+        "typeName": "",
+        "species": [
+          {
+            "japaneseName": "ヒレンジャク",
+            "englishName": "Japanese Waxwing"
+          },
+          {
+            "japaneseName": "キレンジャク",
+            "englishName": "Bohemian Waxwing"
+          }
+        ]
+      }
+    ]
   },
   {
     "familyName": "カワガラス",
-    "types": []
+    "types": [
+      {
+        "typeName": "",
+        "species": [
+          {
+            "japaneseName": "カワガラス",
+            "englishName": "Brown Dipper"
+          }
+        ]
+      }
+    ]
   },
   {
     "familyName": "ミソサザイ",
-    "types": []
+    "types": [
+      {
+        "typeName": "",
+        "species": [
+          {
+            "japaneseName": "ミソサザイ",
+            "englishName": "Winter Wren"
+          }
+        ]
+      }
+    ]
   },
   {
     "familyName": "イワヒバリ",
-    "types": []
+    "types": [
+      {
+        "typeName": "",
+        "species": [
+          {
+            "japaneseName": "カヤクグリ",
+            "englishName": "Japanese Accentor"
+          }
+        ]
+      }
+    ]
   },
   {
     "familyName": "ツグミ",
@@ -1334,252 +1574,284 @@ export const birdDatabase = [
             "englishName": "Japanese Robin"
           }
         ]
-      }
-    ]
-  },
-  {
-    "familyName": "ホントウアカヒゲ",
-    "types": [
+      },
       {
-        "typeName": "Ryukyu Robin",
+        "typeName": "",
         "species": [
           {
             "japaneseName": "ホントウアカヒゲ",
-            "englishName": "比地"
+            "englishName": "Ryukyu Robin"
+          },
+          {
+            "japaneseName": "アカヒゲ",
+            "englishName": "Japanese Robin"
+          },
+          {
+            "japaneseName": "ノゴマ",
+            "englishName": "Siberian Rubythroat"
+          },
+          {
+            "japaneseName": "コルリ",
+            "englishName": "Siberian Blue Robin"
+          },
+          {
+            "japaneseName": "ジョウビタキ",
+            "englishName": "Daurian Redstart"
+          },
+          {
+            "japaneseName": "ルリビタキ",
+            "englishName": "Red-flanked Bluetail"
+          },
+          {
+            "japaneseName": "ノビタキ",
+            "englishName": "Common Stonechat"
           }
         ]
-      }
-    ]
-  },
-  {
-    "familyName": "アカヒゲ",
-    "types": []
-  },
-  {
-    "familyName": "ノゴマ",
-    "types": []
-  },
-  {
-    "familyName": "コルリ",
-    "types": []
-  },
-  {
-    "familyName": "ジョウビタキ",
-    "types": []
-  },
-  {
-    "familyName": "ルリビタキ",
-    "types": []
-  },
-  {
-    "familyName": "ノビタキ",
-    "types": []
-  },
-  {
-    "familyName": "イソヒヨドリ",
-    "types": []
-  },
-  {
-    "familyName": "大型ツグミ",
-    "types": [
+      },
       {
-        "typeName": "トラツグミ",
+        "typeName": "イソヒヨドリ",
         "species": [
           {
-            "japaneseName": "Scaly Thrush",
-            "englishName": "涸沼"
+            "japaneseName": "イソヒヨドリ",
+            "englishName": "Blue Rock Thrush"
           }
         ]
-      }
-    ]
-  },
-  {
-    "familyName": "ミナミトラツグミ",
-    "types": [
+      },
       {
-        "typeName": "Amami Thrush",
+        "typeName": "大型ツグミ",
         "species": [
           {
-            "japaneseName": "オオトラツグミ",
-            "englishName": "奄美"
+            "japaneseName": "トラツグミ",
+            "englishName": "Scaly Thrush"
+          }
+        ]
+      },
+      {
+        "typeName": "",
+        "species": [
+          {
+            "japaneseName": "ミナミトラツグミ",
+            "englishName": "Amami Thrush"
+          },
+          {
+            "japaneseName": "アカハラ",
+            "englishName": "Brown-headed Thrush"
+          },
+          {
+            "japaneseName": "マミチャジナイ",
+            "englishName": "Eyebrowed Thrush"
+          },
+          {
+            "japaneseName": "クロツグミ",
+            "englishName": "Japanese Thrush"
+          },
+          {
+            "japaneseName": "シロハラ",
+            "englishName": "Pale Thrush"
+          },
+          {
+            "japaneseName": "ハチジョウツグミ",
+            "englishName": "Naumann's Thrush"
+          },
+          {
+            "japaneseName": "ツグミ",
+            "englishName": "Dusky Thrush"
           }
         ]
       }
     ]
-  },
-  {
-    "familyName": "アカハラ",
-    "types": []
-  },
-  {
-    "familyName": "マミチャジナイ",
-    "types": []
-  },
-  {
-    "familyName": "クロツグミ",
-    "types": []
-  },
-  {
-    "familyName": "シロハラ",
-    "types": []
-  },
-  {
-    "familyName": "ハチジョウツグミ",
-    "types": []
-  },
-  {
-    "familyName": "ツグミ",
-    "types": []
   },
   {
     "familyName": "ウグイス",
     "types": [
       {
-        "typeName": "ウグイス",
+        "typeName": "",
         "species": [
           {
-            "japaneseName": "Japanese Bush Warbler",
-            "englishName": "ウグイス"
+            "japaneseName": "ウグイス",
+            "englishName": "Japanese Bush Warbler"
+          },
+          {
+            "japaneseName": "ヤブサメ",
+            "englishName": "Asian Stubtail"
+          },
+          {
+            "japaneseName": "オオセッカ",
+            "englishName": "Marsh Grassbird"
+          },
+          {
+            "japaneseName": "セッカ",
+            "englishName": "Zitting Cisticola"
+          },
+          {
+            "japaneseName": "キクイタダキ",
+            "englishName": "Goldcrest"
+          },
+          {
+            "japaneseName": "マキノセンニュウ",
+            "englishName": "Marsh Warbler"
+          },
+          {
+            "japaneseName": "オオヨシキリ",
+            "englishName": "Oriental Reed Warbler"
+          },
+          {
+            "japaneseName": "コヨシキリ",
+            "englishName": "Black-browed Reed Warbler"
+          },
+          {
+            "japaneseName": "メボソムシクイ",
+            "englishName": "Sakhalin Leaf Warbler"
+          },
+          {
+            "japaneseName": "センダイムシクイ",
+            "englishName": "Eastern Crowned Warbler"
+          },
+          {
+            "japaneseName": "シベリアヨシキリ",
+            "englishName": "Arctic Warbler"
           }
         ]
       }
     ]
   },
   {
-    "familyName": "ハシナガウグイス",
-    "types": []
-  },
-  {
-    "familyName": "ヤブサメ",
-    "types": []
-  },
-  {
-    "familyName": "オオセッカ",
-    "types": []
-  },
-  {
-    "familyName": "セッカ",
-    "types": []
-  },
-  {
-    "familyName": "キクイタダキ",
-    "types": []
-  },
-  {
-    "familyName": "マキノセンニュウ",
-    "types": []
-  },
-  {
-    "familyName": "オオヨシキリ",
-    "types": []
-  },
-  {
-    "familyName": "コヨシキリ",
-    "types": []
-  },
-  {
-    "familyName": "メボソムシクイ",
-    "types": []
-  },
-  {
-    "familyName": "センダイムシクイ",
-    "types": []
-  },
-  {
-    "familyName": "シベリアヨシキリ",
-    "types": []
-  },
-  {
     "familyName": "ヒタキ",
-    "types": []
-  },
-  {
-    "familyName": "リュウキュウキビタキ",
-    "types": []
-  },
-  {
-    "familyName": "オオルリ",
-    "types": []
-  },
-  {
-    "familyName": "コサメビタキ",
-    "types": []
-  },
-  {
-    "familyName": "サメビタキ",
-    "types": []
-  },
-  {
-    "familyName": "エゾビタキ",
-    "types": []
-  },
-  {
-    "familyName": "ムギマキ",
-    "types": []
-  },
-  {
-    "familyName": "ニシオジロビタキ",
-    "types": []
+    "types": [
+      {
+        "typeName": "",
+        "species": [
+          {
+            "japaneseName": "キビタキ",
+            "englishName": "Narcissus Flycatcher"
+          },
+          {
+            "japaneseName": "リュウキュウキビタキ",
+            "englishName": "Ryukyu Flycatcher"
+          },
+          {
+            "japaneseName": "オオルリ",
+            "englishName": "Blue-and-white Flycatcher"
+          },
+          {
+            "japaneseName": "コサメビタキ",
+            "englishName": "Asian Brown Flycatcher"
+          },
+          {
+            "japaneseName": "サメビタキ",
+            "englishName": "Dark-sided Flycatcher"
+          },
+          {
+            "japaneseName": "エゾビタキ",
+            "englishName": "Grey-streaked Flycatcher"
+          },
+          {
+            "japaneseName": "ムギマキ",
+            "englishName": "Mugimaki Flycatcher"
+          },
+          {
+            "japaneseName": "ニシオジロビタキ",
+            "englishName": "Red-breasted Flycatcher"
+          }
+        ]
+      }
+    ]
   },
   {
     "familyName": "カササギヒタキ",
-    "types": []
+    "types": [
+      {
+        "typeName": "",
+        "species": [
+          {
+            "japaneseName": "サンコウチョウ",
+            "englishName": "Japanese Paradise Flycatcher"
+          }
+        ]
+      }
+    ]
   },
   {
     "familyName": "シジュウカラ",
-    "types": []
-  },
-  {
-    "familyName": "コガラ",
-    "types": []
-  },
-  {
-    "familyName": "ヒガラ",
-    "types": []
-  },
-  {
-    "familyName": "シジュウカラ",
-    "types": []
-  },
-  {
-    "familyName": "ヤマガラ",
-    "types": []
+    "types": [
+      {
+        "typeName": "",
+        "species": [
+          {
+            "japaneseName": "ハシブトガラ",
+            "englishName": "Marsh Tit"
+          },
+          {
+            "japaneseName": "コガラ",
+            "englishName": "Willow Tit"
+          },
+          {
+            "japaneseName": "ヒガラ",
+            "englishName": "Coal Tit"
+          },
+          {
+            "japaneseName": "シジュウカラ",
+            "englishName": "Great Tit"
+          },
+          {
+            "japaneseName": "ヤマガラ",
+            "englishName": "Varied Tit"
+          }
+        ]
+      }
+    ]
   },
   {
     "familyName": "エナガ",
     "types": [
       {
-        "typeName": "エナガ",
+        "typeName": "",
         "species": [
           {
-            "japaneseName": "Long-tailed Tit",
-            "englishName": "エナガ"
+            "japaneseName": "エナガ",
+            "englishName": "Long-tailed Tit"
           }
         ]
       }
     ]
   },
   {
-    "familyName": "シマエナガ",
-    "types": []
-  },
-  {
     "familyName": "ゴジュウカラ",
-    "types": []
+    "types": [
+      {
+        "typeName": "",
+        "species": [
+          {
+            "japaneseName": "ゴジュウカラ",
+            "englishName": "Eurasian Nuthatch"
+          }
+        ]
+      }
+    ]
   },
   {
     "familyName": "キバシリ",
-    "types": []
+    "types": [
+      {
+        "typeName": "",
+        "species": [
+          {
+            "japaneseName": "キバシリ",
+            "englishName": "Eurasian Treecreeper"
+          }
+        ]
+      }
+    ]
   },
   {
     "familyName": "ツリスガラ",
     "types": [
       {
-        "typeName": "ツリスガラ",
+        "typeName": "",
         "species": [
           {
-            "japaneseName": "Eurasian Penduline Tit",
-            "englishName": "今津"
+            "japaneseName": "ツリスガラ",
+            "englishName": "Eurasian Penduline Tit"
           }
         ]
       }
@@ -1587,206 +1859,268 @@ export const birdDatabase = [
   },
   {
     "familyName": "メジロ",
-    "types": []
-  },
-  {
-    "familyName": "メグロ",
-    "types": []
+    "types": [
+      {
+        "typeName": "",
+        "species": [
+          {
+            "japaneseName": "メジロ",
+            "englishName": "Japanese White-eye"
+          },
+          {
+            "japaneseName": "メグロ",
+            "englishName": "Bonin White-eye"
+          }
+        ]
+      }
+    ]
   },
   {
     "familyName": "ホオジロ",
-    "types": []
-  },
-  {
-    "familyName": "カシラダカ",
-    "types": []
-  },
-  {
-    "familyName": "ホオアカ",
-    "types": []
-  },
-  {
-    "familyName": "ミヤマホオジロ",
-    "types": []
-  },
-  {
-    "familyName": "ユキホオジロ",
-    "types": []
-  },
-  {
-    "familyName": "アオジ",
-    "types": []
-  },
-  {
-    "familyName": "クロジ",
-    "types": []
-  },
-  {
-    "familyName": "コジュリン",
-    "types": []
-  },
-  {
-    "familyName": "オオジュリン",
-    "types": []
-  },
-  {
-    "familyName": "シベリアジュリン",
-    "types": []
+    "types": [
+      {
+        "typeName": "",
+        "species": [
+          {
+            "japaneseName": "ホオジロ",
+            "englishName": "Meadow Bunting"
+          },
+          {
+            "japaneseName": "カシラダカ",
+            "englishName": "Rustic Bunting"
+          },
+          {
+            "japaneseName": "ホオアカ",
+            "englishName": "Chestnut-eared Bunting"
+          },
+          {
+            "japaneseName": "ミヤマホオジロ",
+            "englishName": "Yellow-throated Bunting"
+          },
+          {
+            "japaneseName": "ユキホオジロ",
+            "englishName": "Snow Bunting"
+          },
+          {
+            "japaneseName": "アオジ",
+            "englishName": "Black-faced Bunting"
+          },
+          {
+            "japaneseName": "クロジ",
+            "englishName": "Grey Bunting"
+          },
+          {
+            "japaneseName": "コジュリン",
+            "englishName": "Ochre-rumped Bunting"
+          },
+          {
+            "japaneseName": "オオジュリン",
+            "englishName": "Common Reed Bunting"
+          },
+          {
+            "japaneseName": "シベリアジュリン",
+            "englishName": "Pallas's Reed Bunting"
+          }
+        ]
+      }
+    ]
   },
   {
     "familyName": "アトリ",
-    "types": []
-  },
-  {
-    "familyName": "マヒワ",
-    "types": []
-  },
-  {
-    "familyName": "ベニヒワ",
-    "types": []
-  },
-  {
-    "familyName": "アトリ",
-    "types": []
-  },
-  {
-    "familyName": "オオマシコ",
-    "types": []
-  },
-  {
-    "familyName": "ハギマシコ",
-    "types": []
-  },
-  {
-    "familyName": "イスカ",
-    "types": []
-  },
-  {
-    "familyName": "ベニマシコ",
-    "types": []
-  },
-  {
-    "familyName": "ウソ",
-    "types": []
-  },
-  {
-    "familyName": "アカウソ",
-    "types": []
-  },
-  {
-    "familyName": "コイカル",
-    "types": []
-  },
-  {
-    "familyName": "イカル",
-    "types": []
-  },
-  {
-    "familyName": "シメ",
-    "types": []
+    "types": [
+      {
+        "typeName": "",
+        "species": [
+          {
+            "japaneseName": "カワラヒワ",
+            "englishName": "Oriental Greenfinch"
+          },
+          {
+            "japaneseName": "マヒワ",
+            "englishName": "Eurasian Siskin"
+          },
+          {
+            "japaneseName": "ベニヒワ",
+            "englishName": "Common Redpoll"
+          },
+          {
+            "japaneseName": "アトリ",
+            "englishName": "Brambling"
+          },
+          {
+            "japaneseName": "オオマシコ",
+            "englishName": "Pallas's Rosefinch"
+          },
+          {
+            "japaneseName": "ハギマシコ",
+            "englishName": "Asian Rosy Finch"
+          },
+          {
+            "japaneseName": "イスカ",
+            "englishName": "Red Crossbill"
+          },
+          {
+            "japaneseName": "ベニマシコ",
+            "englishName": "Long-tailed Rosefinch"
+          },
+          {
+            "japaneseName": "ウソ",
+            "englishName": "Eurasian Bullfinch"
+          },
+          {
+            "japaneseName": "コイカル",
+            "englishName": "Japanese Grosbeak"
+          },
+          {
+            "japaneseName": "イカル",
+            "englishName": "Hawfinch"
+          },
+          {
+            "japaneseName": "シメ",
+            "englishName": "Hawfinch"
+          }
+        ]
+      }
+    ]
   },
   {
     "familyName": "スズメ",
-    "types": []
-  },
-  {
-    "familyName": "スズメ",
-    "types": []
+    "types": [
+      {
+        "typeName": "",
+        "species": [
+          {
+            "japaneseName": "ニュウナイスズメ",
+            "englishName": "Russet Sparrow"
+          },
+          {
+            "japaneseName": "スズメ",
+            "englishName": "Eurasian Tree Sparrow"
+          }
+        ]
+      }
+    ]
   },
   {
     "familyName": "ムクドリ",
-    "types": []
-  },
-  {
-    "familyName": "コムクドリ",
-    "types": []
-  },
-  {
-    "familyName": "ホシムクドリ",
-    "types": []
-  },
-  {
-    "familyName": "シロガシラ",
-    "types": []
-  },
-  {
-    "familyName": "インドハッカ",
-    "types": []
+    "types": [
+      {
+        "typeName": "",
+        "species": [
+          {
+            "japaneseName": "ムクドリ",
+            "englishName": "White-cheeked Starling"
+          },
+          {
+            "japaneseName": "コムクドリ",
+            "englishName": "Chestnut-cheeked Starling"
+          },
+          {
+            "japaneseName": "ホシムクドリ",
+            "englishName": "Common Starling"
+          },
+          {
+            "japaneseName": "シロガシラ",
+            "englishName": "Light-vented Bulbul"
+          },
+          {
+            "japaneseName": "インドハッカ",
+            "englishName": "Common Myna"
+          }
+        ]
+      }
+    ]
   },
   {
     "familyName": "カラス",
     "types": [
       {
-        "typeName": "カケス",
+        "typeName": "",
         "species": [
           {
-            "japaneseName": "Eurasian Jay",
-            "englishName": "カケス"
+            "japaneseName": "カケス",
+            "englishName": "Eurasian Jay"
+          },
+          {
+            "japaneseName": "ルリカケス",
+            "englishName": "Lidth's Jay"
+          },
+          {
+            "japaneseName": "オナга",
+            "englishName": "Azure-winged Magpie"
+          },
+          {
+            "japaneseName": "カササギ",
+            "englishName": "Eurasian Magpie"
+          },
+          {
+            "japaneseName": "コクマルガラス",
+            "englishName": "Daurian Jackdaw"
+          },
+          {
+            "japaneseName": "ミヤマガラス",
+            "englishName": "Rook"
+          },
+          {
+            "japaneseName": "ハシボソガラス",
+            "englishName": "Carrion Crow"
+          },
+          {
+            "japaneseName": "ハシブトガラス",
+            "englishName": "Large-billed Crow"
           }
         ]
       }
     ]
   },
   {
-    "familyName": "ミヤマカケス",
-    "types": []
-  },
-  {
-    "familyName": "ルリカケス",
-    "types": []
-  },
-  {
-    "familyName": "オナга",
-    "types": []
-  },
-  {
-    "familyName": "カササギ",
-    "types": []
-  },
-  {
-    "familyName": "コクマルガラス",
-    "types": []
-  },
-  {
-    "familyName": "ミヤマガラス",
-    "types": []
-  },
-  {
-    "familyName": "ハシボソガラス",
-    "types": []
-  },
-  {
-    "familyName": "ハシブトガラス",
-    "types": []
-  },
-  {
     "familyName": "チメドリ",
-    "types": []
-  },
-  {
-    "familyName": "ソウシチョウ",
-    "types": []
+    "types": [
+      {
+        "typeName": "",
+        "species": [
+          {
+            "japaneseName": "ガビチョウ",
+            "englishName": "Chinese Hwamei"
+          },
+          {
+            "japaneseName": "ソウシチョウ",
+            "englishName": "Red-billed Leiothrix"
+          }
+        ]
+      }
+    ]
   },
   {
     "familyName": "インコ",
-    "types": []
+    "types": [
+      {
+        "typeName": "",
+        "species": [
+          {
+            "japaneseName": "ワカケホンセイインコ",
+            "englishName": "Rose-ringed Parakeet"
+          }
+        ]
+      }
+    ]
   },
   {
     "familyName": "キジ",
     "types": [
       {
-        "typeName": "インドクジャク",
+        "typeName": "",
         "species": [
           {
-            "japaneseName": "Indian Peafowl",
-            "englishName": "大野山林"
+            "japaneseName": "インドクジャク",
+            "englishName": "Indian Peafowl"
+          },
+          {
+            "japaneseName": "コウライキジ",
+            "englishName": "Ring-necked Pheasant"
           }
         ]
       }
     ]
-  },
-  {
-    "familyName": "コウライキジ",
-    "types": []
   }
 ];
