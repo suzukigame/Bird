@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { IPhoto } from '../types/photo';
+import { characterData } from '../data/character_data';
 
 interface IPhotoGalleryProps {
   photos: IPhoto[];
@@ -15,6 +16,8 @@ const PhotoGallery: React.FC<IPhotoGalleryProps> = ({ photos }) => {
   const handleCloseModal = () => {
     setSelectedImage(null);
   };
+
+  const characterInfo = selectedImage ? characterData[selectedImage.birdSpecies] : null;
 
   return (
     <div className="photo-gallery">
@@ -39,6 +42,14 @@ const PhotoGallery: React.FC<IPhotoGalleryProps> = ({ photos }) => {
               <p>{selectedImage.prefecture} - {selectedImage.locationDetail}</p>
               <p>{selectedImage.date}</p>
               {selectedImage.memo && <p>{selectedImage.memo}</p>}
+
+              {characterInfo && (
+                <div className="character-section">
+                  <h4>キャラ図鑑</h4>
+                  <img src={process.env.PUBLIC_URL + characterInfo.image} alt="Character" className="character-image" />
+                  <p>{characterInfo.description}</p>
+                </div>
+              )}
             </div>
           </div>
         </div>
