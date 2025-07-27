@@ -78,7 +78,7 @@ function App() {
     <BrowserRouter basename={process.env.PUBLIC_URL}>
       <div className="App">
         <header className="App-header">
-          <h1>GauraBirder奮闘記</h1>
+          <h1>GB野鳥図鑑</h1>
           <nav>
             <Link to="/">ギャラリー</Link>
             <Link to="/collection">マイ図鑑</Link>
