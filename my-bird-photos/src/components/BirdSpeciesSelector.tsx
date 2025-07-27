@@ -1,5 +1,6 @@
 import React from 'react';
 import { birdDatabase } from '../data/bird_database';
+import { useTranslation } from 'react-i18next';
 
 interface IBirdSpeciesSelectorProps {
   birdSpecies: string[];
@@ -14,6 +15,7 @@ const BirdSpeciesSelector: React.FC<IBirdSpeciesSelectorProps> = ({
   onSelectBirdSpecies,
   selectedFamily,
 }) => {
+  const { t } = useTranslation();
   const filteredBirdSpecies = selectedFamily
     ? birdDatabase.find(family => family.familyName === selectedFamily)?.types.flatMap(type => type.species.map(s => s.japaneseName)) || []
     : birdSpecies;
@@ -24,7 +26,7 @@ const BirdSpeciesSelector: React.FC<IBirdSpeciesSelectorProps> = ({
         onClick={() => onSelectBirdSpecies(null)}
         className={selectedBirdSpecies === null ? 'active' : ''}
       >
-        全ての鳥
+        {t('allBirds')}
       </button>
       {filteredBirdSpecies.map((species) => (
         <button
@@ -32,7 +34,7 @@ const BirdSpeciesSelector: React.FC<IBirdSpeciesSelectorProps> = ({
           onClick={() => onSelectBirdSpecies(species)}
           className={selectedBirdSpecies === species ? 'active' : ''}
         >
-          {species}
+          {t(`birdSpeciesNames.${species}`)}
         </button>
       ))}
     </div>

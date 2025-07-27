@@ -67,7 +67,7 @@ const CollectionPage: React.FC = () => {
                 <div className="character-section">
                   <h4>{t('characterEncyclopedia')}</h4>
                   <img src={process.env.PUBLIC_URL + characterInfo.image} alt="Character" className="character-image" />
-                  <p>{formatDescription(characterInfo.description)}</p>
+                  <p>{formatDescription(t(characterInfo.descriptionKey))}</p>
                 </div>
               )}
             </div>

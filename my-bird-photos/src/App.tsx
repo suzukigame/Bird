@@ -121,7 +121,7 @@ function App() {
                   onSelectBirdSpecies={handleSelectBirdSpecies}
                   selectedFamily={selectedFamily} // Pass selectedFamily prop
                 />
-                <p>{t('foundBirdSpecies')}: {foundBirdSpeciesCount} {t('species')}</p>
+                <p>{t('foundBirdSpecies', { count: foundBirdSpeciesCount })}</p>
                 <PhotoGallery photos={filteredPhotos} />
               </>
             } />

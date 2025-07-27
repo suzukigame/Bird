@@ -1,5 +1,6 @@
 import React from 'react';
 import { birdDatabase } from '../data/bird_database';
+import { useTranslation } from 'react-i18next';
 
 interface FamilySelectorProps {
   selectedFamily: string;
@@ -7,20 +8,21 @@ interface FamilySelectorProps {
 }
 
 const FamilySelector: React.FC<FamilySelectorProps> = ({ selectedFamily, onSelectFamily }) => {
+  const { t } = useTranslation();
   const families = birdDatabase.map(family => family.familyName);
 
   return (
     <div className="family-selector">
-      <label htmlFor="family-select">科で絞り込み:</label>
+      <label htmlFor="family-select">{t('filterByFamily')}:</label>
       <select
         id="family-select"
         value={selectedFamily}
         onChange={(e) => onSelectFamily(e.target.value)}
       >
-        <option value="">全ての科</option>
+        <option value="">{t('allFamilies')}</option>
         {families.map((family) => (
           <option key={family} value={family}>
-            {family}
+            {t(`familyNames.${family}`)}
           </option>
         ))}
       </select>

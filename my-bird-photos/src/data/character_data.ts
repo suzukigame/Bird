@@ -1,124 +1,42 @@
 export interface ICharacterData {
   [birdSpecies: string]: {
     image: string;
-    description: string;
+    descriptionKey: string; // descriptionをdescriptionKeyに変更
   };
 }
 
 export const characterData: ICharacterData = {
   'オオワシ': {
     image: '/images/characters/Stellers sea eagle.png',
-    description: `オオワシは、世界でもっとも大きなワシのなかまのひとつです。
-とても力もちで、空を大きな羽ではばたきながら飛びます。
-ロシアで生まれ、日本の北海道に冬にやってきます。
-
-発見した学者の名前から「ステラーワシ」とも呼ばれます。
-数が減っていて絶滅危惧種に指定されています。
-
-GBは冬の羅臼で一生分見ましたが、
-また会いに行きたいくらいかっこよかったです。
-`,
+    descriptionKey: 'description.stellersSeaEagle',
   },
   'コマドリ': {
     image: '/images/characters/komadori.png',
-    description: `全長約14cmの日本三鳴鳥の一つ。
-山地の森林に生息し、昆虫や木の実を食べる雑食性。
-
-警戒心が強く、姿を見るのは難しいが、
-「ヒンカラカラカラカラ」と馬のいななきに似た美しい声でさえずる。
-オスは胸に黒帯を持つ。
-
-特に春の訪れを象徴する鳥として、多くの文学作品や芸術作品に登場します。
-`,
+    descriptionKey: 'description.komadori',
   },
   'オジロワシ': {
     image: '/images/characters/White-tailed eagle.png',
-    description: `日本へは10月に渡来し、北海道で繁殖する一部を残し3月には繁殖地へ去る。
-
-魚類を主食とするが、鳥類やウサギ、ヘビも捕食し、屍肉も食べる。
-
-北海道では大径木の樹上に営巣し、一腹卵数は1～3卵。
-雌雄で約1か月間抱卵し、ふ化後2か月ほどで巣立つ。
-
-道東に行くとカラスのようにその辺にいました。
-`,
+    descriptionKey: 'description.whiteTailedEagle',
   },
   'スズメ': {
     image: '/images/characters/sparrow.png',
-    description: `稲を食べる一方で害虫も食べるため、
-古くから益鳥としても認識されてきました。
-
-昔話や童謡にも登場し、
-日本人にとって身近で親しまれてきた存在です。
-一方、警戒心が強く、人にはなかなか慣れません。
-
-羽毛を清潔に保つために、水浴びと砂浴びを行います。
-`,
+    descriptionKey: 'description.sparrow',
   },
   'ライチョウ': {
     image: '/images/characters/Rock Ptarmigan.png',
-    description: `ライチョウはキジ科の鳥です。
-ニワトリも同じキジ科の鳥です。
-ニワトリと同じようにライチョウは植物が大好物です。
-
-ただしレア度は段違い!!
-GauraBirderが立山に見に行った時は人間を恐れず
-自由気ままな貴婦人のように生活してました。
-みんなが優しくしてくれるのを本人もわかってるんだね。
-
-日本の雷鳥は、標高2,300m以上の高山帯で生活し、
-1年に3度羽が抜け替わり、極端に体色が変化する珍しい鳥です。
-`,
+    descriptionKey: 'description.rockPtarmigan',
   },
   'シマフクロウ': {
     image: '/images/characters/Blakistons fish Owl.png',
-    description: `日本では北海道及び北方領土のみに生息する、
-世界最大級のフクロウです。
-
-アイヌの人々に「村の守り神」と呼ばれるシマフクロウ。
-現在、道東地域を中心に100つがい以上が確認されていますが、
-生息地は道内の一部に限られており、
-依然として絶滅の危機に瀕しています。
-
-アイヌ語名[コタンコㇿカムイ]は[村を領有する神]と
-いう意味を持っています。
-`,
+    descriptionKey: 'description.blakistonsFishOwl',
   },
   'タンチョウ': {
     image: '/images/characters/Red-crowned crane.png',
-    description: `「丹頂」という名前は、頭頂部の赤い部分に由来します。
-興奮すると赤みが増します。
-
-世界に15種類いるツルの仲間の一つで、
-日本国内で繁殖する唯一のツルです。
-日本最大の野鳥: 全長約140cm、
-翼を広げると220cmから250cmにもなる、
-日本最大の野鳥です。
-
-一度つがいになると生涯添い遂げる習性があり、
-夫婦円満の象徴とされています。
-つがいが鳴き合う「鳴き合い」では、
-「コー！」がオス、「カッカッ！」がメスの声です。
-`,
+    descriptionKey: 'description.redCrownedCrane',
   },
   'オオハクチョウ': {
     image: '/images/characters/Whooper swan.png',
-    description: `日本では冬鳥として飛来し、
-主に北海道や東北地方北部で越冬します。
-日本の野鳥の中でも特に重く、
-10kgを超える個体もいます。
-体重のわりに翼が小さいため、
-飛ぶ間はずっと羽ばたき続ける必要があります。
-
-一度つがいになると一生同じパートナーと生活を共にし、
-家族の絆が非常に強い鳥です。
-アイヌ語では「レタッチリ・カムイ」と呼ばれ、
-「白い鳥の神」を意味します。
-
-アンデルセン童話の「みにくいアヒルの子」の主人公はハクチョウで、
-子供の頃は灰色ですが、
-成長すると美しい白い鳥になります。
-`,
+    descriptionKey: 'description.whooperSwan',
   },
   // 他のキャラデータもここに追加
 };

@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 interface IPrefectureSelectorProps {
   prefectures: string[];
@@ -11,13 +12,14 @@ const PrefectureSelector: React.FC<IPrefectureSelectorProps> = ({
   selectedPrefecture,
   onSelectPrefecture,
 }) => {
+  const { t } = useTranslation();
   return (
     <div className="prefecture-selector">
       <button
         onClick={() => onSelectPrefecture(null)}
         className={selectedPrefecture === null ? 'active' : ''}
       >
-        全ての都道府県
+        {t('allPrefectures')}
       </button>
       {prefectures.map((prefecture) => (
         <button
@@ -25,7 +27,7 @@ const PrefectureSelector: React.FC<IPrefectureSelectorProps> = ({
           onClick={() => onSelectPrefecture(prefecture)}
           className={selectedPrefecture === prefecture ? 'active' : ''}
         >
-          {prefecture}
+          {t(`prefectures.${prefecture}`)}
         </button>
       ))}
     </div>
