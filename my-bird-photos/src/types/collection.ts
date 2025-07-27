@@ -5,5 +5,6 @@ export interface ICollectionItem {
   thumbnail: string;
   prefecture: string;
   date: string;
+  locationDetail: string; // Add locationDetail property
   family?: string;
 }
