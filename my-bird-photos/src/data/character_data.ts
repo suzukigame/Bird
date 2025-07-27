@@ -8,7 +8,16 @@ export interface ICharacterData {
 export const characterData: ICharacterData = {
   'オオワシ': {
     image: '/images/characters/Stellers sea eagle.png',
-    description: '北の空を舞う、威厳ある姿の大型猛禽類だよ！',
+    description: `オオワシは、世界でもっとも大きなワシのなかまのひとつです。
+    とても力もちで、空を大きな羽ではばたきながら飛びます。
+ロシアで生まれ、日本の北海道に冬にやってきます。
+
+発見した学者の名前から「ステラーワシ」とも呼ばれます。
+数が減っていて絶滅危惧種に指定されています。
+
+GBは冬の羅臼で一生分見ましたが、
+また会いに行きたいくらいかっこよかったです。
+`,
   },
   'コマドリ': {
     image: '/images/characters/komadori.png',
