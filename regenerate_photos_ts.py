@@ -6,20 +6,23 @@ photos_ts_path = r'C:\Users\sujak\Desktop\hobby\GitHub\Bird\my-bird-photos\src\d
 bird_db_path = r'C:\Users\sujak\Desktop\hobby\GitHub\Bird\my-bird-photos\src\data\bird_database.ts'
 images_base_path = r'C:\Users\sujak\Desktop\hobby\GitHub\Bird\my-bird-photos\public\images\birds'
 
-# 1. Read bird_database.ts to get species to family mapping
+# 1. Read bird_database.ts to get species to family mapping and location/subspecies
 with open(bird_db_path, 'r', encoding='utf-8') as f:
     db_content = f.read().replace('export const birdDatabase = ', '').replace(';', '')
     bird_db = json.loads(db_content)
 
-species_to_family = {}
+species_info_map = {}
 english_to_japanese_species = {}
 for family_entry in bird_db:
-    family_name = family_entry['familyName']
     for type_entry in family_entry['types']:
         for species_entry in type_entry['species']:
             japanese_name = species_entry['japaneseName']
             english_name = species_entry['englishName']
-            species_to_family[japanese_name] = family_name
+            species_info_map[japanese_name] = {
+                'family': family_entry['familyName'],
+                'location': species_entry.get('location', ''),
+                'subspecies': species_entry.get('subspecies', '')
+            }
             english_to_japanese_species[english_name] = japanese_name
 
 # Define prefecture_map globally within the script
@@ -61,6 +64,8 @@ for full_path in all_image_files:
     prefecture = ''
     english_species_from_filename = ''
     japanese_species = ''
+    location_detail = ''
+    memo = ''
 
     if match:
         date = match.group(1)[:4] + '-' + match.group(1)[4:6] + '-' + match.group(1)[6:8]
@@ -88,6 +93,10 @@ for full_path in all_image_files:
         # Use family folder name as birdSpecies if not parsed from filename
         japanese_species = family_folder_name
 
+    # Get locationDetail from bird_database if available
+    if japanese_species in species_info_map and species_info_map[japanese_species]['location']:
+        location_detail = species_info_map[japanese_species]['location']
+
     photos_data.append({
         'id': str(id_counter),
         'src': f'/images/birds/{relative_path}',
@@ -95,8 +104,8 @@ for full_path in all_image_files:
         'prefecture': prefecture,
         'date': date,
         'birdSpecies': japanese_species,
-        'locationDetail': '',
-        'memo': '',
+        'locationDetail': location_detail,
+        'memo': memo, # Memo is empty for now
         'family': family_folder_name, # Family is the top-level folder name
     })
     id_counter += 1
@@ -109,6 +118,7 @@ for i, photo in enumerate(photos_data):
         if key == 'src' or key == 'thumbnail':
             photos_ts_content += f"    {key}: process.env.PUBLIC_URL + '{value}',\n"
         else:
+            # Ensure string values are quoted
             photos_ts_content += f"    {key}: '{value}',\n"
     photos_ts_content += f"  }}{',' if i < len(photos_data) - 1 else ''}\n"
 photos_ts_content += f"];\n"

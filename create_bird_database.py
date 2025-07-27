@@ -25,6 +25,8 @@ for line in content_lines:
     type_name = parts[2] if parts[2] else None
     japanese_name = parts[3] if parts[3] else None
     english_name = parts[4] if parts[4] else None
+    subspecies = parts[5] if parts[5] else None # 亜種
+    location = parts[6] if parts[6] else None # 場所
 
     if family_name:
         current_family = {'familyName': family_name, 'types': []}
@@ -43,7 +45,10 @@ for line in content_lines:
             current_family['types'].append(current_type)
 
         if japanese_name and english_name and current_type:
-            current_type['species'].append({'japaneseName': japanese_name, 'englishName': english_name})
+            species_info = {'japaneseName': japanese_name, 'englishName': english_name}
+            if subspecies: species_info['subspecies'] = subspecies
+            if location: species_info['location'] = location
+            current_type['species'].append(species_info)
 
 # Remove families or types that ended up empty (e.g., due to parsing errors or empty rows)
 final_db = []
