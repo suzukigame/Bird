@@ -2,8 +2,10 @@ import React, { useState } from 'react';
 import { useCollection } from '../hooks/useCollection';
 import { IPhoto } from '../types/photo';
 import { characterData } from '../data/character_data';
+import { useTranslation } from 'react-i18next'; // 追加
 
 const CollectionPage: React.FC = () => {
+  const { t } = useTranslation(); // 追加
   const { collection, removeFromCollection } = useCollection();
   const [selectedImage, setSelectedImage] = useState<IPhoto | null>(null);
 
@@ -17,11 +19,21 @@ const CollectionPage: React.FC = () => {
 
   const characterInfo = selectedImage ? characterData[selectedImage.birdSpecies] : null;
 
+  // descriptionの改行を<br />に変換するヘルパー関数
+  const formatDescription = (description: string) => {
+    return description.split('\n').map((item, key) => (
+      <React.Fragment key={key}>
+        {item}
+        <br />
+      </React.Fragment>
+    ));
+  };
+
   return (
     <div className="collection-page">
-      <h2>マイ図鑑</h2>
+      <h2>{t('myCollection')}</h2>
       {collection.length === 0 ? (
-        <p>まだ図鑑に鳥が追加されていません。</p>
+        <p>{t('noBirdsInCollection')}</p>
       ) : (
         <div className="photo-gallery">
           {collection.map((photo) => (
@@ -32,7 +44,7 @@ const CollectionPage: React.FC = () => {
                 <p>{photo.prefecture} - {photo.locationDetail}</p>
                 <p>{photo.date}</p>
                 <button onClick={() => removeFromCollection(photo.id)} className="remove-from-collection">
-                  図鑑から削除
+                  {t('removeFromCollection')}
                 </button>
               </div>
             </div>
@@ -53,9 +65,9 @@ const CollectionPage: React.FC = () => {
 
               {characterInfo && (
                 <div className="character-section">
-                  <h4>キャラ図鑑</h4>
+                  <h4>{t('characterEncyclopedia')}</h4>
                   <img src={process.env.PUBLIC_URL + characterInfo.image} alt="Character" className="character-image" />
-                  <p>{characterInfo.description}</p>
+                  <p>{formatDescription(characterInfo.description)}</p>
                 </div>
               )}
             </div>

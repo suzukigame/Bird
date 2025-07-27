@@ -4,6 +4,7 @@ import './App.css';
 import { prefectures } from './data/prefectures';
 import { photos } from './data/photos';
 import { birdDatabase } from './data/bird_database';
+import { useTranslation } from 'react-i18next'; // 追加
 
 import PhotoGallery from './components/PhotoGallery';
 import PrefectureSelector from './components/PrefectureSelector';
@@ -14,6 +15,7 @@ import CollectionPage from './pages/CollectionPage';
 
 
 function App() {
+  const { t, i18n } = useTranslation(); // 追加
   const [selectedPrefecture, setSelectedPrefecture] = useState<string | null>(null);
   const [selectedYear, setSelectedYear] = useState<string | null>(null);
   const [selectedBirdSpecies, setSelectedBirdSpecies] = useState<string | null>(null);
@@ -74,15 +76,26 @@ function App() {
     return uniqueSpecies.size;
   }, [filteredPhotos]);
 
+  const changeLanguage = (lng: string) => {
+    i18n.changeLanguage(lng);
+  };
+
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
       <div className="App">
         <header className="App-header">
-          <h1>GB野鳥図鑑</h1>
+          <h1>{t('appTitle')}</h1>
           <nav>
-            <Link to="/">ギャラリー</Link>
-            <Link to="/collection">マイ図鑑</Link>
+            <Link to="/">{t('home')}</Link>
+            <Link to="/collection">{t('collection')}</Link>
           </nav>
+          <div className="language-selector">
+            <label htmlFor="language-select">{t('language')}: </label>
+            <select id="language-select" onChange={(e) => changeLanguage(e.target.value)} value={i18n.language}>
+              <option value="ja">{t('japanese')}</option>
+              <option value="en">{t('english')}</option>
+            </select>
+          </div>
         </header>
         <main>
           <Routes>
@@ -108,7 +121,7 @@ function App() {
                   onSelectBirdSpecies={handleSelectBirdSpecies}
                   selectedFamily={selectedFamily} // Pass selectedFamily prop
                 />
-                <p>見つけた鳥の種類: {foundBirdSpeciesCount} 種類</p>
+                <p>{t('foundBirdSpecies')}: {foundBirdSpeciesCount} {t('species')}</p>
                 <PhotoGallery photos={filteredPhotos} />
               </>
             } />
