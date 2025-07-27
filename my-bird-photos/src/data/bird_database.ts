@@ -7,7 +7,9 @@ export const birdDatabase = [
         "species": [
           {
             "japaneseName": "和名",
-            "englishName": "英名"
+            "englishName": "英名",
+            "subspecies": "亜種",
+            "location": "場所"
           }
         ]
       }
@@ -21,7 +23,9 @@ export const birdDatabase = [
         "species": [
           {
             "japaneseName": "---",
-            "englishName": "---"
+            "englishName": "---",
+            "subspecies": "---",
+            "location": "---"
           }
         ]
       }
@@ -35,15 +39,18 @@ export const birdDatabase = [
         "species": [
           {
             "japaneseName": "アビ",
-            "englishName": "Red-throated Diver"
+            "englishName": "Red-throated Diver",
+            "location": "大洗漁港"
           },
           {
             "japaneseName": "シロエリオオハム",
-            "englishName": "Pacific Diver"
+            "englishName": "Pacific Diver",
+            "location": "大洗漁港"
           },
           {
             "japaneseName": "ハシジロアビ",
-            "englishName": "White-billed Diver"
+            "englishName": "White-billed Diver",
+            "location": "会瀬漁港"
           }
         ]
       }
@@ -99,7 +106,8 @@ export const birdDatabase = [
           },
           {
             "japaneseName": "チシマウガラス",
-            "englishName": "Red-faced Cormorant"
+            "englishName": "Red-faced Cormorant",
+            "location": "磯崎"
           }
         ]
       }
@@ -135,7 +143,8 @@ export const birdDatabase = [
         "species": [
           {
             "japaneseName": "シジュウカラガン",
-            "englishName": "Cackling goose"
+            "englishName": "Cackling goose",
+            "location": "伊豆沼、浦幌"
           }
         ]
       },
@@ -144,19 +153,24 @@ export const birdDatabase = [
         "species": [
           {
             "japaneseName": "コクガン",
-            "englishName": "Brant"
+            "englishName": "Brant",
+            "location": "会瀬漁港、野付半島"
           },
           {
             "japaneseName": "ハクガン",
-            "englishName": "Snow goose"
+            "englishName": "Snow goose",
+            "location": "伊豆沼、浦幌"
           },
           {
             "japaneseName": "マガン",
-            "englishName": "Greater white-fronted goose"
+            "englishName": "Greater white-fronted goose",
+            "location": "伊豆沼"
           },
           {
             "japaneseName": "ヒシクイ",
-            "englishName": "Bean goose"
+            "englishName": "Bean goose",
+            "subspecies": "ヒシクイ",
+            "location": "東よか、浦幌"
           }
         ]
       },
@@ -174,7 +188,8 @@ export const birdDatabase = [
         "species": [
           {
             "japaneseName": "アカツクシガモ",
-            "englishName": "Ruddy shelduck"
+            "englishName": "Ruddy shelduck",
+            "location": "白石町"
           }
         ]
       },
@@ -200,7 +215,8 @@ export const birdDatabase = [
           },
           {
             "japaneseName": "コガモ",
-            "englishName": "Common Teal"
+            "englishName": "Common Teal",
+            "subspecies": "コガモ"
           },
           {
             "japaneseName": "シマアジ",
@@ -208,7 +224,8 @@ export const birdDatabase = [
           },
           {
             "japaneseName": "トモエガモ",
-            "englishName": "Baikal teal"
+            "englishName": "Baikal teal",
+            "location": "曲渕"
           },
           {
             "japaneseName": "オシドリ",
@@ -232,7 +249,8 @@ export const birdDatabase = [
           },
           {
             "japaneseName": "アメリカヒドリ",
-            "englishName": "American Wigeon"
+            "englishName": "American Wigeon",
+            "subspecies": "アメリカヒドリxヒドリガモ(交雑)"
           }
         ]
       },
@@ -309,7 +327,8 @@ export const birdDatabase = [
         "species": [
           {
             "japaneseName": "ケイマフリ",
-            "englishName": "Spectacled Guillemot"
+            "englishName": "Spectacled Guillemot",
+            "location": "斜里町"
           }
         ]
       },
@@ -318,15 +337,18 @@ export const birdDatabase = [
         "species": [
           {
             "japaneseName": "ウミガラス",
-            "englishName": "Common Murre"
+            "englishName": "Common Murre",
+            "location": "天売島"
           },
           {
             "japaneseName": "ウミスズメ",
-            "englishName": "Ancient murrelet"
+            "englishName": "Ancient murrelet",
+            "location": "天売島"
           },
           {
             "japaneseName": "カンムリウミスズメ",
-            "englishName": "Japanese Murrelet"
+            "englishName": "Japanese Murrelet",
+            "location": "門川"
           }
         ]
       }
@@ -376,7 +398,8 @@ export const birdDatabase = [
         "species": [
           {
             "japaneseName": "オオミズナギドリ",
-            "englishName": "Streaked Shearwater"
+            "englishName": "Streaked Shearwater",
+            "location": "銚子"
           },
           {
             "japaneseName": "ハシボソミズナギドリ",
@@ -451,7 +474,8 @@ export const birdDatabase = [
           },
           {
             "japaneseName": "シロカモメ",
-            "englishName": "Glaucous Gull"
+            "englishName": "Glaucous Gull",
+            "location": "羅臼"
           },
           {
             "japaneseName": "カモメ",
@@ -459,7 +483,8 @@ export const birdDatabase = [
           },
           {
             "japaneseName": "ズグロカモメ",
-            "englishName": "Saunders's gull"
+            "englishName": "Saunders's gull",
+            "location": "東よか"
           },
           {
             "japaneseName": "ユリカモメ",
@@ -471,7 +496,8 @@ export const birdDatabase = [
           },
           {
             "japaneseName": "ギンカモメ",
-            "englishName": "Silver gull"
+            "englishName": "Silver gull",
+            "location": "新川河口"
           }
         ]
       },
@@ -489,7 +515,8 @@ export const birdDatabase = [
         "species": [
           {
             "japaneseName": "ベニアジサシ",
-            "englishName": "Roseate Tern"
+            "englishName": "Roseate Tern",
+            "location": "石垣大原航路"
           },
           {
             "japaneseName": "エリグロアジサシ",
@@ -501,11 +528,13 @@ export const birdDatabase = [
           },
           {
             "japaneseName": "オニアジサシ",
-            "englishName": "Caspian Tern"
+            "englishName": "Caspian Tern",
+            "location": "三番瀬"
           },
           {
             "japaneseName": "オオアジサシ",
-            "englishName": "Greater crested tern"
+            "englishName": "Greater crested tern",
+            "location": "石垣大原航路"
           },
           {
             "japaneseName": "ハシグロクロハラアジサシ",
@@ -527,7 +556,8 @@ export const birdDatabase = [
         "species": [
           {
             "japaneseName": "カツオドリ",
-            "englishName": "Brown booby"
+            "englishName": "Brown booby",
+            "location": "二見ヶ浦"
           }
         ]
       },
@@ -536,7 +566,8 @@ export const birdDatabase = [
         "species": [
           {
             "japaneseName": "アカアシカツオドリ",
-            "englishName": "Red-footed booby"
+            "englishName": "Red-footed booby",
+            "location": "三番瀬"
           },
           {
             "japaneseName": "ナスカカツオドリ",
@@ -558,15 +589,18 @@ export const birdDatabase = [
           },
           {
             "japaneseName": "リュウキュウヨシゴイ",
-            "englishName": "Cinnamon Bittern"
+            "englishName": "Cinnamon Bittern",
+            "location": "平田原"
           },
           {
             "japaneseName": "ミゾゴイ",
-            "englishName": "Japanese night heron"
+            "englishName": "Japanese night heron",
+            "location": "大野山林"
           },
           {
             "japaneseName": "ズグロミゾゴイ",
-            "englishName": "Malayan Night Heron"
+            "englishName": "Malayan Night Heron",
+            "location": "アンパル"
           },
           {
             "japaneseName": "ゴイサギ",
@@ -574,11 +608,13 @@ export const birdDatabase = [
           },
           {
             "japaneseName": "ササゴイ",
-            "englishName": "Striated heron"
+            "englishName": "Striated heron",
+            "location": "諏訪湖"
           },
           {
             "japaneseName": "アカガシラサギ",
-            "englishName": "Chinese pond heron"
+            "englishName": "Chinese pond heron",
+            "location": "土浦"
           },
           {
             "japaneseName": "アマサギ",
@@ -598,7 +634,8 @@ export const birdDatabase = [
           },
           {
             "japaneseName": "クロサギ",
-            "englishName": "Pacific reef heron"
+            "englishName": "Pacific reef heron",
+            "location": "佐渡島"
           },
           {
             "japaneseName": "アオサギ",
@@ -606,7 +643,8 @@ export const birdDatabase = [
           },
           {
             "japaneseName": "ムラサキサギ",
-            "englishName": "Purple heron"
+            "englishName": "Purple heron",
+            "location": "池間島"
           }
         ]
       }
@@ -660,7 +698,9 @@ export const birdDatabase = [
           },
           {
             "japaneseName": "ナベヅル",
-            "englishName": "Hooded crane"
+            "englishName": "Hooded crane",
+            "subspecies": "ナベヅル",
+            "location": "出水"
           },
           {
             "japaneseName": "カナダヅル",
@@ -676,7 +716,8 @@ export const birdDatabase = [
           },
           {
             "japaneseName": "マナヅル",
-            "englishName": "White-necked crane"
+            "englishName": "White-necked crane",
+            "location": "出水"
           }
         ]
       }
@@ -706,15 +747,18 @@ export const birdDatabase = [
           },
           {
             "japaneseName": "ヤンバルクイナ",
-            "englishName": "Okinawa rail"
+            "englishName": "Okinawa rail",
+            "location": "比地"
           },
           {
             "japaneseName": "オオクイナ",
-            "englishName": "Slaty-legged Crake"
+            "englishName": "Slaty-legged Crake",
+            "location": "大野山林"
           },
           {
             "japaneseName": "シロハラクイナ",
-            "englishName": "White-breasted Waterhen"
+            "englishName": "White-breasted Waterhen",
+            "location": "来間島"
           }
         ]
       }
@@ -754,7 +798,8 @@ export const birdDatabase = [
           },
           {
             "japaneseName": "オオメダイチドリ",
-            "englishName": "Greater Sand Plover"
+            "englishName": "Greater Sand Plover",
+            "location": "新川"
           },
           {
             "japaneseName": "シロチドリ",
@@ -788,7 +833,8 @@ export const birdDatabase = [
         "species": [
           {
             "japaneseName": "ツバメチドリ",
-            "englishName": "Oriental pratincole"
+            "englishName": "Oriental pratincole",
+            "location": "来間島"
           }
         ]
       }
@@ -806,7 +852,8 @@ export const birdDatabase = [
           },
           {
             "japaneseName": "オジロトウネン",
-            "englishName": "Temminick's Stint"
+            "englishName": "Temminick's Stint",
+            "location": "浮島"
           },
           {
             "japaneseName": "ヨーロッパトウネン",
@@ -814,7 +861,8 @@ export const birdDatabase = [
           },
           {
             "japaneseName": "ヒバリシギ",
-            "englishName": "Long-toed Stint"
+            "englishName": "Long-toed Stint",
+            "location": "浮島"
           },
           {
             "japaneseName": "ウズラシギ",
@@ -906,7 +954,8 @@ export const birdDatabase = [
           },
           {
             "japaneseName": "ホウロクシギ",
-            "englishName": "Far Eastern Curlew"
+            "englishName": "Far Eastern Curlew",
+            "location": "東よか"
           },
           {
             "japaneseName": "チュウシャクシギ",
@@ -930,7 +979,8 @@ export const birdDatabase = [
           },
           {
             "japaneseName": "アマミヤマシギ",
-            "englishName": "Amami Woodcock"
+            "englishName": "Amami Woodcock",
+            "location": "奄美大島"
           }
         ]
       }
@@ -944,7 +994,8 @@ export const birdDatabase = [
         "species": [
           {
             "japaneseName": "タマシギ",
-            "englishName": "Greater Painted-snipe"
+            "englishName": "Greater Painted-snipe",
+            "location": "♂のみ"
           }
         ]
       }
@@ -962,7 +1013,8 @@ export const birdDatabase = [
           },
           {
             "japaneseName": "ソリハシセイタカシギ",
-            "englishName": "Pied Avocet"
+            "englishName": "Pied Avocet",
+            "location": "東よか/今津"
           }
         ]
       }
@@ -980,7 +1032,8 @@ export const birdDatabase = [
           },
           {
             "japaneseName": "ハイイロヒレアシシギ",
-            "englishName": "Red phalarope"
+            "englishName": "Red phalarope",
+            "location": "会瀬漁港"
           }
         ]
       }
@@ -1002,19 +1055,23 @@ export const birdDatabase = [
           },
           {
             "japaneseName": "オオワシ",
-            "englishName": "Steller's sea eagle"
+            "englishName": "Steller's sea eagle",
+            "location": "涸沼"
           },
           {
             "japaneseName": "イヌワシ",
-            "englishName": "Golden Eagle"
+            "englishName": "Golden Eagle",
+            "location": "長野県高山村"
           },
           {
             "japaneseName": "カンムリワシ",
-            "englishName": "Crested serpent eagle"
+            "englishName": "Crested serpent eagle",
+            "location": "嵩田林道"
           },
           {
             "japaneseName": "クマタカ",
-            "englishName": "Mountain hawk-eagle"
+            "englishName": "Mountain hawk-eagle",
+            "location": "檜枝岐村,浪岡ダム"
           },
           {
             "japaneseName": "ハチクマ",
@@ -1030,11 +1087,13 @@ export const birdDatabase = [
           },
           {
             "japaneseName": "ノスリ",
-            "englishName": "Eastern Buzzard"
+            "englishName": "Eastern Buzzard",
+            "subspecies": "ノスリ"
           },
           {
             "japaneseName": "ケアシノスリ",
-            "englishName": "Rough-legged Buzzard"
+            "englishName": "Rough-legged Buzzard",
+            "location": "西ノ洲"
           },
           {
             "japaneseName": "ハイイロチュウヒ",
@@ -1042,7 +1101,8 @@ export const birdDatabase = [
           },
           {
             "japaneseName": "マダラチュウヒ",
-            "englishName": "Pied Harrier"
+            "englishName": "Pied Harrier",
+            "location": "渡良瀬"
           },
           {
             "japaneseName": "チュウヒ",
@@ -1058,11 +1118,13 @@ export const birdDatabase = [
           },
           {
             "japaneseName": "ツミ",
-            "englishName": "Japanese sparrow-hawk"
+            "englishName": "Japanese sparrow-hawk",
+            "location": "山本山"
           },
           {
             "japaneseName": "カタグロトビ",
-            "englishName": "Black-winged kite"
+            "englishName": "Black-winged kite",
+            "location": "新川"
           }
         ]
       }
@@ -1076,7 +1138,8 @@ export const birdDatabase = [
         "species": [
           {
             "japaneseName": "ハヤブサ",
-            "englishName": "Peregrine Falcon"
+            "englishName": "Peregrine Falcon",
+            "subspecies": "ハヤブサ"
           },
           {
             "japaneseName": "チゴハヤブサ",
@@ -1102,7 +1165,8 @@ export const birdDatabase = [
         "species": [
           {
             "japaneseName": "シマフクロウ",
-            "englishName": "Blakiston's fish Owl"
+            "englishName": "Blakiston's fish Owl",
+            "location": "羅臼"
           },
           {
             "japaneseName": "トラフズク",
@@ -1118,11 +1182,14 @@ export const birdDatabase = [
           },
           {
             "japaneseName": "アオバズク",
-            "englishName": "Northern boobook"
+            "englishName": "Northern boobook",
+            "subspecies": "アオバズク"
           },
           {
             "japaneseName": "コノハズク",
-            "englishName": "Japanese Scops Owl"
+            "englishName": "Japanese Scops Owl",
+            "subspecies": "リュウキュウコノハズク",
+            "location": "フルスト原"
           }
         ]
       }
@@ -1136,7 +1203,8 @@ export const birdDatabase = [
         "species": [
           {
             "japaneseName": "ライチョウ",
-            "englishName": "Rock Ptarmigan"
+            "englishName": "Rock Ptarmigan",
+            "location": "立石"
           }
         ]
       }
@@ -1150,7 +1218,8 @@ export const birdDatabase = [
         "species": [
           {
             "japaneseName": "ミフウズラ",
-            "englishName": "Barred Buttonquail"
+            "englishName": "Barred Buttonquail",
+            "location": "来間島"
           }
         ]
       }
@@ -1176,7 +1245,8 @@ export const birdDatabase = [
           },
           {
             "japaneseName": "ヤマドリ",
-            "englishName": "Copper Pheasant"
+            "englishName": "Copper Pheasant",
+            "location": "筑波山"
           }
         ]
       }
@@ -1190,7 +1260,9 @@ export const birdDatabase = [
         "species": [
           {
             "japaneseName": "カラスバト",
-            "englishName": "Japanese Wood Pigeon"
+            "englishName": "Japanese Wood Pigeon",
+            "subspecies": "カラスバト",
+            "location": "大野山林"
           },
           {
             "japaneseName": "キジバト",
@@ -1198,15 +1270,18 @@ export const birdDatabase = [
           },
           {
             "japaneseName": "キンバト",
-            "englishName": "Emerald dove"
+            "englishName": "Emerald dove",
+            "location": "大野山林"
           },
           {
             "japaneseName": "アオバト",
-            "englishName": "White-bellied green-pigeon"
+            "englishName": "White-bellied green-pigeon",
+            "location": "青森県深浦町"
           },
           {
             "japaneseName": "ズアカアオバト",
-            "englishName": "Whistling Green Pigeon"
+            "englishName": "Whistling Green Pigeon",
+            "location": "比地"
           },
           {
             "japaneseName": "カワラバト（ドバト）",
@@ -1246,7 +1321,8 @@ export const birdDatabase = [
         "species": [
           {
             "japaneseName": "ハリオアマツバメ",
-            "englishName": "White-throated Needletail"
+            "englishName": "White-throated Needletail",
+            "location": "羅臼"
           },
           {
             "japaneseName": "ヒメアマツバメ",
@@ -1254,7 +1330,8 @@ export const birdDatabase = [
           },
           {
             "japaneseName": "アマツバメ",
-            "englishName": "Pacific Swift"
+            "englishName": "Pacific Swift",
+            "location": "達古武"
           }
         ]
       }
@@ -1268,7 +1345,8 @@ export const birdDatabase = [
         "species": [
           {
             "japaneseName": "ヤマセミ",
-            "englishName": "Crested Kingfisher"
+            "englishName": "Crested Kingfisher",
+            "location": "尾瀬"
           },
           {
             "japaneseName": "カワセミ",
@@ -1276,7 +1354,9 @@ export const birdDatabase = [
           },
           {
             "japaneseName": "アカショウビン",
-            "englishName": "Ruddy Kingfisher"
+            "englishName": "Ruddy Kingfisher",
+            "subspecies": "リュウキュウアカショウビン",
+            "location": "大野山林"
           }
         ]
       }
@@ -1304,7 +1384,8 @@ export const birdDatabase = [
         "species": [
           {
             "japaneseName": "ヤツガシラ",
-            "englishName": "Eurasian Hoopoe"
+            "englishName": "Eurasian Hoopoe",
+            "location": "江戸崎"
           }
         ]
       }
@@ -1318,7 +1399,8 @@ export const birdDatabase = [
         "species": [
           {
             "japaneseName": "クマゲラ",
-            "englishName": "Black Woodpecker"
+            "englishName": "Black Woodpecker",
+            "location": "真駒内"
           },
           {
             "japaneseName": "アオゲラ",
@@ -1326,7 +1408,8 @@ export const birdDatabase = [
           },
           {
             "japaneseName": "ヤマゲラ",
-            "englishName": "Grey-headed Woodpecker"
+            "englishName": "Grey-headed Woodpecker",
+            "location": "丸瀬布"
           },
           {
             "japaneseName": "アリスイ",
@@ -1346,7 +1429,8 @@ export const birdDatabase = [
           },
           {
             "japaneseName": "ノグチゲラ",
-            "englishName": "Okinawa Woodpecker"
+            "englishName": "Okinawa Woodpecker",
+            "location": "比地"
           }
         ]
       }
@@ -1364,7 +1448,8 @@ export const birdDatabase = [
           },
           {
             "japaneseName": "ハマヒバリ",
-            "englishName": "Horned Lark"
+            "englishName": "Horned Lark",
+            "location": "荒尾干潟"
           }
         ]
       }
@@ -1421,7 +1506,9 @@ export const birdDatabase = [
           },
           {
             "japaneseName": "ツメナガセキレイ",
-            "englishName": "Eastern Yellow Wagtail"
+            "englishName": "Eastern Yellow Wagtail",
+            "subspecies": "ツメナガセキレイ",
+            "location": "沖縄"
           }
         ]
       },
@@ -1457,7 +1544,9 @@ export const birdDatabase = [
         "species": [
           {
             "japaneseName": "リュウキュウサンショウクイ",
-            "englishName": "Ryukyu Minivet"
+            "englishName": "Ryukyu Minivet",
+            "subspecies": "リュウキュウサンショウクイ",
+            "location": "辺野喜"
           }
         ]
       }
@@ -1489,15 +1578,18 @@ export const birdDatabase = [
           },
           {
             "japaneseName": "アカモズ",
-            "englishName": "Brown Shrike"
+            "englishName": "Brown Shrike",
+            "subspecies": "シマアカモズ"
           },
           {
             "japaneseName": "タカサゴモズ",
-            "englishName": "Long-tailed Shrike"
+            "englishName": "Long-tailed Shrike",
+            "location": "諫早干拓"
           },
           {
             "japaneseName": "オオカラモズ",
-            "englishName": "Chinese Grey Shrike"
+            "englishName": "Chinese Grey Shrike",
+            "location": "見沼"
           }
         ]
       }
@@ -1571,7 +1663,8 @@ export const birdDatabase = [
         "species": [
           {
             "japaneseName": "コマドリ",
-            "englishName": "Japanese Robin"
+            "englishName": "Japanese Robin",
+            "location": "上高地"
           }
         ]
       },
@@ -1580,7 +1673,9 @@ export const birdDatabase = [
         "species": [
           {
             "japaneseName": "ホントウアカヒゲ",
-            "englishName": "Ryukyu Robin"
+            "englishName": "Ryukyu Robin",
+            "subspecies": "ホントウアカヒゲ",
+            "location": "比地"
           },
           {
             "japaneseName": "アカヒゲ",
@@ -1622,7 +1717,8 @@ export const birdDatabase = [
         "species": [
           {
             "japaneseName": "トラツグミ",
-            "englishName": "Scaly Thrush"
+            "englishName": "Scaly Thrush",
+            "location": "涸沼"
           }
         ]
       },
@@ -1631,7 +1727,9 @@ export const birdDatabase = [
         "species": [
           {
             "japaneseName": "ミナミトラツグミ",
-            "englishName": "Amami Thrush"
+            "englishName": "Amami Thrush",
+            "subspecies": "オオトラツグミ",
+            "location": "奄美"
           },
           {
             "japaneseName": "アカハラ",
@@ -1639,7 +1737,8 @@ export const birdDatabase = [
           },
           {
             "japaneseName": "マミチャジナイ",
-            "englishName": "Eyebrowed Thrush"
+            "englishName": "Eyebrowed Thrush",
+            "location": "丸瀬布"
           },
           {
             "japaneseName": "クロツグミ",
@@ -1651,7 +1750,8 @@ export const birdDatabase = [
           },
           {
             "japaneseName": "ハチジョウツグミ",
-            "englishName": "Naumann's Thrush"
+            "englishName": "Naumann's Thrush",
+            "location": "富山市中央植物園"
           },
           {
             "japaneseName": "ツグミ",
@@ -1669,7 +1769,8 @@ export const birdDatabase = [
         "species": [
           {
             "japaneseName": "ウグイス",
-            "englishName": "Japanese Bush Warbler"
+            "englishName": "Japanese Bush Warbler",
+            "subspecies": "ウグイス"
           },
           {
             "japaneseName": "ヤブサメ",
@@ -1677,7 +1778,8 @@ export const birdDatabase = [
           },
           {
             "japaneseName": "オオセッカ",
-            "englishName": "Marsh Grassbird"
+            "englishName": "Marsh Grassbird",
+            "location": "甘田"
           },
           {
             "japaneseName": "セッカ",
@@ -1709,7 +1811,8 @@ export const birdDatabase = [
           },
           {
             "japaneseName": "シベリアヨシキリ",
-            "englishName": "Arctic Warbler"
+            "englishName": "Arctic Warbler",
+            "location": "北印旛沼"
           }
         ]
       }
@@ -1809,7 +1912,8 @@ export const birdDatabase = [
         "species": [
           {
             "japaneseName": "エナガ",
-            "englishName": "Long-tailed Tit"
+            "englishName": "Long-tailed Tit",
+            "subspecies": "エナガ"
           }
         ]
       }
@@ -1851,7 +1955,8 @@ export const birdDatabase = [
         "species": [
           {
             "japaneseName": "ツリスガラ",
-            "englishName": "Eurasian Penduline Tit"
+            "englishName": "Eurasian Penduline Tit",
+            "location": "今津"
           }
         ]
       }
@@ -1899,7 +2004,8 @@ export const birdDatabase = [
           },
           {
             "japaneseName": "ユキホオジロ",
-            "englishName": "Snow Bunting"
+            "englishName": "Snow Bunting",
+            "location": "野付半島"
           },
           {
             "japaneseName": "アオジ",
@@ -1919,7 +2025,8 @@ export const birdDatabase = [
           },
           {
             "japaneseName": "シベリアジュリン",
-            "englishName": "Pallas's Reed Bunting"
+            "englishName": "Pallas's Reed Bunting",
+            "location": "今津"
           }
         ]
       }
@@ -1949,15 +2056,18 @@ export const birdDatabase = [
           },
           {
             "japaneseName": "オオマシコ",
-            "englishName": "Pallas's Rosefinch"
+            "englishName": "Pallas's Rosefinch",
+            "location": "筑波山"
           },
           {
             "japaneseName": "ハギマシコ",
-            "englishName": "Asian Rosy Finch"
+            "englishName": "Asian Rosy Finch",
+            "location": "筑波山"
           },
           {
             "japaneseName": "イスカ",
-            "englishName": "Red Crossbill"
+            "englishName": "Red Crossbill",
+            "location": "銚子。♀のみ"
           },
           {
             "japaneseName": "ベニマシコ",
@@ -1965,11 +2075,13 @@ export const birdDatabase = [
           },
           {
             "japaneseName": "ウソ",
-            "englishName": "Eurasian Bullfinch"
+            "englishName": "Eurasian Bullfinch",
+            "subspecies": "ウソ"
           },
           {
             "japaneseName": "コイカル",
-            "englishName": "Japanese Grosbeak"
+            "englishName": "Japanese Grosbeak",
+            "location": "秋ヶ瀬"
           },
           {
             "japaneseName": "イカル",
@@ -2021,7 +2133,8 @@ export const birdDatabase = [
           },
           {
             "japaneseName": "シロガシラ",
-            "englishName": "Light-vented Bulbul"
+            "englishName": "Light-vented Bulbul",
+            "location": "沖縄"
           },
           {
             "japaneseName": "インドハッカ",
@@ -2039,15 +2152,18 @@ export const birdDatabase = [
         "species": [
           {
             "japaneseName": "カケス",
-            "englishName": "Eurasian Jay"
+            "englishName": "Eurasian Jay",
+            "subspecies": "カケス"
           },
           {
             "japaneseName": "ルリカケス",
-            "englishName": "Lidth's Jay"
+            "englishName": "Lidth's Jay",
+            "location": "奄美大島"
           },
           {
             "japaneseName": "オナга",
-            "englishName": "Azure-winged Magpie"
+            "englishName": "Azure-winged Magpie",
+            "location": "新潟市"
           },
           {
             "japaneseName": "カササギ",
@@ -2113,7 +2229,8 @@ export const birdDatabase = [
         "species": [
           {
             "japaneseName": "インドクジャク",
-            "englishName": "Indian Peafowl"
+            "englishName": "Indian Peafowl",
+            "location": "大野山林"
           },
           {
             "japaneseName": "コウライキジ",
