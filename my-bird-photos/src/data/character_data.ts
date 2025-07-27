@@ -23,7 +23,7 @@ export const characterData: ICharacterData = {
     description: 'みんなの身近にいる、ちっちゃな友達だよ！',
   },
   'ライチョウ': {
-    image: '/images/characters/Rock/Ptarmigan.png',
+    image: '/images/characters/Rock Ptarmigan.png',
     description: '高山に住む、季節で羽の色が変わる不思議な鳥だよ！',
   },
   'シマフクロウ': {
