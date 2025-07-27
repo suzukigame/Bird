@@ -1,0 +1,32 @@
+# IDE files
+.idea/
+.vscode/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.log
+*.tmp
+*.bak
+*.swp
+*~
+*.swo
+
+# Python specific
+__pycache__/
+*.pyc
+.Python
+venv/
+env/
+
+# Node.js specific (if any outside my-bird-photos)
+node_modules/
+
+# Generated sitemap (if generated outside build folder)
+sitemap.xml
+
+# Other specific files to ignore
+cleanup_dirs.bat
+commit_message.txt

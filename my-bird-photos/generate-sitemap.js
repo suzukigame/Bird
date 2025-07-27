@@ -8,8 +8,8 @@ async function generateSitemap() {
   const sitemap = new SitemapStream({ hostname });
 
   // サイトの各ページのURLを追加
-  sitemap.write({ url: '/', changefreq: 'daily', priority: 1.0 });
-  sitemap.write({ url: '/collection', changefreq: 'weekly', priority: 0.8 });
+  sitemap.write({ url: '/Bird/', changefreq: 'daily', priority: 1.0 });
+  sitemap.write({ url: '/Bird/collection', changefreq: 'weekly', priority: 0.8 });
 
   // 必要に応じて、動的に生成されるページのURLもここに追加
   // 例: 各鳥の詳細ページなど
