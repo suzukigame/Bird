@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { IPhoto } from '../types/photo';
 import { characterData } from '../data/character_data';
+import { useCollection } from '../hooks/useCollection';
 
 interface IPhotoGalleryProps {
   photos: IPhoto[];
@@ -8,6 +9,7 @@ interface IPhotoGalleryProps {
 
 const PhotoGallery: React.FC<IPhotoGalleryProps> = ({ photos }) => {
   const [selectedImage, setSelectedImage] = useState<IPhoto | null>(null);
+  const { addToCollection, isInCollection } = useCollection();
 
   const handleImageClick = (photo: IPhoto) => {
     setSelectedImage(photo);
@@ -22,12 +24,19 @@ const PhotoGallery: React.FC<IPhotoGalleryProps> = ({ photos }) => {
   return (
     <div className="photo-gallery">
       {photos.map((photo) => (
-        <div key={photo.id} className="photo-item" onClick={() => handleImageClick(photo)}>
-          <img src={photo.thumbnail} alt={photo.birdSpecies} />
+        <div key={photo.id} className="photo-item">
+          <img src={photo.thumbnail} alt={photo.birdSpecies} onClick={() => handleImageClick(photo)} />
           <div className="photo-info">
             <h3>{photo.birdSpecies}</h3>
             <p>{photo.prefecture} - {photo.locationDetail}</p>
             <p>{photo.date}</p>
+            <button
+              onClick={() => addToCollection(photo)}
+              disabled={isInCollection(photo.id)}
+              className={isInCollection(photo.id) ? 'added-to-collection' : 'add-to-collection'}
+            >
+              {isInCollection(photo.id) ? '図鑑に追加済み' : '図鑑に追加'}
+            </button>
           </div>
         </div>
       ))}

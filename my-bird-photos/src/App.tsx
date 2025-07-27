@@ -1,4 +1,5 @@
 import React, { useState, useMemo } from 'react';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import './App.css';
 import { prefectures } from './data/prefectures';
 import { photos } from './data/photos';
@@ -9,6 +10,7 @@ import PrefectureSelector from './components/PrefectureSelector';
 import YearSelector from './components/YearSelector';
 import BirdSpeciesSelector from './components/BirdSpeciesSelector';
 import FamilySelector from './components/FamilySelector';
+import CollectionPage from './pages/CollectionPage';
 
 
 function App() {
@@ -73,35 +75,48 @@ function App() {
   }, [filteredPhotos]);
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>GauraBirder奮闘記</h1>
-      </header>
-      <main>
-        <FamilySelector
-          selectedFamily={selectedFamily || ''}
-          onSelectFamily={handleSelectFamily}
-        />
-        <PrefectureSelector
-          prefectures={prefectures}
-          selectedPrefecture={selectedPrefecture}
-          onSelectPrefecture={handleSelectPrefecture}
-        />
-        <YearSelector
-          years={uniqueYears}
-          selectedYear={selectedYear}
-          onSelectYear={handleSelectYear}
-        />
-        <BirdSpeciesSelector
-          birdSpecies={uniqueBirdSpecies}
-          selectedBirdSpecies={selectedBirdSpecies}
-          onSelectBirdSpecies={handleSelectBirdSpecies}
-          selectedFamily={selectedFamily} // Pass selectedFamily prop
-        />
-        <p>見つけた鳥の種類: {foundBirdSpeciesCount} 種類</p>
-        <PhotoGallery photos={filteredPhotos} />
-      </main>
-    </div>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <div className="App">
+        <header className="App-header">
+          <h1>GauraBirder奮闘記</h1>
+          <nav>
+            <Link to="/">ギャラリー</Link>
+            <Link to="/collection">マイ図鑑</Link>
+          </nav>
+        </header>
+        <main>
+          <Routes>
+            <Route path="/" element={
+              <>
+                <FamilySelector
+                  selectedFamily={selectedFamily || ''}
+                  onSelectFamily={handleSelectFamily}
+                />
+                <PrefectureSelector
+                  prefectures={prefectures}
+                  selectedPrefecture={selectedPrefecture}
+                  onSelectPrefecture={handleSelectPrefecture}
+                />
+                <YearSelector
+                  years={uniqueYears}
+                  selectedYear={selectedYear}
+                  onSelectYear={handleSelectYear}
+                />
+                <BirdSpeciesSelector
+                  birdSpecies={uniqueBirdSpecies}
+                  selectedBirdSpecies={selectedBirdSpecies}
+                  onSelectBirdSpecies={handleSelectBirdSpecies}
+                  selectedFamily={selectedFamily} // Pass selectedFamily prop
+                />
+                <p>見つけた鳥の種類: {foundBirdSpeciesCount} 種類</p>
+                <PhotoGallery photos={filteredPhotos} />
+              </>
+            } />
+            <Route path="/collection" element={<CollectionPage />} />
+          </Routes>
+        </main>
+      </div>
+    </BrowserRouter>
   );
 }
 
