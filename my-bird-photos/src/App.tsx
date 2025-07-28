@@ -56,7 +56,7 @@ function App() {
       }
     });
     return Array.from(species).sort();
-  }, [photos, selectedFamily]);
+  }, [photos, selectedFamily, i18n.language]);
 
   const filteredPhotos = useMemo(() => {
     return photos.filter(photo => {
@@ -66,7 +66,7 @@ function App() {
       const matchesFamily = !selectedFamily || photo.family?.ja === selectedFamily;
       return matchesPrefecture && matchesYear && matchesBirdSpecies && matchesFamily;
     });
-  }, [selectedPrefecture, selectedYear, selectedBirdSpecies, selectedFamily]);
+  }, [selectedPrefecture, selectedYear, selectedBirdSpecies, selectedFamily, i18n.language]);
 
   
 
@@ -74,7 +74,7 @@ function App() {
     const uniqueSpecies = new Set<string>();
     filteredPhotos.forEach(photo => uniqueSpecies.add(photo.birdSpecies[i18n.language as keyof typeof photo.birdSpecies]));
     return uniqueSpecies.size;
-  }, [filteredPhotos]);
+  }, [filteredPhotos, i18n.language]);
 
   const changeLanguage = (lng: string) => {
     i18n.changeLanguage(lng);
