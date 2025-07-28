@@ -16,5 +16,13 @@
   "removeFromCollection": "図鑑から削除",
   "myCollectionTitle": "マイ図鑑",
   "noBirdsInCollection": "まだ図鑑に鳥が追加されていません。",
-  "characterEncyclopedia": "キャラ図鑑"
+  "characterEncyclopedia": "キャラ図鑑",
+  "description.stellersSeaEagle": "オオワシは、世界最大の猛禽類の一つで、主に魚を食べます。日本では冬鳥として飛来し、その雄大な姿は多くの人々を魅了します。",
+  "description.komadori": "コマドリは、美しい鳴き声を持つことで知られる小鳥です。日本では夏鳥として山地の渓流沿いに生息し、その姿を見ることは稀です。",
+  "description.whiteTailedEagle": "オジロワシは、ユーラシア大陸に広く分布する大型の猛禽類です。日本では冬鳥として飛来し、白い尾羽が特徴です。",
+  "description.sparrow": "スズメは、世界中で見られる最も身近な鳥の一つです。人里に生息し、穀物や昆虫などを食べます。",
+  "description.rockPtarmigan": "ライチョウは、高山帯に生息する鳥で、冬には全身が白くなることで知られています。日本では特別天然記念物に指定されています。",
+  "description.blakistonsFishOwl": "シマフクロウは、世界最大のフクロウで、主に魚を食べます。日本では北海道にのみ生息し、絶滅危惧種に指定されています。",
+  "description.redCrownedCrane": "タンチョウは、美しい姿と優雅な舞で知られる大型のツルです。日本では北海道に生息し、特別天然記念物に指定されています。",
+  "description.whooperSwan": "オオハクチョウは、大型の白いハクチョウで、冬鳥として日本に飛来します。美しい鳴き声と優雅な姿が特徴です."
 }
