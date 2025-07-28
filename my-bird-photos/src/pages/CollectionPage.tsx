@@ -56,7 +56,7 @@ const CollectionPage: React.FC = () => {
       {selectedImage && (
         <div className="modal-overlay" onClick={handleCloseModal}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-            <img src={process.env.PUBLIC_URL + characterData[selectedImage.birdSpecies.ja]?.image} alt={selectedImage.birdSpecies[i18n.language as keyof typeof selectedImage.birdSpecies]} />
+            <img src={selectedImage.src} alt={selectedImage.birdSpecies[i18n.language as keyof typeof selectedImage.birdSpecies]} />
             <button className="close-button" onClick={handleCloseModal}>&times;</button>
             <div className="modal-info">
               <h3>{selectedImage.birdSpecies[i18n.language as keyof typeof selectedImage.birdSpecies]}</h3>
