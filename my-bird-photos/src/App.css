@@ -42,6 +42,24 @@
   border-radius: 25px;
   transition: all 0.3s ease;
   font-weight: bold;
+  position: relative; /* 下線アニメーションのために必要 */
+  overflow: hidden; /* 下線がはみ出さないように */
+}
+
+.App-header nav a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  transform: translateX(-100%); /* 最初は非表示 */
+  transition: transform 0.3s ease-out;
+}
+
+.App-header nav a:hover::after {
+  transform: translateX(0); /* ホバー時に表示 */
 }
 
 .App-header nav a:hover {
@@ -95,6 +113,8 @@ main {
   background-color: var(--primary-color);
   color: white;
   border-color: var(--primary-color);
+  transform: translateY(-2px) scale(1.02); /* わずかに上に移動し、拡大 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 影を追加 */
 }
 
 .year-selector button.active,
