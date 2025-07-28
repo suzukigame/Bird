@@ -20,7 +20,7 @@ export const useCollection = () => {
       if (isAlreadyInCollection) {
         return prevCollection; // Already in collection, do nothing
       }
-      const newCollection = [...prevCollection, photo];
+      const newCollection = [...prevCollection, photo as ICollectionItem];
       localStorage.setItem(COLLECTION_KEY, JSON.stringify(newCollection));
       return newCollection;
     });

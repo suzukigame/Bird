@@ -3,9 +3,9 @@ export interface ICollectionItem {
   birdSpecies: { ja: string; en: string; zh: string; };
   src: string;
   thumbnail: string;
-  prefecture: string;
+  prefecture: { ja: string; en: string; zh: string; };
   date: string;
-  locationDetail: { ja: string; en: string; zh: string; }; // 修正
-  memo?: { ja: string; en: string; zh: string; }; // 追加
-  family?: string;
+  locationDetail: { ja: string; en: string; zh: string; };
+  memo?: { ja: string; en: string; zh: string; };
+  family?: { ja: string; en: string; zh: string; };
 }
