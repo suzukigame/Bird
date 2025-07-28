@@ -4,8 +4,8 @@ export interface IPhoto {
   thumbnail: string;
   prefecture: string;
   date: string;
-  birdSpecies: { ja: string; en: string; };
-  locationDetail: { ja: string; en: string; }; // Change to object
-  memo?: { ja: string; en: string; }; // Change to object
+  birdSpecies: { ja: string; en: string; zh: string; };
+  locationDetail: { ja: string; en: string; zh: string; }; // Change to object
+  memo?: { ja: string; en: string; zh: string; }; // Change to object
   family?: string;
 }
