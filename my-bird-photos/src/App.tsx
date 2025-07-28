@@ -94,6 +94,7 @@ function App() {
             <select id="language-select" onChange={(e) => changeLanguage(e.target.value)} value={i18n.language}>
               <option value="ja">{t('japanese')}</option>
               <option value="en">{t('english')}</option>
+              <option value="zh">{t('chinese')}</option>
             </select>
           </div>
         </header>
