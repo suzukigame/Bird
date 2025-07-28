@@ -65,6 +65,11 @@ const RadarChart: React.FC<RadarChartProps> = ({ stats }) => {
         ticks: {
           display: false, // 数値を非表示
         },
+        pointLabels: {
+          font: {
+            size: 12, // フォントサイズを調整
+          },
+        },
       },
     },
     plugins: {

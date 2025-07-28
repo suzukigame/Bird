@@ -28,5 +28,11 @@
   "description.rockPtarmigan": "The Rock Ptarmigan is a bird that lives in alpine regions and is known for turning completely white in winter. In Japan, it is designated as a Special Natural Monument.",
   "description.blakistonsFishOwl": "Blakiston's Fish Owl is the world's largest owl, primarily feeding on fish. It lives only in Hokkaido, Japan, and is designated as an endangered species.",
   "description.redCrownedCrane": "The Red-crowned Crane is a large crane known for its beautiful appearance and graceful dance. It lives in Hokkaido, Japan, and is designated as a Special Natural Monument.",
-  "description.whooperSwan": "The Whooper Swan is a large white swan that migrates to Japan as a winter bird. It is characterized by its beautiful singing voice and elegant appearance."
+  "description.whooperSwan": "The Whooper Swan is a large white swan that migrates to Japan as a winter bird. It is characterized by its beautiful singing voice and elegant appearance.",
+  "popularity": "Popularity",
+  "individualCount": "Individual Count",
+  "cuteness": "Cuteness",
+  "coolness": "Coolness",
+  "visibility": "Visibility",
+  "stats": "Stats"
 }
