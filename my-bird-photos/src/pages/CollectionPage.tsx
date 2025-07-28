@@ -41,7 +41,7 @@ const CollectionPage: React.FC = () => {
               <img src={photo.thumbnail} alt={photo.birdSpecies[i18n.language as keyof typeof photo.birdSpecies]} onClick={() => handleImageClick(photo)} />
               <div className="photo-info">
                 <h3>{photo.birdSpecies[i18n.language as keyof typeof photo.birdSpecies]}</h3>
-                <p>{photo.prefecture} - {photo.locationDetail[i18n.language as keyof typeof photo.locationDetail]}</p>
+                <p>{photo.prefecture[i18n.language as keyof typeof photo.prefecture]} - {photo.locationDetail[i18n.language as keyof typeof photo.locationDetail]}</p>
                 <p>{photo.date}</p>
                 <button onClick={() => removeFromCollection(photo.id)} className="remove-from-collection">
                   {t('removeFromCollection')}
@@ -59,7 +59,7 @@ const CollectionPage: React.FC = () => {
             <button className="close-button" onClick={handleCloseModal}>&times;</button>
             <div className="modal-info">
               <h3>{selectedImage.birdSpecies[i18n.language as keyof typeof selectedImage.birdSpecies]}</h3>
-              <p>{selectedImage.prefecture} - {selectedImage.locationDetail[i18n.language as keyof typeof selectedImage.locationDetail]}</p>
+              <p>{selectedImage.prefecture[i18n.language as keyof typeof selectedImage.prefecture]} - {selectedImage.locationDetail[i18n.language as keyof typeof selectedImage.locationDetail]}</p>
               <p>{selectedImage.date}</p>
               {selectedImage.memo && <p>{selectedImage.memo[i18n.language as keyof typeof selectedImage.memo]}</p>}
 
