@@ -3,6 +3,7 @@ import { IPhoto } from '../types/photo';
 import { characterData } from '../data/character_data';
 import { useCollection } from '../hooks/useCollection';
 import { useTranslation } from 'react-i18next';
+import Masonry from 'react-masonry-css'; // Import Masonry
 
 interface IPhotoGalleryProps {
   photos: IPhoto[];
@@ -23,8 +24,19 @@ const PhotoGallery: React.FC<IPhotoGalleryProps> = ({ photos }) => {
 
   const characterInfo = selectedImage ? characterData[selectedImage.birdSpecies.ja] : null;
 
+  // Masonry breakpoints
+  const breakpointColumnsObj = {
+    default: 4,
+    1100: 3,
+    700: 2,
+    500: 1
+  };
+
   return (
-    <div className="photo-gallery">
+    <Masonry
+      breakpointCols={breakpointColumnsObj}
+      className="my-masonry-grid"
+      columnClassName="my-masonry-grid_column">
       {photos.map((photo) => (
         <div key={photo.id} className="photo-item">
           <img src={photo.thumbnail} alt={photo.birdSpecies[i18n.language as keyof typeof photo.birdSpecies]} onClick={() => handleImageClick(photo)} />
@@ -65,7 +77,7 @@ const PhotoGallery: React.FC<IPhotoGalleryProps> = ({ photos }) => {
           </div>
         </div>
       )}
-    </div>
+    </Masonry>
   );
 };
 
