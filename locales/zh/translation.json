@@ -28,5 +28,11 @@
   "description.rockPtarmigan": "岩雷鸟是一种生活在高山地区的鸟类，以冬季全身变白而闻名。在日本，它被指定为特别天然纪念物。",
   "description.blakistonsFishOwl": "毛腿渔鸮是世界上最大的猫头鹰，主要以鱼类为食。它仅在日本北海道栖息，被列为濒危物种。",
   "description.redCrownedCrane": "丹顶鹤是一种以其美丽的外表和优雅的舞蹈而闻名的大型鹤类。它栖息在日本北海道，被指定为特别天然纪念物。",
-  "description.whooperSwan": "大天鹅是一种大型白色天鹅，作为冬候鸟迁徙到日本。它以其美妙的歌声和优雅的外表为特征。"
+  "description.whooperSwan": "大天鹅是一种大型白色天鹅，作为冬候鸟迁徙到日本。它以其美妙的歌声和优雅的外表为特征。",
+  "popularity": "人气",
+  "individualCount": "个体数",
+  "cuteness": "可爱度",
+  "coolness": "帅气度",
+  "visibility": "可见度",
+  "stats": "状态"
 }
