@@ -47,14 +47,16 @@ const RadarChart: React.FC<RadarChartProps> = ({ stats }) => {
           stats.coolness || 0,
           stats.visibility || 0,
         ],
-        backgroundColor: 'rgba(75, 192, 192, 0.2)',
-        borderColor: 'rgba(75, 192, 192, 1)',
-        borderWidth: 1,
+        backgroundColor: 'rgba(0, 191, 255, 0.4)', // 濃い水色
+        borderColor: 'rgba(0, 191, 255, 1)',     // 濃い水色
+        borderWidth: 3, // 線の太さを調整
       },
     ],
   };
 
   const options = {
+    responsive: true,
+    maintainAspectRatio: false,
     scales: {
       r: {
         angleLines: {
@@ -68,6 +70,8 @@ const RadarChart: React.FC<RadarChartProps> = ({ stats }) => {
         pointLabels: {
           font: {
             size: 40, // フォントサイズを調整
+            family: 'Noto Sans JP', // 書体を指定
+            weight: 'bold', // 太字にする
           },
         },
       },
@@ -83,12 +87,16 @@ const RadarChart: React.FC<RadarChartProps> = ({ stats }) => {
       },
       point: {
         radius: 3,
-        backgroundColor: 'rgba(75, 192, 192, 1)',
+        backgroundColor: 'rgba(0, 191, 255, 1)', // 濃い水色
       },
     },
   };
 
-  return <Radar data={data} options={options} />;
+  return (
+    <div style={{ width: '66%', height: '66%', margin: '0 auto' }}> {/* サイズを2/3に縮小 */}
+      <Radar data={data} options={options} />
+    </div>
+  );
 };
 
 export default RadarChart;
