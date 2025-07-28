@@ -72,7 +72,7 @@ const PhotoGallery: React.FC<IPhotoGalleryProps> = ({ photos }) => {
                   <h4>{t('characterEncyclopedia')}</h4>
                   <img src={process.env.PUBLIC_URL + characterInfo.image} alt="Character" className="character-image" />
                   {characterInfo.stats && <RadarChart stats={characterInfo.stats} />}
-                  <p>{t(characterInfo.descriptionKey)}</p>
+                  <p style={{ fontSize: '40px' }}>{t(characterInfo.descriptionKey)}</p>
                 </div>
               )}
             </div>

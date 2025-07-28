@@ -69,7 +69,7 @@ const CollectionPage: React.FC = () => {
                   <h4>{t('characterEncyclopedia')}</h4>
                   <img src={process.env.PUBLIC_URL + characterInfo.image} alt="Character" className="character-image" />
                   {characterInfo.stats && <RadarChart stats={characterInfo.stats} />}
-                  <p>{formatDescription(t(characterInfo.descriptionKey))}</p>
+                  <p style={{ fontSize: '40px' }}>{formatDescription(t(characterInfo.descriptionKey))}</p>
                 </div>
               )}
             </div>
