@@ -45,7 +45,7 @@ function App() {
       years.add(year);
     });
     return Array.from(years).sort();
-  }, []);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   const uniqueBirdSpecies = useMemo(() => {
     const species = new Set<string>();
