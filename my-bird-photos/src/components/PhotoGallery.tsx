@@ -62,7 +62,7 @@ const PhotoGallery: React.FC<IPhotoGalleryProps> = ({ photos }) => {
             <button className="close-button" onClick={handleCloseModal}>&times;</button>
             <div className="modal-info">
               <h3>{selectedImage.birdSpecies[i18n.language as keyof typeof selectedImage.birdSpecies]}</h3>
-              <p>{selectedImage.prefecture} - {selectedImage.locationDetail[i18n.language as keyof typeof selectedImage.locationDetail]}</p>
+              <p>{selectedImage.prefecture[i18n.language as keyof typeof selectedImage.prefecture]} - {selectedImage.locationDetail[i18n.language as keyof typeof selectedImage.locationDetail]}</p>
               <p>{selectedImage.date}</p>
               {selectedImage.memo && <p>{selectedImage.memo[i18n.language as keyof typeof selectedImage.memo]}</p>}
 
