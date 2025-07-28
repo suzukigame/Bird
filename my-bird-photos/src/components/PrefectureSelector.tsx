@@ -15,21 +15,19 @@ const PrefectureSelector: React.FC<IPrefectureSelectorProps> = ({
   const { t } = useTranslation();
   return (
     <div className="prefecture-selector">
-      <button
-        onClick={() => onSelectPrefecture(null)}
-        className={selectedPrefecture === null ? 'active' : ''}
+      <label htmlFor="prefecture-select">{t('filterByPrefecture')}</label>
+      <select
+        id="prefecture-select"
+        value={selectedPrefecture || ''}
+        onChange={(e) => onSelectPrefecture(e.target.value || null)}
       >
-        {t('allPrefectures')}
-      </button>
-      {prefectures.map((prefecture) => (
-        <button
-          key={prefecture}
-          onClick={() => onSelectPrefecture(prefecture)}
-          className={selectedPrefecture === prefecture ? 'active' : ''}
-        >
-          {t(`prefectures.${prefecture}`)}
-        </button>
-      ))}
+        <option value="">{t('allPrefectures')}</option>
+        {prefectures.map((prefecture) => (
+          <option key={prefecture} value={prefecture}>
+            {prefecture}
+          </option>
+        ))}
+      </select>
     </div>
   );
 };

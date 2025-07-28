@@ -2,12 +2,14 @@ import React, { useState } from 'react';
 import { IPhoto } from '../types/photo';
 import { characterData } from '../data/character_data';
 import { useCollection } from '../hooks/useCollection';
+import { useTranslation } from 'react-i18next';
 
 interface IPhotoGalleryProps {
   photos: IPhoto[];
 }
 
 const PhotoGallery: React.FC<IPhotoGalleryProps> = ({ photos }) => {
+  const { t, i18n } = useTranslation();
   const [selectedImage, setSelectedImage] = useState<IPhoto | null>(null);
   const { addToCollection, isInCollection } = useCollection();
 
@@ -28,14 +30,14 @@ const PhotoGallery: React.FC<IPhotoGalleryProps> = ({ photos }) => {
           <img src={photo.thumbnail} alt={photo.birdSpecies} onClick={() => handleImageClick(photo)} />
           <div className="photo-info">
             <h3>{photo.birdSpecies}</h3>
-            <p>{photo.prefecture} - {photo.locationDetail}</p>
+            <p>{photo.prefecture} - {photo.locationDetail[i18n.language as keyof typeof photo.locationDetail]}</p>
             <p>{photo.date}</p>
             <button
               onClick={() => addToCollection(photo)}
               disabled={isInCollection(photo.id)}
               className={isInCollection(photo.id) ? 'added-to-collection' : 'add-to-collection'}
             >
-              {isInCollection(photo.id) ? '図鑑に追加済み' : '図鑑に追加'}
+              {t(isInCollection(photo.id) ? 'addedToCollection' : 'addToCollection')}
             </button>
           </div>
         </div>
@@ -48,13 +50,13 @@ const PhotoGallery: React.FC<IPhotoGalleryProps> = ({ photos }) => {
             <button className="close-button" onClick={handleCloseModal}>&times;</button>
             <div className="modal-info">
               <h3>{selectedImage.birdSpecies}</h3>
-              <p>{selectedImage.prefecture} - {selectedImage.locationDetail}</p>
+              <p>{selectedImage.prefecture} - {selectedImage.locationDetail[i18n.language as keyof typeof selectedImage.locationDetail]}</p>
               <p>{selectedImage.date}</p>
-              {selectedImage.memo && <p>{selectedImage.memo}</p>}
+              {selectedImage.memo && <p>{selectedImage.memo[i18n.language as keyof typeof selectedImage.memo]}</p>}
 
               {characterInfo && (
                 <div className="character-section">
-                  <h4>キャラ図鑑</h4>
+                  <h4>{t('characterEncyclopedia')}</h4>
                   <img src={process.env.PUBLIC_URL + characterInfo.image} alt="Character" className="character-image" />
                   <p>{characterInfo.description}</p>
                 </div>

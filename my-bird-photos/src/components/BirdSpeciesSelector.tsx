@@ -22,21 +22,19 @@ const BirdSpeciesSelector: React.FC<IBirdSpeciesSelectorProps> = ({
 
   return (
     <div className="bird-species-selector">
-      <button
-        onClick={() => onSelectBirdSpecies(null)}
-        className={selectedBirdSpecies === null ? 'active' : ''}
+      <label htmlFor="bird-species-select">{t('filterBySpecies')}</label>
+      <select
+        id="bird-species-select"
+        value={selectedBirdSpecies || ''}
+        onChange={(e) => onSelectBirdSpecies(e.target.value || null)}
       >
-        {t('allBirds')}
-      </button>
-      {filteredBirdSpecies.map((species) => (
-        <button
-          key={species}
-          onClick={() => onSelectBirdSpecies(species)}
-          className={selectedBirdSpecies === species ? 'active' : ''}
-        >
-          {t(`birdSpeciesNames.${species}`)}
-        </button>
-      ))}
+        <option value="">{t('allSpecies')}</option>
+        {filteredBirdSpecies.map((species) => (
+          <option key={species} value={species}>
+            {species}
+          </option>
+        ))}
+      </select>
     </div>
   );
 };

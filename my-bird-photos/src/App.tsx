@@ -4,7 +4,7 @@ import './App.css';
 import { prefectures } from './data/prefectures';
 import { photos } from './data/photos';
 import { birdDatabase } from './data/bird_database';
-import { useTranslation } from 'react-i18next'; // 追加
+import { useTranslation } from 'react-i18next';
 
 import PhotoGallery from './components/PhotoGallery';
 import PrefectureSelector from './components/PrefectureSelector';
@@ -15,7 +15,7 @@ import CollectionPage from './pages/CollectionPage';
 
 
 function App() {
-  const { t, i18n } = useTranslation(); // 追加
+  const { t, i18n } = useTranslation();
   const [selectedPrefecture, setSelectedPrefecture] = useState<string | null>(null);
   const [selectedYear, setSelectedYear] = useState<string | null>(null);
   const [selectedBirdSpecies, setSelectedBirdSpecies] = useState<string | null>(null);
@@ -86,8 +86,8 @@ function App() {
         <header className="App-header">
           <h1>{t('appTitle')}</h1>
           <nav>
-            <Link to="/">{t('home')}</Link>
-            <Link to="/collection">{t('collection')}</Link>
+            <Link to="/">{t('gallery')}</Link>
+            <Link to="/collection">{t('myCollection')}</Link>
           </nav>
           <div className="language-selector">
             <label htmlFor="language-select">{t('language')}: </label>
@@ -121,7 +121,7 @@ function App() {
                   onSelectBirdSpecies={handleSelectBirdSpecies}
                   selectedFamily={selectedFamily} // Pass selectedFamily prop
                 />
-                <p>{t('foundBirdSpecies', { count: foundBirdSpeciesCount })}</p>
+                <p>{t('foundBirdSpeciesCount', { count: foundBirdSpeciesCount })}</p>
                 <PhotoGallery photos={filteredPhotos} />
               </>
             } />

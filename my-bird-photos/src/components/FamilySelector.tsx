@@ -13,7 +13,7 @@ const FamilySelector: React.FC<FamilySelectorProps> = ({ selectedFamily, onSelec
 
   return (
     <div className="family-selector">
-      <label htmlFor="family-select">{t('filterByFamily')}:</label>
+      <label htmlFor="family-select">{t('filterByFamily')}</label>
       <select
         id="family-select"
         value={selectedFamily}
@@ -22,7 +22,7 @@ const FamilySelector: React.FC<FamilySelectorProps> = ({ selectedFamily, onSelec
         <option value="">{t('allFamilies')}</option>
         {families.map((family) => (
           <option key={family} value={family}>
-            {t(`familyNames.${family}`)}
+            {family}
           </option>
         ))}
       </select>

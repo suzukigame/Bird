@@ -12,7 +12,7 @@ with open(bird_db_path, 'r', encoding='utf-8') as f:
     bird_db = json.loads(db_content)
 
 species_info_map = {}
-english_to_japanese_species = {}
+japanese_to_english_species = {}
 for family_entry in bird_db:
     for type_entry in family_entry['types']:
         for species_entry in type_entry['species']:
@@ -21,19 +21,20 @@ for family_entry in bird_db:
             species_info_map[japanese_name] = {
                 'family': family_entry['familyName'],
                 'location': species_entry.get('location', ''),
-                'subspecies': species_entry.get('subspecies', '')
+                'subspecies': species_entry.get('subspecies', ''),
+                'englishName': english_name # Add englishName to map
             }
-            english_to_japanese_species[english_name] = japanese_name
+            japanese_to_english_species[japanese_name] = english_name
 
 # Define prefecture_map globally within the script
 prefecture_map = {
-    'fukuoka': '福岡県',
-    'ibaraki': '茨城県',
-    'saga': '佐賀県',
-    'hokkaido': '北海道',
-    'tochigi': '栃木県',
-    'miyagi': '宮城県',
-    'nagano': '長野県',
+    'fukuoka': {'ja': '福岡県', 'en': 'Fukuoka Prefecture'},
+    'ibaraki': {'ja': '茨城県', 'en': 'Ibaraki Prefecture'},
+    'saga': {'ja': '佐賀県', 'en': 'Saga Prefecture'},
+    'hokkaido': {'ja': '北海道', 'en': 'Hokkaido'},
+    'tochigi': {'ja': '栃木県', 'en': 'Tochigi Prefecture'},
+    'miyagi': {'ja': '宮城県', 'en': 'Miyagi Prefecture'},
+    'nagano': {'ja': '長野県', 'en': 'Nagano Prefecture'},
 }
 
 # 2. List Image Files
@@ -61,18 +62,22 @@ for full_path in all_image_files:
     match = re.match(r'^(\d{8})_([a-zA-Z]+)_([a-zA-Z0-9\s-]+)(?:_\d+)?$', filename_without_ext)
     
     date = ''
-    prefecture = ''
+    prefecture_ja = ''
+    prefecture_en = ''
     english_species_from_filename = ''
     japanese_species = ''
-    location_detail = ''
-    memo = ''
+    location_detail_ja = ''
+    location_detail_en = ''
+    memo_ja = ''
+    memo_en = ''
 
     if match:
         date = match.group(1)[:4] + '-' + match.group(1)[4:6] + '-' + match.group(1)[6:8]
-        prefecture_en = match.group(2)
-        prefecture = prefecture_map.get(prefecture_en.lower(), prefecture_en) # Default to English if not found
+        prefecture_code = match.group(2).lower()
+        prefecture_ja = prefecture_map.get(prefecture_code, {'ja': '', 'en': ''})['ja']
+        prefecture_en = prefecture_map.get(prefecture_code, {'ja': '', 'en': ''})['en']
         english_species_from_filename = match.group(3).replace('_', ' ')
-        japanese_species = english_to_japanese_species.get(english_species_from_filename, family_folder_name) # Fallback to family folder name
+        japanese_species = [jp for jp, en in japanese_to_english_species.items() if en == english_species_from_filename].pop() if [jp for jp, en in japanese_to_english_species.items() if en == english_species_from_filename] else family_folder_name
     else:
         # Fallback if filename doesn't match expected pattern
         # Try to get date from filename if it contains YYYYMMDD
@@ -88,24 +93,27 @@ for full_path in all_image_files:
         # Try to get prefecture from filename
         pref_match_fallback = re.search(r'_(fukuoka|ibaraki|saga|hokkaido|tochigi|miyagi|nagano)', filename_without_ext, re.IGNORECASE)
         if pref_match_fallback:
-            prefecture = prefecture_map.get(pref_match_fallback.group(1).lower(), pref_match_fallback.group(1))
+            prefecture_code = pref_match_fallback.group(1).lower()
+            prefecture_ja = prefecture_map.get(prefecture_code, {'ja': '', 'en': ''})['ja']
+            prefecture_en = prefecture_map.get(prefecture_code, {'ja': '', 'en': ''})['en']
         
         # Use family folder name as birdSpecies if not parsed from filename
         japanese_species = family_folder_name
 
     # Get locationDetail from bird_database if available
-    if japanese_species in species_info_map and species_info_map[japanese_species]['location']:
-        location_detail = species_info_map[japanese_species]['location']
+    if japanese_species in species_info_map:
+        location_detail_ja = species_info_map[japanese_species]['location']
+        location_detail_en = japanese_to_english_species.get(location_detail_ja, '') # This needs proper translation
 
     photos_data.append({
         'id': str(id_counter),
         'src': f'/images/birds/{relative_path}',
         'thumbnail': f'/images/birds/{relative_path}',
-        'prefecture': prefecture,
+        'prefecture': {'ja': prefecture_ja, 'en': prefecture_en},
         'date': date,
         'birdSpecies': japanese_species,
-        'locationDetail': location_detail,
-        'memo': memo, # Memo is empty for now
+        'locationDetail': {'ja': location_detail_ja, 'en': location_detail_en},
+        'memo': {'ja': memo_ja, 'en': memo_en}, # Memo is empty for now
         'family': family_folder_name, # Family is the top-level folder name
     })
     id_counter += 1
@@ -117,8 +125,9 @@ for i, photo in enumerate(photos_data):
     for key, value in photo.items():
         if key == 'src' or key == 'thumbnail':
             photos_ts_content += f"    {key}: process.env.PUBLIC_URL + '{value}',\n"
+        elif isinstance(value, dict):
+            photos_ts_content += f"    {key}: {{ ja: '{value['ja']}', en: '{value['en']}' }},\n"
         else:
-            # Ensure string values are quoted
             photos_ts_content += f"    {key}: '{value}',\n"
     photos_ts_content += f"  }}{',' if i < len(photos_data) - 1 else ''}\n"
 photos_ts_content += f"];\n"

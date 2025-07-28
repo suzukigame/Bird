@@ -5,7 +5,7 @@ export interface IPhoto {
   prefecture: string;
   date: string;
   birdSpecies: string;
-  locationDetail: string;
-  memo?: string;
-  family?: string; // Add family property
+  locationDetail: { ja: string; en: string; }; // Change to object
+  memo?: { ja: string; en: string; }; // Change to object
+  family?: string;
 }
