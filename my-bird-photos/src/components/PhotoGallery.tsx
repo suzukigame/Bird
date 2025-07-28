@@ -21,15 +21,15 @@ const PhotoGallery: React.FC<IPhotoGalleryProps> = ({ photos }) => {
     setSelectedImage(null);
   };
 
-  const characterInfo = selectedImage ? characterData[selectedImage.birdSpecies] : null;
+  const characterInfo = selectedImage ? characterData[selectedImage.birdSpecies.ja] : null;
 
   return (
     <div className="photo-gallery">
       {photos.map((photo) => (
         <div key={photo.id} className="photo-item">
-          <img src={photo.thumbnail} alt={photo.birdSpecies} onClick={() => handleImageClick(photo)} />
+          <img src={photo.thumbnail} alt={photo.birdSpecies[i18n.language as keyof typeof photo.birdSpecies]} onClick={() => handleImageClick(photo)} />
           <div className="photo-info">
-            <h3>{photo.birdSpecies}</h3>
+            <h3>{photo.birdSpecies[i18n.language as keyof typeof photo.birdSpecies]}</h3>
             <p>{photo.prefecture} - {photo.locationDetail[i18n.language as keyof typeof photo.locationDetail]}</p>
             <p>{photo.date}</p>
             <button
@@ -46,10 +46,10 @@ const PhotoGallery: React.FC<IPhotoGalleryProps> = ({ photos }) => {
       {selectedImage && (
         <div className="modal-overlay" onClick={handleCloseModal}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-            <img src={selectedImage.src} alt={selectedImage.birdSpecies} />
+            <img src={selectedImage.src} alt={selectedImage.birdSpecies[i18n.language as keyof typeof selectedImage.birdSpecies]} />
             <button className="close-button" onClick={handleCloseModal}>&times;</button>
             <div className="modal-info">
-              <h3>{selectedImage.birdSpecies}</h3>
+              <h3>{selectedImage.birdSpecies[i18n.language as keyof typeof selectedImage.birdSpecies]}</h3>
               <p>{selectedImage.prefecture} - {selectedImage.locationDetail[i18n.language as keyof typeof selectedImage.locationDetail]}</p>
               <p>{selectedImage.date}</p>
               {selectedImage.memo && <p>{selectedImage.memo[i18n.language as keyof typeof selectedImage.memo]}</p>}

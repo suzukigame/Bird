@@ -52,7 +52,7 @@ function App() {
     photos.forEach(photo => {
       // If no family is selected (null or empty string), include all bird species
       if (!selectedFamily || photo.family === selectedFamily) {
-        species.add(photo.birdSpecies);
+        species.add(photo.birdSpecies[i18n.language as keyof typeof photo.birdSpecies]);
       }
     });
     return Array.from(species).sort();
@@ -62,7 +62,7 @@ function App() {
     return photos.filter(photo => {
       const matchesPrefecture = selectedPrefecture === null || photo.prefecture === selectedPrefecture;
       const matchesYear = selectedYear === null || photo.date.startsWith(selectedYear);
-      const matchesBirdSpecies = selectedBirdSpecies === null || photo.birdSpecies === selectedBirdSpecies;
+      const matchesBirdSpecies = selectedBirdSpecies === null || photo.birdSpecies[i18n.language as keyof typeof photo.birdSpecies] === selectedBirdSpecies;
       const matchesFamily = !selectedFamily || photo.family === selectedFamily;
       return matchesPrefecture && matchesYear && matchesBirdSpecies && matchesFamily;
     });
@@ -72,7 +72,7 @@ function App() {
 
   const foundBirdSpeciesCount = useMemo(() => {
     const uniqueSpecies = new Set<string>();
-    filteredPhotos.forEach(photo => uniqueSpecies.add(photo.birdSpecies));
+    filteredPhotos.forEach(photo => uniqueSpecies.add(photo.birdSpecies[i18n.language as keyof typeof photo.birdSpecies]));
     return uniqueSpecies.size;
   }, [filteredPhotos]);
 
