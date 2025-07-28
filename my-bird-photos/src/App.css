@@ -1,10 +1,10 @@
 :root {
-  --primary-color: #4CAF50; /* 緑系 */
-  --secondary-color: #FFC107; /* 黄色系 */
-  --text-color: #333;
-  --light-gray: #f8f8f8;
-  --medium-gray: #ddd;
-  --dark-gray: #666;
+  --primary-color: #5F7C4B; /* 落ち着いたフォレストグリーン */
+  --secondary-color: #D4B996; /* ソフトなベージュ/ゴールド */
+  --text-color: #333333;
+  --light-gray: #F5F5F5;
+  --medium-gray: #CCCCCC;
+  --dark-gray: #555555;
 }
 
 .App {
