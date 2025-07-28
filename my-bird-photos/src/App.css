@@ -263,7 +263,7 @@ main {
 
 /* Character Description Text */
 .description-text {
-  font-size: 40px; /* PC版のデフォルトサイズ */
+  font-size: 24px; /* PC版のデフォルトサイズ */
   line-height: 1.5;
   color: var(--dark-gray);
   text-align: left; /* 必要に応じて調整 */
@@ -324,7 +324,7 @@ main {
   }
 
   .description-text {
-    font-size: 20px; /* スマホ版での調整 */
+    font-size: 18px; /* スマホ版での調整 */
   }
 }
 
