@@ -67,7 +67,7 @@ const RadarChart: React.FC<RadarChartProps> = ({ stats }) => {
         },
         pointLabels: {
           font: {
-            size: 12, // フォントサイズを調整
+            size: 40, // フォントサイズを調整
           },
         },
       },
