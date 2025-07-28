@@ -5,6 +5,7 @@ export interface ICollectionItem {
   thumbnail: string;
   prefecture: string;
   date: string;
-  locationDetail: string; // Add locationDetail property
+  locationDetail: { ja: string; en: string; }; // 修正
+  memo?: { ja: string; en: string; }; // 追加
   family?: string;
 }
