@@ -261,6 +261,14 @@ main {
   color: var(--primary-color);
 }
 
+/* Character Description Text */
+.description-text {
+  font-size: 40px; /* PC版のデフォルトサイズ */
+  line-height: 1.5;
+  color: var(--dark-gray);
+  text-align: left; /* 必要に応じて調整 */
+}
+
 /* レスポンシブデザイン */
 @media (max-width: 768px) {
   .App-header h1 {
@@ -282,13 +290,13 @@ main {
   }
 
   .photo-gallery {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 15px;
+    /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
+    /* gap: 15px; */
     padding: 15px;
   }
 
   .photo-item img {
-    height: 150px;
+    /* height: 150px; */
   }
 
   .photo-info h3 {
@@ -314,6 +322,10 @@ main {
   .modal-info p {
     font-size: 0.9em;
   }
+
+  .description-text {
+    font-size: 20px; /* スマホ版での調整 */
+  }
 }
 
 @media (max-width: 480px) {
@@ -335,6 +347,10 @@ main {
   }
 
   .photo-gallery {
-    grid-template-columns: 1fr;
+    /* grid-template-columns: 1fr; */
+  }
+
+  .description-text {
+    font-size: 16px; /* さらに小さい画面での調整 */
   }
 }
