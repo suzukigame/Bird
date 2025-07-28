@@ -1,6 +1,6 @@
 export interface ICollectionItem {
   id: string;
-  birdSpecies: string;
+  birdSpecies: { ja: string; en: string; };
   src: string;
   thumbnail: string;
   prefecture: string;
