@@ -38,6 +38,7 @@ function App() {
     setSelectedBirdSpecies(null); // Reset bird species when family changes
   };
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const uniqueYears = useMemo(() => {
     const years = new Set<string>();
     photos.forEach(photo => {
@@ -45,7 +46,7 @@ function App() {
       years.add(year);
     });
     return Array.from(years).sort();
-  }, []); // eslint-disable-line react-hooks/exhaustive-deps // eslint-disable-line react-hooks/exhaustive-deps
+  }, []);
 
   const uniqueBirdSpecies = useMemo(() => {
     const species = new Set<string>();
