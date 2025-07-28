@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import './App.css';
 import { prefectures } from './data/prefectures';
 import { photos } from './data/photos';
-import { birdDatabase } from './data/bird_database';
+import { birdDatabase } from './data/bird_database'; // eslint-disable-line @typescript-eslint/no-unused-vars
 import { useTranslation } from 'react-i18next';
 
 import PhotoGallery from './components/PhotoGallery';
@@ -45,7 +45,7 @@ function App() {
       years.add(year);
     });
     return Array.from(years).sort();
-  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps // eslint-disable-line react-hooks/exhaustive-deps
 
   const uniqueBirdSpecies = useMemo(() => {
     const species = new Set<string>();
