@@ -60,7 +60,7 @@ function App() {
 
   const filteredPhotos = useMemo(() => {
     return photos.filter(photo => {
-      const matchesPrefecture = selectedPrefecture === null || photo.prefecture === selectedPrefecture;
+      const matchesPrefecture = selectedPrefecture === null || photo.prefecture[i18n.language as keyof typeof photo.prefecture] === selectedPrefecture;
       const matchesYear = selectedYear === null || photo.date.startsWith(selectedYear);
       const matchesBirdSpecies = selectedBirdSpecies === null || photo.birdSpecies[i18n.language as keyof typeof photo.birdSpecies] === selectedBirdSpecies;
       const matchesFamily = !selectedFamily || photo.family?.ja === selectedFamily;
