@@ -51,7 +51,7 @@ function App() {
     const species = new Set<string>();
     photos.forEach(photo => {
       // If no family is selected (null or empty string), include all bird species
-      if (!selectedFamily || photo.family === selectedFamily) {
+      if (!selectedFamily || photo.family?.ja === selectedFamily) {
         species.add(photo.birdSpecies[i18n.language as keyof typeof photo.birdSpecies]);
       }
     });
@@ -63,7 +63,7 @@ function App() {
       const matchesPrefecture = selectedPrefecture === null || photo.prefecture === selectedPrefecture;
       const matchesYear = selectedYear === null || photo.date.startsWith(selectedYear);
       const matchesBirdSpecies = selectedBirdSpecies === null || photo.birdSpecies[i18n.language as keyof typeof photo.birdSpecies] === selectedBirdSpecies;
-      const matchesFamily = !selectedFamily || photo.family === selectedFamily;
+      const matchesFamily = !selectedFamily || photo.family?.ja === selectedFamily;
       return matchesPrefecture && matchesYear && matchesBirdSpecies && matchesFamily;
     });
   }, [selectedPrefecture, selectedYear, selectedBirdSpecies, selectedFamily]);
