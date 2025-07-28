@@ -39,16 +39,19 @@ export const birdDatabase = [
         "species": [
           {
             "japaneseName": "アビ",
+            "chineseName": "红喉潜鸟",
             "englishName": "Red-throated Diver",
             "location": "大洗漁港"
           },
           {
             "japaneseName": "シロエリオオハム",
+            "chineseName": "太平洋潜鸟",
             "englishName": "Pacific Diver",
             "location": "大洗漁港"
           },
           {
             "japaneseName": "ハシジロアビ",
+            "chineseName": "黄嘴潜鸟",
             "englishName": "White-billed Diver",
             "location": "会瀬漁港"
           }
@@ -64,22 +67,27 @@ export const birdDatabase = [
         "species": [
           {
             "japaneseName": "カンムリカイツブリ",
+            "chineseName": "凤头䴙䴘",
             "englishName": "Great Crested Grebe"
           },
           {
             "japaneseName": "アカエリカイツブリ",
+            "chineseName": "赤颈䴙䴘",
             "englishName": "Red-necked grebe"
           },
           {
             "japaneseName": "ミミカイツブリ",
+            "chineseName": "角䴙䴘",
             "englishName": "Horned Grebe"
           },
           {
             "japaneseName": "ハジロカイツブリ",
+            "chineseName": "黑颈鸊鷉",
             "englishName": "Black-necked Grebe"
           },
           {
             "japaneseName": "カイツブリ",
+            "chineseName": "小鸊鷉",
             "englishName": "Little grebe"
           }
         ]
@@ -94,18 +102,22 @@ export const birdDatabase = [
         "species": [
           {
             "japaneseName": "カワウ",
+            "chineseName": "鸬鹚",
             "englishName": "Great Cormorant"
           },
           {
             "japaneseName": "ウミウ",
+            "chineseName": "海鸬鹚",
             "englishName": "Japanese Cormorant"
           },
           {
             "japaneseName": "ヒメウ",
+            "chineseName": "海鸕鶿",
             "englishName": "Pelagic Cormorant"
           },
           {
             "japaneseName": "チシマウガラス",
+            "chineseName": "花魁鸟",
             "englishName": "Red-faced Cormorant",
             "location": "磯崎"
           }
@@ -121,6 +133,7 @@ export const birdDatabase = [
         "species": [
           {
             "japaneseName": "コブハクチョウ",
+            "chineseName": "疣鼻天鹅",
             "englishName": "Mute Swan"
           }
         ]
@@ -130,10 +143,12 @@ export const birdDatabase = [
         "species": [
           {
             "japaneseName": "オオハクチョウ",
+            "chineseName": "大天鹅",
             "englishName": "Whooper swan"
           },
           {
             "japaneseName": "コハクチョウ",
+            "chineseName": "小天鹅",
             "englishName": "Tundra swan"
           }
         ]
@@ -143,6 +158,7 @@ export const birdDatabase = [
         "species": [
           {
             "japaneseName": "シジュウカラガン",
+            "chineseName": "小美洲黑雁",
             "englishName": "Cackling goose",
             "location": "伊豆沼、浦幌"
           }
@@ -153,21 +169,25 @@ export const birdDatabase = [
         "species": [
           {
             "japaneseName": "コクガン",
+            "chineseName": "黑雁",
             "englishName": "Brant",
             "location": "会瀬漁港、野付半島"
           },
           {
             "japaneseName": "ハクガン",
+            "chineseName": "白額雁",
             "englishName": "Snow goose",
             "location": "伊豆沼、浦幌"
           },
           {
             "japaneseName": "マガン",
+            "chineseName": "斑头雁",
             "englishName": "Greater white-fronted goose",
             "location": "伊豆沼"
           },
           {
             "japaneseName": "ヒシクイ",
+            "chineseName": "豆雁",
             "englishName": "Bean goose",
             "subspecies": "ヒシクイ",
             "location": "東よか、浦幌"
@@ -179,6 +199,7 @@ export const birdDatabase = [
         "species": [
           {
             "japaneseName": "ツクシガモ",
+            "chineseName": "翘鼻麻鸭",
             "englishName": "Common Shelduck"
           }
         ]
@@ -188,6 +209,7 @@ export const birdDatabase = [
         "species": [
           {
             "japaneseName": "アカツクシガモ",
+            "chineseName": "赤麻鴨",
             "englishName": "Ruddy shelduck",
             "location": "白石町"
           }
@@ -198,6 +220,7 @@ export const birdDatabase = [
         "species": [
           {
             "japaneseName": "マガモ",
+            "chineseName": "绿头鸭",
             "englishName": "Mallard"
           }
         ]
@@ -207,48 +230,59 @@ export const birdDatabase = [
         "species": [
           {
             "japaneseName": "カルガモ",
+            "chineseName": "斑嘴鸭",
             "englishName": "Eastern Spot-billed Duck"
           },
           {
             "japaneseName": "ハシビロガモ",
+            "chineseName": "琵嘴鸭",
             "englishName": "Northern Shoveler"
           },
           {
             "japaneseName": "コガモ",
+            "chineseName": "绿翅鸭",
             "englishName": "Common Teal",
             "subspecies": "コガモ"
           },
           {
             "japaneseName": "シマアジ",
+            "chineseName": "黄带拟鲹",
             "englishName": "Garganey"
           },
           {
             "japaneseName": "トモエガモ",
+            "chineseName": "花脸鸭",
             "englishName": "Baikal teal",
             "location": "曲渕"
           },
           {
             "japaneseName": "オシドリ",
+            "chineseName": "鴛鴦",
             "englishName": "Mandarin duck"
           },
           {
             "japaneseName": "ヨシガモ",
+            "chineseName": "罗纹鸭",
             "englishName": "Falcated duck"
           },
           {
             "japaneseName": "オカヨシガモ",
+            "chineseName": "赤膀鸭",
             "englishName": "Gadwall"
           },
           {
             "japaneseName": "オナガガモ",
+            "chineseName": "尖尾鸭",
             "englishName": "Northern Pintail"
           },
           {
             "japaneseName": "ヒドリガモ",
+            "chineseName": "赤颈鸭",
             "englishName": "Eurasian Wigeon"
           },
           {
             "japaneseName": "アメリカヒドリ",
+            "chineseName": "美洲赤颈鸭",
             "englishName": "American Wigeon",
             "subspecies": "アメリカヒドリxヒドリガモ(交雑)"
           }
@@ -259,6 +293,7 @@ export const birdDatabase = [
         "species": [
           {
             "japaneseName": "ホシハジロ",
+            "chineseName": "紅頭潛鴨",
             "englishName": "Common pochard"
           }
         ]
@@ -268,34 +303,42 @@ export const birdDatabase = [
         "species": [
           {
             "japaneseName": "オオホシハジロ",
+            "chineseName": "帆背潜鴨",
             "englishName": "Canvasback"
           },
           {
             "japaneseName": "ホオジロガモ",
+            "chineseName": "鵲鴨",
             "englishName": "Common Goldeneye"
           },
           {
             "japaneseName": "キンクロハジロ",
+            "chineseName": "凤头潜鸭",
             "englishName": "Tufted duck"
           },
           {
             "japaneseName": "スズガモ",
+            "chineseName": "斑背潜鸭",
             "englishName": "Greater Scaup"
           },
           {
             "japaneseName": "シノリガモ",
+            "chineseName": "丑鴨",
             "englishName": "Harlequin duck"
           },
           {
             "japaneseName": "クロガモ",
+            "chineseName": "黑海鸭",
             "englishName": "Black scoter"
           },
           {
             "japaneseName": "ビロードキンクロ",
+            "chineseName": "斑脸海番鸭",
             "englishName": "Velvet scoter"
           },
           {
             "japaneseName": "コオリガモ",
+            "chineseName": "长尾鸭",
             "englishName": "Long-tailed Duck"
           }
         ]
@@ -305,6 +348,7 @@ export const birdDatabase = [
         "species": [
           {
             "japaneseName": "ミコアイサ",
+            "chineseName": "白秋沙鴨",
             "englishName": "Smew"
           }
         ]
@@ -314,10 +358,12 @@ export const birdDatabase = [
         "species": [
           {
             "japaneseName": "ウミアイサ",
+            "chineseName": "普通秋沙鸭",
             "englishName": "Red-breasted Merganser"
           },
           {
             "japaneseName": "カワアイサ",
+            "chineseName": "普通秋沙鸭",
             "englishName": "Common Merganser"
           }
         ]
@@ -327,6 +373,7 @@ export const birdDatabase = [
         "species": [
           {
             "japaneseName": "ケイマフリ",
+            "chineseName": "白眶海鸽",
             "englishName": "Spectacled Guillemot",
             "location": "斜里町"
           }
@@ -337,16 +384,19 @@ export const birdDatabase = [
         "species": [
           {
             "japaneseName": "ウミガラス",
+            "chineseName": "崖海鸦",
             "englishName": "Common Murre",
             "location": "天売島"
           },
           {
             "japaneseName": "ウミスズメ",
+            "chineseName": "海雀",
             "englishName": "Ancient murrelet",
             "location": "天売島"
           },
           {
             "japaneseName": "カンムリウミスズメ",
+            "chineseName": "冠海雀",
             "englishName": "Japanese Murrelet",
             "location": "門川"
           }
@@ -362,6 +412,7 @@ export const birdDatabase = [
         "species": [
           {
             "japaneseName": "アホウドリ",
+            "chineseName": "信天翁",
             "englishName": "Short-tailed albatross"
           }
         ]
@@ -371,10 +422,12 @@ export const birdDatabase = [
         "species": [
           {
             "japaneseName": "コアホウドリ",
+            "chineseName": "黑背信天翁",
             "englishName": "Laysan albatross"
           },
           {
             "japaneseName": "クロアシアホウドリ",
+            "chineseName": "黑脚信天翁",
             "englishName": "Black-footed albatross"
           }
         ]
@@ -389,6 +442,7 @@ export const birdDatabase = [
         "species": [
           {
             "japaneseName": "フルマカモメ",
+            "chineseName": "管鼻鸌",
             "englishName": "Northern Fulmar"
           }
         ]
@@ -398,19 +452,23 @@ export const birdDatabase = [
         "species": [
           {
             "japaneseName": "オオミズナギドリ",
+            "chineseName": "白額鸌",
             "englishName": "Streaked Shearwater",
             "location": "銚子"
           },
           {
             "japaneseName": "ハシボソミズナギドリ",
+            "chineseName": "短尾鹱",
             "englishName": "Short-tailed Shearwater"
           },
           {
             "japaneseName": "ハジロミズナギドリ",
+            "chineseName": "白额圆尾鹱",
             "englishName": "Providence petrel"
           },
           {
             "japaneseName": "オナガミズナギドリ",
+            "chineseName": "曳尾鹱",
             "englishName": "Wedge-tailed shearwater"
           }
         ]
@@ -425,6 +483,7 @@ export const birdDatabase = [
         "species": [
           {
             "japaneseName": "オーストンウミツバメ",
+            "chineseName": "褐翅叉尾海燕",
             "englishName": "Tristram's storm-petrel"
           }
         ]
@@ -439,6 +498,7 @@ export const birdDatabase = [
         "species": [
           {
             "japaneseName": "トウゾクカモメ",
+            "chineseName": "贼鸥",
             "englishName": "Pomarine skua"
           }
         ]
@@ -453,6 +513,7 @@ export const birdDatabase = [
         "species": [
           {
             "japaneseName": "オオセグロカモメ",
+            "chineseName": "灰背鸥",
             "englishName": "Slaty-backed Gull"
           }
         ]
@@ -462,40 +523,49 @@ export const birdDatabase = [
         "species": [
           {
             "japaneseName": "セグロカモメ",
+            "chineseName": "灰背鸥",
             "englishName": "Herring Gull"
           },
           {
             "japaneseName": "ウミネコ",
+            "chineseName": "黑尾鸥",
             "englishName": "Black-tailed gull"
           },
           {
             "japaneseName": "ワシカモメ",
+            "chineseName": "灰翅鸥",
             "englishName": "Glaucous-winged Gull"
           },
           {
             "japaneseName": "シロカモメ",
+            "chineseName": "北极鸥",
             "englishName": "Glaucous Gull",
             "location": "羅臼"
           },
           {
             "japaneseName": "カモメ",
+            "chineseName": "海鸥",
             "englishName": "Common gull"
           },
           {
             "japaneseName": "ズグロカモメ",
+            "chineseName": "红嘴鸥",
             "englishName": "Saunders's gull",
             "location": "東よか"
           },
           {
             "japaneseName": "ユリカモメ",
+            "chineseName": "红嘴鸥",
             "englishName": "Black-headed Gull"
           },
           {
             "japaneseName": "ミツユビカモメ",
+            "chineseName": "三趾鸥",
             "englishName": "Black-legged kittiwake"
           },
           {
             "japaneseName": "ギンカモメ",
+            "chineseName": "银鸥",
             "englishName": "Silver gull",
             "location": "新川河口"
           }
@@ -506,6 +576,7 @@ export const birdDatabase = [
         "species": [
           {
             "japaneseName": "アジサシ",
+            "chineseName": "燕鸥",
             "englishName": "Common Tern"
           }
         ]
@@ -515,33 +586,40 @@ export const birdDatabase = [
         "species": [
           {
             "japaneseName": "ベニアジサシ",
+            "chineseName": "粉红燕鸥",
             "englishName": "Roseate Tern",
             "location": "石垣大原航路"
           },
           {
             "japaneseName": "エリグロアジサシ",
+            "chineseName": "黑枕燕鸥",
             "englishName": "Black-naped Tern"
           },
           {
             "japaneseName": "コアジサシ",
+            "chineseName": "白额燕鸥",
             "englishName": "Little Tern"
           },
           {
             "japaneseName": "オニアジサシ",
+            "chineseName": "红嘴巨燕鸥",
             "englishName": "Caspian Tern",
             "location": "三番瀬"
           },
           {
             "japaneseName": "オオアジサシ",
+            "chineseName": "大凤头燕鸥",
             "englishName": "Greater crested tern",
             "location": "石垣大原航路"
           },
           {
             "japaneseName": "ハシグロクロハラアジサシ",
+            "chineseName": "黑浮鸥",
             "englishName": "Black Tern"
           },
           {
             "japaneseName": "クロハラアジサシ",
+            "chineseName": "黑腹燕鸥",
             "englishName": "Whiskered Tern"
           }
         ]
@@ -556,6 +634,7 @@ export const birdDatabase = [
         "species": [
           {
             "japaneseName": "カツオドリ",
+            "chineseName": "鲣鸟",
             "englishName": "Brown booby",
             "location": "二見ヶ浦"
           }
@@ -566,11 +645,13 @@ export const birdDatabase = [
         "species": [
           {
             "japaneseName": "アカアシカツオドリ",
+            "chineseName": "红脚鲣鸟",
             "englishName": "Red-footed booby",
             "location": "三番瀬"
           },
           {
             "japaneseName": "ナスカカツオドリ",
+            "chineseName": "橙嘴鲣鸟",
             "englishName": "Nazca booby"
           }
         ]
@@ -585,64 +666,78 @@ export const birdDatabase = [
         "species": [
           {
             "japaneseName": "ヨシゴイ",
+            "chineseName": "黄斑苇鳽",
             "englishName": "Yellow Bittern"
           },
           {
             "japaneseName": "リュウキュウヨシゴイ",
+            "chineseName": "栗苇鳽",
             "englishName": "Cinnamon Bittern",
             "location": "平田原"
           },
           {
             "japaneseName": "ミゾゴイ",
+            "chineseName": "栗头鳽",
             "englishName": "Japanese night heron",
             "location": "大野山林"
           },
           {
             "japaneseName": "ズグロミゾゴイ",
+            "chineseName": "黑冠鳽",
             "englishName": "Malayan Night Heron",
             "location": "アンパル"
           },
           {
             "japaneseName": "ゴイサギ",
+            "chineseName": "夜鷺",
             "englishName": "Black-crowned night heron"
           },
           {
             "japaneseName": "ササゴイ",
+            "chineseName": "绿蓑鹭",
             "englishName": "Striated heron",
             "location": "諏訪湖"
           },
           {
             "japaneseName": "アカガシラサギ",
+            "chineseName": "池鹭",
             "englishName": "Chinese pond heron",
             "location": "土浦"
           },
           {
             "japaneseName": "アマサギ",
+            "chineseName": "牛背鹭",
             "englishName": "Cattle egret"
           },
           {
             "japaneseName": "コサギ",
+            "chineseName": "小白鹭",
             "englishName": "Little egret"
           },
           {
             "japaneseName": "チュウサギ",
+            "chineseName": "中白鷺",
             "englishName": "Intermediate egret"
           },
           {
             "japaneseName": "ダイサギ",
+            "chineseName": "大白鹭",
             "englishName": "Great egret"
           },
           {
             "japaneseName": "クロサギ",
+            "chineseName": "黑鹭",
             "englishName": "Pacific reef heron",
             "location": "佐渡島"
           },
           {
             "japaneseName": "アオサギ",
+            "chineseName": "苍鹭",
             "englishName": "Grey heron"
           },
           {
             "japaneseName": "ムラサキサギ",
+            "chineseName": "紫鷺",
             "englishName": "Purple heron",
             "location": "池間島"
           }
@@ -658,6 +753,7 @@ export const birdDatabase = [
         "species": [
           {
             "japaneseName": "コウノトリ",
+            "chineseName": "鹳",
             "englishName": "Oriental stork"
           }
         ]
@@ -672,14 +768,17 @@ export const birdDatabase = [
         "species": [
           {
             "japaneseName": "トキ",
+            "chineseName": "朱鹮",
             "englishName": "Crested ibis"
           },
           {
             "japaneseName": "ヘラサギ",
+            "chineseName": "白琵鹭",
             "englishName": "Eurasian Spoonbill"
           },
           {
             "japaneseName": "クロツラヘラサギ",
+            "chineseName": "黑脸琵鹭",
             "englishName": "Black-faced spoonbill"
           }
         ]
@@ -694,28 +793,34 @@ export const birdDatabase = [
         "species": [
           {
             "japaneseName": "クロヅル",
+            "chineseName": "灰鹤",
             "englishName": "Common Crane"
           },
           {
             "japaneseName": "ナベヅル",
+            "chineseName": "白头鹤",
             "englishName": "Hooded crane",
             "subspecies": "ナベヅル",
             "location": "出水"
           },
           {
             "japaneseName": "カナダヅル",
+            "chineseName": "沙丘鹤",
             "englishName": "Sandhill Crane"
           },
           {
             "japaneseName": "タンチョウ",
+            "chineseName": "丹頂鶴",
             "englishName": "Red-crowned crane"
           },
           {
             "japaneseName": "ソデグロヅル",
+            "chineseName": "白鶴",
             "englishName": "Siberian Crane"
           },
           {
             "japaneseName": "マナヅル",
+            "chineseName": "白枕鹤",
             "englishName": "White-necked crane",
             "location": "出水"
           }
@@ -731,32 +836,39 @@ export const birdDatabase = [
         "species": [
           {
             "japaneseName": "オオバン",
+            "chineseName": "白骨顶",
             "englishName": "Common coot"
           },
           {
             "japaneseName": "バン",
+            "chineseName": "鷭",
             "englishName": "Common Moorhen"
           },
           {
             "japaneseName": "クイナ",
+            "chineseName": "白喉斑秧鸡",
             "englishName": "Water rail"
           },
           {
             "japaneseName": "ヒクイナ",
+            "chineseName": "红胸田鸡",
             "englishName": "Ruddy-breasted crake"
           },
           {
             "japaneseName": "ヤンバルクイナ",
+            "chineseName": "沖繩秧雞",
             "englishName": "Okinawa rail",
             "location": "比地"
           },
           {
             "japaneseName": "オオクイナ",
+            "chineseName": "灰腳秧雞",
             "englishName": "Slaty-legged Crake",
             "location": "大野山林"
           },
           {
             "japaneseName": "シロハラクイナ",
+            "chineseName": "白腹秧雞",
             "englishName": "White-breasted Waterhen",
             "location": "来間島"
           }
@@ -772,6 +884,7 @@ export const birdDatabase = [
         "species": [
           {
             "japaneseName": "ミヤコドリ",
+            "chineseName": "蛎鹬",
             "englishName": "Eurasian Oystercatcher"
           }
         ]
@@ -786,39 +899,48 @@ export const birdDatabase = [
         "species": [
           {
             "japaneseName": "コチドリ",
+            "chineseName": "金眶鸻",
             "englishName": "Little ringed Plover"
           },
           {
             "japaneseName": "イカルチドリ",
+            "chineseName": "金眶鸻",
             "englishName": "Long-billed Plover"
           },
           {
             "japaneseName": "メダイチドリ",
+            "chineseName": "环颈鸻",
             "englishName": "Lesser Sand Plover"
           },
           {
             "japaneseName": "オオメダイチドリ",
+            "chineseName": "铁嘴沙鸻",
             "englishName": "Greater Sand Plover",
             "location": "新川"
           },
           {
             "japaneseName": "シロチドリ",
+            "chineseName": "环颈鸻",
             "englishName": "Kentish Plover"
           },
           {
             "japaneseName": "ムナグロ",
+            "chineseName": "太平洋金斑鸻",
             "englishName": "Pacific Golden Plover"
           },
           {
             "japaneseName": "ダイゼン",
+            "chineseName": "灰斑",
             "englishName": "Grey plover"
           },
           {
             "japaneseName": "タゲリ",
+            "chineseName": "凤头麦鸡",
             "englishName": "Northern lapwing"
           },
           {
             "japaneseName": "ケリ",
+            "chineseName": "灰头麦鸡",
             "englishName": "Grey-headed lapwing"
           }
         ]
@@ -833,6 +955,7 @@ export const birdDatabase = [
         "species": [
           {
             "japaneseName": "ツバメチドリ",
+            "chineseName": "普通燕鸻",
             "englishName": "Oriental pratincole",
             "location": "来間島"
           }
@@ -848,137 +971,170 @@ export const birdDatabase = [
         "species": [
           {
             "japaneseName": "トウネン",
+            "chineseName": "红颈滨鹬",
             "englishName": "Red-necked Stint"
           },
           {
             "japaneseName": "オジロトウネン",
+            "chineseName": "小濱鷸",
             "englishName": "Temminick's Stint",
             "location": "浮島"
           },
           {
             "japaneseName": "ヨーロッパトウネン",
+            "chineseName": "小滨鹬",
             "englishName": "Little Stint"
           },
           {
             "japaneseName": "ヒバリシギ",
+            "chineseName": "长趾滨鹬",
             "englishName": "Long-toed Stint",
             "location": "浮島"
           },
           {
             "japaneseName": "ウズラシギ",
+            "chineseName": "尖尾滨鹬",
             "englishName": "Sharp-tailed Sandpiper"
           },
           {
             "japaneseName": "アメリカウズラシギ",
+            "chineseName": "斑胸滨鹬",
             "englishName": "Pectoral Sandpiper"
           },
           {
             "japaneseName": "キリアイ",
+            "chineseName": "阔嘴鹬",
             "englishName": "Broad-billed Sandpiper"
           },
           {
             "japaneseName": "ハマシギ",
+            "chineseName": "黒腹濱鷸",
             "englishName": "Dunlin"
           },
           {
             "japaneseName": "ミユビシギ",
+            "chineseName": "三趾鹬",
             "englishName": "Sanderling"
           },
           {
             "japaneseName": "オバシギ",
+            "chineseName": "大滨鹬",
             "englishName": "Great Knot"
           },
           {
             "japaneseName": "コオバシギ",
+            "chineseName": "弯嘴滨鹬",
             "englishName": "Red Knot"
           },
           {
             "japaneseName": "エリマキシギ",
+            "chineseName": "流蘇鷸",
             "englishName": "Ruff"
           },
           {
             "japaneseName": "タカブシギ",
+            "chineseName": "扇尾沙锥",
             "englishName": "Wood Sandpiper"
           },
           {
             "japaneseName": "クサシギ",
+            "chineseName": "林鹬",
             "englishName": "Green Sandpiper"
           },
           {
             "japaneseName": "コアオアシシギ",
+            "chineseName": "小滨鹬",
             "englishName": "Marsh Sandpiper"
           },
           {
             "japaneseName": "イソシギ",
+            "chineseName": "矶鹬",
             "englishName": "Common Sandpiper"
           },
           {
             "japaneseName": "ソリハシシギ",
+            "chineseName": "翹嘴鷸",
             "englishName": "Terek Sandpiper"
           },
           {
             "japaneseName": "キョウジョシギ",
+            "chineseName": "翻石鹬",
             "englishName": "Ruddy Turnstone"
           },
           {
             "japaneseName": "ツルシギ",
+            "chineseName": "鹤鹬",
             "englishName": "Spotted Redshank"
           },
           {
             "japaneseName": "アカアシシギ",
+            "chineseName": "红脚鹬",
             "englishName": "Common Redshank"
           },
           {
             "japaneseName": "アオアシシギ",
+            "chineseName": "青脚鹬",
             "englishName": "Common Greenshank"
           },
           {
             "japaneseName": "キアシシギ",
+            "chineseName": "灰尾漂鹬",
             "englishName": "Grey-tailed Tattler"
           },
           {
             "japaneseName": "オグロシギ",
+            "chineseName": "黑尾塍鹬",
             "englishName": "Black-tailed Godwit"
           },
           {
             "japaneseName": "オオソリハシシギ",
+            "chineseName": "斑尾塍鹬",
             "englishName": "Bar-tailed Godwit"
           },
           {
             "japaneseName": "オオハシシギ",
+            "chineseName": "長嘴鷸",
             "englishName": "Long-billed Dowitcher"
           },
           {
             "japaneseName": "ダイシャクシギ",
+            "chineseName": "白腰杓鹬",
             "englishName": "Eurasian Curlew"
           },
           {
             "japaneseName": "ホウロクシギ",
+            "chineseName": "白腰杓鹬",
             "englishName": "Far Eastern Curlew",
             "location": "東よか"
           },
           {
             "japaneseName": "チュウシャクシギ",
+            "chineseName": "中杓鹬",
             "englishName": "Whimbrel"
           },
           {
             "japaneseName": "タシギ",
+            "chineseName": "扇尾沙锥",
             "englishName": "Common snipe"
           },
           {
             "japaneseName": "チュウジシギ",
+            "chineseName": "大沙锥",
             "englishName": "Swinhoe's Snipe"
           },
           {
             "japaneseName": "オオジシギ",
+            "chineseName": "大沙锥",
             "englishName": "Latham's Snipe"
           },
           {
             "japaneseName": "ヤマシギ",
+            "chineseName": "山鹬",
             "englishName": "Eurasian Woodcock"
           },
           {
             "japaneseName": "アマミヤマシギ",
+            "chineseName": "琉球丘鹬",
             "englishName": "Amami Woodcock",
             "location": "奄美大島"
           }
@@ -994,6 +1150,7 @@ export const birdDatabase = [
         "species": [
           {
             "japaneseName": "タマシギ",
+            "chineseName": "彩鹬",
             "englishName": "Greater Painted-snipe",
             "location": "♂のみ"
           }
@@ -1009,10 +1166,12 @@ export const birdDatabase = [
         "species": [
           {
             "japaneseName": "セイタカシギ",
+            "chineseName": "黑翅长脚鹬",
             "englishName": "Black-winged Stilt"
           },
           {
             "japaneseName": "ソリハシセイタカシギ",
+            "chineseName": "反嘴鷸",
             "englishName": "Pied Avocet",
             "location": "東よか/今津"
           }
@@ -1028,10 +1187,12 @@ export const birdDatabase = [
         "species": [
           {
             "japaneseName": "アカエリヒレアシシギ",
+            "chineseName": "红颈瓣蹼鹬",
             "englishName": "Red-necked phalarope"
           },
           {
             "japaneseName": "ハイイロヒレアシシギ",
+            "chineseName": "灰瓣蹼鹬",
             "englishName": "Red phalarope",
             "location": "会瀬漁港"
           }
@@ -1047,82 +1208,100 @@ export const birdDatabase = [
         "species": [
           {
             "japaneseName": "ミサゴ",
+            "chineseName": "鱼鹰",
             "englishName": "Osprey"
           },
           {
             "japaneseName": "オジロワシ",
+            "chineseName": "白尾海雕",
             "englishName": "White-tailed eagle"
           },
           {
             "japaneseName": "オオワシ",
+            "chineseName": "虎头海雕",
             "englishName": "Steller's sea eagle",
             "location": "涸沼"
           },
           {
             "japaneseName": "イヌワシ",
+            "chineseName": "金鹰",
             "englishName": "Golden Eagle",
             "location": "長野県高山村"
           },
           {
             "japaneseName": "カンムリワシ",
+            "chineseName": "蛇雕",
             "englishName": "Crested serpent eagle",
             "location": "嵩田林道"
           },
           {
             "japaneseName": "クマタカ",
+            "chineseName": "熊鷹",
             "englishName": "Mountain hawk-eagle",
             "location": "檜枝岐村,浪岡ダム"
           },
           {
             "japaneseName": "ハチクマ",
+            "chineseName": "凤头蜂鹰",
             "englishName": "Oriental honey-buzzard"
           },
           {
             "japaneseName": "トビ",
+            "chineseName": "鸢",
             "englishName": "Black Kite"
           },
           {
             "japaneseName": "サシバ",
+            "chineseName": "灰脸鵟鹰",
             "englishName": "Grey-faced buzzard"
           },
           {
             "japaneseName": "ノスリ",
+            "chineseName": "普通鵟",
             "englishName": "Eastern Buzzard",
             "subspecies": "ノスリ"
           },
           {
             "japaneseName": "ケアシノスリ",
+            "chineseName": "毛足鵟",
             "englishName": "Rough-legged Buzzard",
             "location": "西ノ洲"
           },
           {
             "japaneseName": "ハイイロチュウヒ",
+            "chineseName": "白尾鹞",
             "englishName": "Hen harrier"
           },
           {
             "japaneseName": "マダラチュウヒ",
+            "chineseName": "鹊鹞",
             "englishName": "Pied Harrier",
             "location": "渡良瀬"
           },
           {
             "japaneseName": "チュウヒ",
+            "chineseName": "東方澤鵟",
             "englishName": "Eastern marsh harrier"
           },
           {
             "japaneseName": "オオタカ",
+            "chineseName": "苍鹰",
             "englishName": "Northern Goshawk"
           },
           {
             "japaneseName": "ハイタカ",
+            "chineseName": "雀鹰",
             "englishName": "Eurasian Sparrowhawk"
           },
           {
             "japaneseName": "ツミ",
+            "chineseName": "雀鷹",
             "englishName": "Japanese sparrow-hawk",
             "location": "山本山"
           },
           {
             "japaneseName": "カタグロトビ",
+            "chineseName": "黑翅鸢",
             "englishName": "Black-winged kite",
             "location": "新川"
           }
@@ -1138,19 +1317,23 @@ export const birdDatabase = [
         "species": [
           {
             "japaneseName": "ハヤブサ",
+            "chineseName": "隼",
             "englishName": "Peregrine Falcon",
             "subspecies": "ハヤブサ"
           },
           {
             "japaneseName": "チゴハヤブサ",
+            "chineseName": "燕隼",
             "englishName": "Eurasian Hobby"
           },
           {
             "japaneseName": "コチョウゲンボウ",
+            "chineseName": "红隼",
             "englishName": "Merlin"
           },
           {
             "japaneseName": "チョウゲンボウ",
+            "chineseName": "红隼",
             "englishName": "Common Kestrel"
           }
         ]
@@ -1165,15 +1348,18 @@ export const birdDatabase = [
         "species": [
           {
             "japaneseName": "シマフクロウ",
+            "chineseName": "毛腿渔鸮",
             "englishName": "Blakiston's fish Owl",
             "location": "羅臼"
           },
           {
             "japaneseName": "トラフズク",
+            "chineseName": "长耳鸮",
             "englishName": "Long-eared Owl"
           },
           {
             "japaneseName": "コミミズク",
+            "chineseName": "短耳鸮",
             "englishName": "Short-eared Owl"
           },
           {
