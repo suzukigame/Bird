@@ -56,7 +56,7 @@ function App() {
       }
     });
     return Array.from(species).sort();
-  }, [photos, selectedFamily, i18n.language]);
+  }, []);
 
   const filteredPhotos = useMemo(() => {
     return photos.filter(photo => {
