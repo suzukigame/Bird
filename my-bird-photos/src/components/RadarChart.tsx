@@ -71,7 +71,7 @@ const RadarChart: React.FC<RadarChartProps> = ({ stats }) => {
           font: {
             size: 40, // フォントサイズを調整
             family: 'Noto Sans JP', // 書体を指定
-            weight: 'bold', // 太字にする
+            weight: 700, // 太字にする (数値で指定)
           },
         },
       },
