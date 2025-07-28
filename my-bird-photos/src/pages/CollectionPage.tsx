@@ -3,6 +3,7 @@ import { useCollection } from '../hooks/useCollection';
 import { IPhoto } from '../types/photo';
 import { characterData } from '../data/character_data';
 import { useTranslation } from 'react-i18next';
+import RadarChart from '../components/RadarChart'; // RadarChartをインポート
 
 const CollectionPage: React.FC = () => {
   const { t, i18n } = useTranslation();
@@ -55,7 +56,7 @@ const CollectionPage: React.FC = () => {
       {selectedImage && (
         <div className="modal-overlay" onClick={handleCloseModal}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-            <img src={selectedImage.src} alt={selectedImage.birdSpecies[i18n.language as keyof typeof selectedImage.birdSpecies]} />
+            <img src={process.env.PUBLIC_URL + characterData[selectedImage.birdSpecies.ja]?.image} alt={selectedImage.birdSpecies[i18n.language as keyof typeof selectedImage.birdSpecies]} />
             <button className="close-button" onClick={handleCloseModal}>&times;</button>
             <div className="modal-info">
               <h3>{selectedImage.birdSpecies[i18n.language as keyof typeof selectedImage.birdSpecies]}</h3>
@@ -67,7 +68,8 @@ const CollectionPage: React.FC = () => {
                 <div className="character-section">
                   <h4>{t('characterEncyclopedia')}</h4>
                   <img src={process.env.PUBLIC_URL + characterInfo.image} alt="Character" className="character-image" />
-                                    <p>{formatDescription(t(characterInfo.descriptionKey))}</p>
+                  {characterInfo.stats && <RadarChart stats={characterInfo.stats} />}
+                  <p>{formatDescription(t(characterInfo.descriptionKey))}</p>
                 </div>
               )}
             </div>

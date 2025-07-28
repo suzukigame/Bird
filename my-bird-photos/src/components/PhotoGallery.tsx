@@ -4,6 +4,7 @@ import { characterData } from '../data/character_data';
 import { useCollection } from '../hooks/useCollection';
 import { useTranslation } from 'react-i18next';
 import Masonry from 'react-masonry-css'; // Import Masonry
+import RadarChart from './RadarChart'; // RadarChartをインポート
 
 interface IPhotoGalleryProps {
   photos: IPhoto[];
@@ -58,7 +59,7 @@ const PhotoGallery: React.FC<IPhotoGalleryProps> = ({ photos }) => {
       {selectedImage && (
         <div className="modal-overlay" onClick={handleCloseModal}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-            <img src={selectedImage.src} alt={selectedImage.birdSpecies[i18n.language as keyof typeof selectedImage.birdSpecies]} />
+            <img src={process.env.PUBLIC_URL + characterData[selectedImage.birdSpecies.ja]?.image} alt={selectedImage.birdSpecies[i18n.language as keyof typeof selectedImage.birdSpecies]} />
             <button className="close-button" onClick={handleCloseModal}>&times;</button>
             <div className="modal-info">
               <h3>{selectedImage.birdSpecies[i18n.language as keyof typeof selectedImage.birdSpecies]}</h3>
@@ -70,6 +71,7 @@ const PhotoGallery: React.FC<IPhotoGalleryProps> = ({ photos }) => {
                 <div className="character-section">
                   <h4>{t('characterEncyclopedia')}</h4>
                   <img src={process.env.PUBLIC_URL + characterInfo.image} alt="Character" className="character-image" />
+                  {characterInfo.stats && <RadarChart stats={characterInfo.stats} />}
                   <p>{t(characterInfo.descriptionKey)}</p>
                 </div>
               )}
