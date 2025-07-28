@@ -42,7 +42,7 @@ const PhotoGallery: React.FC<IPhotoGalleryProps> = ({ photos }) => {
           <img src={photo.thumbnail} alt={photo.birdSpecies[i18n.language as keyof typeof photo.birdSpecies]} onClick={() => handleImageClick(photo)} />
           <div className="photo-info">
             <h3>{photo.birdSpecies[i18n.language as keyof typeof photo.birdSpecies]}</h3>
-            <p>{photo.prefecture} - {photo.locationDetail[i18n.language as keyof typeof photo.locationDetail]}</p>
+            <p>{photo.prefecture[i18n.language as keyof typeof photo.prefecture]} - {photo.locationDetail[i18n.language as keyof typeof photo.locationDetail]}</p>
             <p>{photo.date}</p>
             <button
               onClick={() => addToCollection(photo)}
