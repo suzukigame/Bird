@@ -3,11 +3,11 @@ import { IPhoto } from '../types/photo';
 export const photos: IPhoto[] = [
   {
     id: '1',
-    src: process.env.PUBLIC_URL + '/images/birds/アトリ/Hawfinch_fukuoka_201904.JPG.JPG',
-    thumbnail: process.env.PUBLIC_URL + '/images/birds/アトリ/Hawfinch_fukuoka_201904.JPG.JPG',
+    src: process.env.PUBLIC_URL + '/images/birds/アトリ/Hawfinch_fukuoka_201904.webp',
+    thumbnail: process.env.PUBLIC_URL + '/images/birds/アトリ/Hawfinch_fukuoka_201904.webp',
     prefecture: { ja: '福岡県', en: 'Fukuoka Prefecture', zh: '福冈县' },
     date: '2019-04',
-    birdSpecies: { ja: 'アトリ', en: 'Hawfinch', zh: '蜡嘴雀' },
+    birdSpecies: { ja: 'イカル', en: 'Hawfinch', zh: '蜡嘴雀' },
     locationDetail: { ja: '', en: '', zh: '' },
     memo: { ja: '', en: '', zh: '' },
     family: { ja: 'アトリ', en: 'Fringillidae', zh: '雀科' },
