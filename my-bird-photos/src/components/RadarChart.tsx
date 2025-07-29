@@ -69,7 +69,7 @@ const RadarChart: React.FC<RadarChartProps> = ({ stats }) => {
         },
         pointLabels: {
           font: {
-            size: 40, // フォントサイズを調整
+            size: 20, // フォントサイズを調整 (40の半分)
             family: 'Noto Sans JP', // 書体を指定
             weight: 700, // 太字にする (数値で指定)
           },
@@ -93,7 +93,7 @@ const RadarChart: React.FC<RadarChartProps> = ({ stats }) => {
   };
 
   return (
-    <div style={{ width: '66%', height: '66%', margin: '0 auto' }}> {/* サイズを2/3に縮小 */}
+    <div style={{ width: '80%', height: '80%', margin: '0 auto' }}> {/* サイズを80%に調整 */}
       <Radar data={data} options={options} />
     </div>
   );
