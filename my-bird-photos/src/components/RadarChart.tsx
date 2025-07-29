@@ -63,9 +63,13 @@ const RadarChart: React.FC<RadarChartProps> = ({ stats }) => {
           display: false,
         },
         suggestedMin: 0,
-        suggestedMax: 5, // 仮の最大値。ユーザーからの情報で調整
+        suggestedMax: 10, // 最大値を10に設定
         ticks: {
-          display: false, // 数値を非表示
+          display: true, // 数値を表示
+          stepSize: 2, // 2刻みで表示
+          font: {
+            size: 10, // 数値のフォントサイズ
+          },
         },
         pointLabels: {
           font: {
@@ -93,7 +97,7 @@ const RadarChart: React.FC<RadarChartProps> = ({ stats }) => {
   };
 
   return (
-    <div style={{ width: '80%', height: '80%', margin: '0 auto' }}> {/* サイズを80%に調整 */}
+    <div className="radar-chart-container"> {/* CSSクラスを適用 */}
       <Radar data={data} options={options} />
     </div>
   );

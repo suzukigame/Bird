@@ -269,6 +269,13 @@ main {
   text-align: left; /* 必要に応じて調整 */
 }
 
+/* Radar Chart Container */
+.radar-chart-container {
+  width: 500px; /* PC版の固定幅 */
+  height: 500px; /* PC版の固定高さ */
+  margin: 0 auto;
+}
+
 /* レスポンシブデザイン */
 @media (max-width: 768px) {
   .App-header h1 {
@@ -326,6 +333,11 @@ main {
   .description-text {
     font-size: 18px; /* スマホ版での調整 */
   }
+
+  .radar-chart-container {
+    width: 90%; /* スマホ版での幅 */
+    height: 90vw; /* スマホ版での高さ (viewport width基準) */
+  }
 }
 
 @media (max-width: 480px) {
@@ -352,5 +364,10 @@ main {
 
   .description-text {
     font-size: 16px; /* さらに小さい画面での調整 */
+  }
+
+  .radar-chart-container {
+    width: 95%; /* さらに小さい画面での幅 */
+    height: 95vw; /* さらに小さい画面での高さ */
   }
 }
